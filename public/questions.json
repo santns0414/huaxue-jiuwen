@@ -2682,7 +2682,16 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：氧气可以用向下排空气法收集。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "氧气密度比空气大，应使用向上排空气法，不能用向下排空气法。",
     "tags": [
@@ -2812,7 +2821,16 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：长颈漏斗下端只要伸进容器口即可，不必伸入液面以下。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "必须伸入液面以下形成液封，否则气体会从漏斗逸出。",
     "tags": [
@@ -3198,7 +3216,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：密度比空气大的气体，采用瓶口向上的集气方式，称为向上排空气法。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "对",
     "explanation": "表述正确。",
     "tags": [
@@ -3329,7 +3356,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：化学变化中的最小粒子是电子。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "化学变化中的最小粒子是原子，不是电子。",
     "tags": [
@@ -3386,7 +3422,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：温度升高，分子运动通常更剧烈。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
@@ -3480,7 +3525,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：「氧分子由氧原子构成」这句话是对的。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "对",
     "explanation": "分子由原子构成，氧分子由氧原子构成。",
     "tags": [
@@ -3573,7 +3627,16 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：分子之间没有间隔。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "分子之间有间隔。",
     "tags": [
@@ -3958,7 +4021,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：同种元素的原子，中子数一定相同。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "同种元素质子数相同，中子数可能不同（同位素）。",
     "tags": [
@@ -4088,7 +4160,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：可以说「一个水分子含有两个氢元素」。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "元素只讲种类不讲个数；应说两个氢原子。",
     "tags": [
@@ -4289,7 +4370,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：元素既可以讲种类，也可以讲个数。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "元素只讲种类，不讲个数。",
     "tags": [
@@ -4639,7 +4729,16 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：化合物中各元素化合价代数和一定为0。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
@@ -4768,7 +4867,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：写化学式时可以把化合价数字直接写在元素符号右上角作为化学式的一部分。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "化合价标在元素正上方用于分析，不写入化学式。",
     "tags": [
@@ -5153,7 +5261,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：硬水是指含有较多可溶性钙、镁化合物的水。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
@@ -5498,7 +5615,16 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：水的化学式是H₂O₂。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "H₂O₂是过氧化氢，水是H₂O。",
     "tags": [
@@ -5701,7 +5827,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：化学式只表示物质由哪些元素组成，不表示原子个数。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "化学式既表示元素组成，也表示一个分子中各原子个数等。",
     "tags": [
@@ -6270,7 +6405,16 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：所有变化都遵守质量守恒定律。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "质量守恒定律适用于化学反应。",
     "tags": [
@@ -6691,7 +6835,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：化学方程式中的短线改成等号前必须配平。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "对",
     "explanation": "配平后才能将→或—改为等号（教材规范）。",
     "tags": [
@@ -7949,7 +8102,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：二氧化碳一般可用排水法大量收集。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "CO₂能溶于水且与水反应，一般不用排水法。",
     "tags": [
@@ -9329,7 +9491,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：化石燃料可以在短期内大量再生。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "化石燃料不可再生。",
     "tags": [
@@ -9641,7 +9812,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：制CO₂时长颈漏斗下端不必伸入稀盐酸液面以下。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "必须伸入液面以下液封。",
     "tags": [
@@ -9882,7 +10062,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：温度降低时，分子运动通常会更剧烈。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "错",
     "explanation": "温度降低，分子运动通常减缓。",
     "tags": [
@@ -9974,7 +10163,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：原子可以构成分子，分子也可以在化学变化中分成原子。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
@@ -10946,7 +11144,16 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：氧气密度比空气大，可用向上排空气法收集。",
-    "options": [],
+    "options": [
+      {
+        "key": "对",
+        "text": "对"
+      },
+      {
+        "key": "错",
+        "text": "错"
+      }
+    ],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
