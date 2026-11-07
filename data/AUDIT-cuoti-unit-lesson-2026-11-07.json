@@ -1,0 +1,304 @@
+{
+  "unitWrong": [
+    {
+      "id": "sz-2024-172",
+      "unitId": "u4",
+      "lessonId": "u4t3",
+      "stem": "过氧化氢的化学式是",
+      "reason": "制氧/氧气检验像 u2t3（现 u4/u4t3，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-183",
+      "unitId": "u5",
+      "lessonId": "u5t1",
+      "stem": "电解水实验能体现质量守恒，是因为",
+      "reason": "电解水→u4t3（现 u5/u5t1，期望 unit∈['u4'] lesson∈['u4t3']）",
+      "expectedUnit": "u4",
+      "expectedLesson": "u4t3"
+    },
+    {
+      "id": "sz-2024-192",
+      "unitId": "u5",
+      "lessonId": "u5t2",
+      "stem": "过氧化氢制氧气的化学方程式为",
+      "reason": "制氧/氧气检验像 u2t3（现 u5/u5t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-197",
+      "unitId": "u5",
+      "lessonId": "u5t3",
+      "stem": "制取氧气时，若用KMnO₄制得氧气3.2g，理论上至少需要高锰酸钾的质量（已知2KMnO₄→K₂MnO₄+MnO₂+O₂↑，K=39，Mn=55，O=16）约为",
+      "reason": "制氧/氧气检验像 u2t3（现 u5/u5t3，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-226",
+      "unitId": "u6",
+      "lessonId": "u6t2",
+      "stem": "判断：二氧化碳一般可用排水法大量收集。",
+      "reason": "制氧/氧气检验像 u2t3（现 u6/u6t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-357",
+      "unitId": "u4",
+      "lessonId": "u4t2",
+      "stem": "水的化学式是____。",
+      "reason": "水的化学式→u4t3/u3t4（现 u4/u4t2，期望 unit∈['u3', 'u4'] lesson∈['u3t4', 'u4t3']）",
+      "expectedUnit": "u3",
+      "expectedLesson": "u3t4/u4t3"
+    },
+    {
+      "id": "sz-2024-364",
+      "unitId": "u4",
+      "lessonId": "u4t3",
+      "stem": "氢氧化钙的化学式是____。",
+      "reason": "化合价写式→u3t4（现 u4/u4t3，期望 unit∈['u3'] lesson∈['u3t4']）",
+      "expectedUnit": "u3",
+      "expectedLesson": "u3t4"
+    },
+    {
+      "id": "sz-2024-373",
+      "unitId": "u5",
+      "lessonId": "u5t2",
+      "stem": "加热高锰酸钾制氧气的化学方程式中，条件应标注____。",
+      "reason": "制氧/氧气检验像 u2t3（现 u5/u5t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-377",
+      "unitId": "u5",
+      "lessonId": "u5t2",
+      "stem": "过氧化氢分解的化学方程式可写为：2H₂O₂ →[MnO₂] ____ + O₂↑（填化学式）。",
+      "reason": "制氧/氧气检验像 u2t3（现 u5/u5t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-378",
+      "unitId": "u5",
+      "lessonId": "u5t3",
+      "stem": "化学反应中，____（填“分子”或“原子”）可再分，____不可再分。",
+      "reason": "化学变化最小粒子→u3t1（现 u5/u5t3，期望 unit∈['u3'] lesson∈['u3t1']）",
+      "expectedUnit": "u3",
+      "expectedLesson": "u3t1"
+    },
+    {
+      "id": "sz-2024-389",
+      "unitId": "u6",
+      "lessonId": "u6t2",
+      "stem": "制取CO₂时一般____（填“能”或“不能”）用排水法收集，因为二氧化碳能溶于水且与水反应。",
+      "reason": "制氧/氧气检验像 u2t3（现 u6/u6t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    }
+  ],
+  "lessonOnlyStrict": [
+    {
+      "id": "sz-2024-358",
+      "unitId": "u4",
+      "lessonId": "u4t2",
+      "stem": "电解水时，正极产生____，负极产生氢气。",
+      "reason": "电解水→u4t3（现 u4/u4t2，期望 unit∈['u4'] lesson∈['u4t3']）",
+      "expectedUnit": "u4",
+      "expectedLesson": "u4t3"
+    },
+    {
+      "id": "sz-2024-359",
+      "unitId": "u4",
+      "lessonId": "u4t2",
+      "stem": "电解水得到的氢气与氧气体积比约为____。",
+      "reason": "电解水→u4t3（现 u4/u4t2，期望 unit∈['u4'] lesson∈['u4t3']）",
+      "expectedUnit": "u4",
+      "expectedLesson": "u4t3"
+    },
+    {
+      "id": "sz-2024-360",
+      "unitId": "u4",
+      "lessonId": "u4t2",
+      "stem": "电解水说明水是由____、____两种元素组成的。",
+      "reason": "电解水→u4t3（现 u4/u4t2，期望 unit∈['u4'] lesson∈['u4t3']）",
+      "expectedUnit": "u4",
+      "expectedLesson": "u4t3"
+    }
+  ],
+  "allHeuristic": [
+    {
+      "id": "sz-2024-172",
+      "unitId": "u4",
+      "lessonId": "u4t3",
+      "stem": "过氧化氢的化学式是",
+      "reason": "制氧/氧气检验像 u2t3（现 u4/u4t3，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-183",
+      "unitId": "u5",
+      "lessonId": "u5t1",
+      "stem": "电解水实验能体现质量守恒，是因为",
+      "reason": "电解水→u4t3（现 u5/u5t1，期望 unit∈['u4'] lesson∈['u4t3']）",
+      "expectedUnit": "u4",
+      "expectedLesson": "u4t3"
+    },
+    {
+      "id": "sz-2024-192",
+      "unitId": "u5",
+      "lessonId": "u5t2",
+      "stem": "过氧化氢制氧气的化学方程式为",
+      "reason": "制氧/氧气检验像 u2t3（现 u5/u5t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-197",
+      "unitId": "u5",
+      "lessonId": "u5t3",
+      "stem": "制取氧气时，若用KMnO₄制得氧气3.2g，理论上至少需要高锰酸钾的质量（已知2KMnO₄→K₂MnO₄+MnO₂+O₂↑，K=39，Mn=55，O=16）约为",
+      "reason": "制氧/氧气检验像 u2t3（现 u5/u5t3，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-226",
+      "unitId": "u6",
+      "lessonId": "u6t2",
+      "stem": "判断：二氧化碳一般可用排水法大量收集。",
+      "reason": "制氧/氧气检验像 u2t3（现 u6/u6t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-357",
+      "unitId": "u4",
+      "lessonId": "u4t2",
+      "stem": "水的化学式是____。",
+      "reason": "水的化学式→u4t3/u3t4（现 u4/u4t2，期望 unit∈['u3', 'u4'] lesson∈['u3t4', 'u4t3']）",
+      "expectedUnit": "u3",
+      "expectedLesson": "u3t4/u4t3"
+    },
+    {
+      "id": "sz-2024-358",
+      "unitId": "u4",
+      "lessonId": "u4t2",
+      "stem": "电解水时，正极产生____，负极产生氢气。",
+      "reason": "电解水→u4t3（现 u4/u4t2，期望 unit∈['u4'] lesson∈['u4t3']）",
+      "expectedUnit": "u4",
+      "expectedLesson": "u4t3"
+    },
+    {
+      "id": "sz-2024-359",
+      "unitId": "u4",
+      "lessonId": "u4t2",
+      "stem": "电解水得到的氢气与氧气体积比约为____。",
+      "reason": "电解水→u4t3（现 u4/u4t2，期望 unit∈['u4'] lesson∈['u4t3']）",
+      "expectedUnit": "u4",
+      "expectedLesson": "u4t3"
+    },
+    {
+      "id": "sz-2024-360",
+      "unitId": "u4",
+      "lessonId": "u4t2",
+      "stem": "电解水说明水是由____、____两种元素组成的。",
+      "reason": "电解水→u4t3（现 u4/u4t2，期望 unit∈['u4'] lesson∈['u4t3']）",
+      "expectedUnit": "u4",
+      "expectedLesson": "u4t3"
+    },
+    {
+      "id": "sz-2024-364",
+      "unitId": "u4",
+      "lessonId": "u4t3",
+      "stem": "氢氧化钙的化学式是____。",
+      "reason": "化合价写式→u3t4（现 u4/u4t3，期望 unit∈['u3'] lesson∈['u3t4']）",
+      "expectedUnit": "u3",
+      "expectedLesson": "u3t4"
+    },
+    {
+      "id": "sz-2024-373",
+      "unitId": "u5",
+      "lessonId": "u5t2",
+      "stem": "加热高锰酸钾制氧气的化学方程式中，条件应标注____。",
+      "reason": "制氧/氧气检验像 u2t3（现 u5/u5t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-377",
+      "unitId": "u5",
+      "lessonId": "u5t2",
+      "stem": "过氧化氢分解的化学方程式可写为：2H₂O₂ →[MnO₂] ____ + O₂↑（填化学式）。",
+      "reason": "制氧/氧气检验像 u2t3（现 u5/u5t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    },
+    {
+      "id": "sz-2024-378",
+      "unitId": "u5",
+      "lessonId": "u5t3",
+      "stem": "化学反应中，____（填“分子”或“原子”）可再分，____不可再分。",
+      "reason": "化学变化最小粒子→u3t1（现 u5/u5t3，期望 unit∈['u3'] lesson∈['u3t1']）",
+      "expectedUnit": "u3",
+      "expectedLesson": "u3t1"
+    },
+    {
+      "id": "sz-2024-389",
+      "unitId": "u6",
+      "lessonId": "u6t2",
+      "stem": "制取CO₂时一般____（填“能”或“不能”）用排水法收集，因为二氧化碳能溶于水且与水反应。",
+      "reason": "制氧/氧气检验像 u2t3（现 u6/u6t2，期望 unit∈['u2'] lesson∈['u2t3']）",
+      "expectedUnit": "u2",
+      "expectedLesson": "u2t3"
+    }
+  ],
+  "materialFlags": [
+    {
+      "id": "sz-mat-003",
+      "unitId": "u1",
+      "lessonId": "u1t3",
+      "reason": "制CO2→u6t2",
+      "title": "物质变化与性质辨析"
+    },
+    {
+      "id": "sz-mat-006",
+      "unitId": "u2",
+      "lessonId": "u2t2",
+      "reason": "制氧/氧气检验像 u2t3",
+      "title": "氧气的实验室制取与收集"
+    },
+    {
+      "id": "sz-mat-008",
+      "unitId": "u2",
+      "lessonId": "u2t3",
+      "reason": "制CO2→u6t2",
+      "title": "长颈漏斗制气装置气密性"
+    },
+    {
+      "id": "sz-mat-015",
+      "unitId": "u4",
+      "lessonId": "u4t2",
+      "reason": "电解水→u4t3",
+      "title": "电解水实验数据分析"
+    },
+    {
+      "id": "sz-mat-020",
+      "unitId": "u5",
+      "lessonId": "u5t2",
+      "reason": "制氧/氧气检验像 u2t3",
+      "title": "化学方程式的书写与配平"
+    },
+    {
+      "id": "sz-mat-021",
+      "unitId": "u5",
+      "lessonId": "u5t3",
+      "reason": "制氧/氧气检验像 u2t3",
+      "title": "根据方程式的简单计算"
+    }
+  ]
+}

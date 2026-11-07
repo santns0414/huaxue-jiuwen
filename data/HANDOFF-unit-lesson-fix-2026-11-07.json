@@ -1,0 +1,153 @@
+{
+  "action": "redeploy_unit_lesson_fixes",
+  "priority": true,
+  "generatedAt": "2026-11-07T13:22:59",
+  "store": "/cursor/stores/store-f8087d11-0d8a-469d-a717-f8a368033b79/huaxue-practice",
+  "filesUpdated": [
+    "questions.json",
+    "questions-fill.json",
+    "questions-material.json"
+  ],
+  "jumpLogic": "OK — reviewHashForItem 用 item.unitId/lessonId → #liudu/{unit}/{lesson}；材料小题继承 pack 的 unit/lesson",
+  "questionsFixed": [
+    {
+      "id": "sz-2024-357",
+      "from": "u4/u4t2",
+      "to": "u4/u4t3",
+      "reason": "水的化学式属于水的组成，非水的净化"
+    },
+    {
+      "id": "sz-2024-358",
+      "from": "u4/u4t2",
+      "to": "u4/u4t3",
+      "reason": "电解水正负极气体→水的组成"
+    },
+    {
+      "id": "sz-2024-359",
+      "from": "u4/u4t2",
+      "to": "u4/u4t3",
+      "reason": "电解水体积比→水的组成"
+    },
+    {
+      "id": "sz-2024-360",
+      "from": "u4/u4t2",
+      "to": "u4/u4t3",
+      "reason": "电解水元素组成→水的组成"
+    },
+    {
+      "id": "sz-2024-378",
+      "from": "u5/u5t3",
+      "to": "u3/u3t1",
+      "reason": "分子可再分/原子不可再分→分子和原子，误挂在方程式计算"
+    },
+    {
+      "id": "sz-2024-364",
+      "from": "u4/u4t3",
+      "to": "u3/u3t4",
+      "reason": "按化合价写氢氧化钙化学式→化学式与化合价（虽与硬水相关，考点是写式）"
+    },
+    {
+      "id": "sz-2024-172",
+      "from": "u4/u4t3",
+      "to": "u2/u2t3",
+      "reason": "过氧化氢化学式常与制氧药品相关；且原 tag water_formula 易误导，宜挂制取氧气/化学式，优先 u2t3"
+    }
+  ],
+  "fillMirrorFixed": [
+    {
+      "id": "sz-2024-357",
+      "from": "u4/u4t2",
+      "to": "u4/u4t3"
+    },
+    {
+      "id": "sz-2024-358",
+      "from": "u4/u4t2",
+      "to": "u4/u4t3"
+    },
+    {
+      "id": "sz-2024-359",
+      "from": "u4/u4t2",
+      "to": "u4/u4t3"
+    },
+    {
+      "id": "sz-2024-360",
+      "from": "u4/u4t2",
+      "to": "u4/u4t3"
+    },
+    {
+      "id": "sz-2024-378",
+      "from": "u5/u5t3",
+      "to": "u3/u3t1"
+    },
+    {
+      "id": "sz-2024-364",
+      "from": "u4/u4t3",
+      "to": "u3/u3t4"
+    }
+  ],
+  "materialFixed": [
+    {
+      "id": "sz-mat-006",
+      "from": "u2/u2t2",
+      "to": "u2/u2t3",
+      "reason": "套卷讲高锰酸钾制氧与收集，课题应是制取氧气而非氧气性质"
+    },
+    {
+      "id": "sz-mat-008",
+      "from": "u2/u2t3",
+      "to": "u6/u6t2",
+      "reason": "大理石+稀盐酸制CO₂+长颈漏斗，应挂二氧化碳制取，非制氧气"
+    },
+    {
+      "id": "sz-mat-015",
+      "from": "u4/u4t2",
+      "to": "u4/u4t3",
+      "reason": "电解水数据分析→水的组成，非水的净化"
+    }
+  ],
+  "intentionallyKept": [
+    {
+      "id": "sz-2024-183",
+      "unitId": "u5",
+      "lessonId": "u5t1",
+      "note": "电解水作质量守恒情境，保留 u5t1"
+    },
+    {
+      "id": "sz-2024-192",
+      "note": "制氧方程式练书写，保留 u5t2"
+    },
+    {
+      "id": "sz-2024-197",
+      "note": "制氧计算练方程式计算，保留 u5t3"
+    },
+    {
+      "id": "sz-2024-373",
+      "note": "同上保留 u5t2"
+    },
+    {
+      "id": "sz-2024-377",
+      "note": "同上保留 u5t2"
+    },
+    {
+      "id": "sz-2024-226",
+      "note": "CO₂收集判断，u6t2 正确"
+    },
+    {
+      "id": "sz-2024-389",
+      "note": "CO₂排水法，u6t2 正确"
+    },
+    {
+      "id": "sz-mat-020",
+      "note": "用制氧反应练配平，保留 u5t2"
+    },
+    {
+      "id": "sz-mat-021",
+      "note": "用双氧水算氧气，保留 u5t3"
+    },
+    {
+      "id": "sz-mat-003",
+      "note": "石灰石盐酸仅作变化分类例子，保留 u1t3"
+    }
+  ],
+  "uiCheck": "computerUse 抽测进行中，完成后另报"
+}

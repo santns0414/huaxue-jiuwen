@@ -6006,8 +6006,8 @@
   },
   {
     "id": "sz-2024-172",
-    "unitId": "u4",
-    "lessonId": "u4t3",
+    "unitId": "u2",
+    "lessonId": "u2t3",
     "year": 2024,
     "source": "深圳考情原创（九年级上册）",
     "difficulty": 1,
@@ -6034,11 +6034,11 @@
     "answer": "B",
     "explanation": "过氧化氢是H₂O₂，勿与水混淆。",
     "tags": [
-      "water_formula"
+      "oxygen_prep"
     ],
     "knowledgePoints": [
       "过氧化氢",
-      "水的化学式"
+      "化学式"
     ]
   },
   {
@@ -12050,7 +12050,7 @@
   {
     "id": "sz-2024-357",
     "unitId": "u4",
-    "lessonId": "u4t2",
+    "lessonId": "u4t3",
     "year": 2024,
     "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 1,
@@ -12076,7 +12076,7 @@
   {
     "id": "sz-2024-358",
     "unitId": "u4",
-    "lessonId": "u4t2",
+    "lessonId": "u4t3",
     "year": 2024,
     "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 1,
@@ -12100,7 +12100,7 @@
   {
     "id": "sz-2024-359",
     "unitId": "u4",
-    "lessonId": "u4t2",
+    "lessonId": "u4t3",
     "year": 2024,
     "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 2,
@@ -12125,7 +12125,7 @@
   {
     "id": "sz-2024-360",
     "unitId": "u4",
-    "lessonId": "u4t2",
+    "lessonId": "u4t3",
     "year": 2024,
     "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 2,
@@ -12224,8 +12224,8 @@
   },
   {
     "id": "sz-2024-364",
-    "unitId": "u4",
-    "lessonId": "u4t3",
+    "unitId": "u3",
+    "lessonId": "u3t4",
     "year": 2024,
     "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 2,
@@ -12556,8 +12556,8 @@
   },
   {
     "id": "sz-2024-378",
-    "unitId": "u5",
-    "lessonId": "u5t3",
+    "unitId": "u3",
+    "lessonId": "u3t1",
     "year": 2024,
     "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 2,
