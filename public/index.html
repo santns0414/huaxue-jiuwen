@@ -537,6 +537,18 @@ ul.plain li { margin-bottom: 0.3rem; }
   .mat-passage-sticky { top: 4.5rem; max-height: 36vh; }
 }
 
+
+.cuoti-group { margin: 1rem 0 1.4rem; }
+.cuoti-group-title { color: var(--heading); font-size: 1rem; margin: 0 0 0.65rem; }
+.cuoti-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.9rem 1rem 1rem;
+  margin-bottom: 0.7rem;
+}
+.cuoti-card .stem { margin: 0.55rem 0 0.75rem; line-height: 1.55; color: var(--text); }
+.cuoti-actions { display: flex; flex-wrap: wrap; gap: 0.45rem; }
 </style>
 </head>
 <body>
@@ -558,6 +570,7 @@ ul.plain li { margin-bottom: 0.3rem; }
     <button type="button" class="nav-link" data-nav="liudu/u12">12单元</button>
     <button type="button" class="nav-link" data-nav="shuati">刷题</button>
     <button type="button" class="nav-link" data-nav="cailiao">材料题</button>
+    <button type="button" class="nav-link" data-nav="cuoti">错题本</button>
     <button type="button" class="nav-link" data-nav="zhongkao">中考趋势</button>
   </nav>
   <div class="theme-row">
@@ -657,6 +670,7 @@ ul.plain li { margin-bottom: 0.3rem; }
       else if (target === 'zhongkao') active = h.indexOf('zhongkao') === 0;
       else if (target === 'shuati') active = h.indexOf('shuati') === 0;
       else if (target === 'cailiao') active = h.indexOf('cailiao') === 0;
+      else if (target === 'cuoti') active = h.indexOf('cuoti') === 0;
       else active = h === target || h.indexOf(target + '/') === 0;
       btn.classList.toggle('active', active);
     });
@@ -772,7 +786,7 @@ ul.plain li { margin-bottom: 0.3rem; }
     }).join('');
     app.innerHTML =
       '<div class="hero"><h1>人教版九年级化学 · 六维复习</h1>' +
-      '<p>手机友好复习站。顶栏进入<strong>一至十二单元</strong>课题列表；另有<strong>刷题</strong>、<strong>材料题</strong>与<strong>中考趋势</strong>。每课含六维卡片，笔记保存在本机。</p>' +
+      '<p>手机友好复习站。顶栏进入<strong>一至十二单元</strong>课题列表；另有<strong>刷题</strong>、<strong>材料题</strong>、<strong>错题本</strong>与<strong>中考趋势</strong>。每课含六维卡片，笔记保存在本机。</p>' +
       '<div class="dims-legend">' + legend + '</div></div>' +
       '<h3 style="color:var(--heading);font-size:1rem;margin:0 0 0.55rem">按单元进入</h3>' +
       '<div class="home-unit-grid">' + units + '</div>' +
@@ -784,12 +798,15 @@ ul.plain li { margin-bottom: 0.3rem; }
       '<p>阅读材料后作答小题（单选 / 判断 / 填空）。独立题库，可按难度、单元筛选。</p>' +
       '<div class="go">进入材料题 →</div></button></div>' +
       '<div class="grid-2" style="margin-top:1rem">' +
+      '<button type="button" class="entry-card" data-go="cuoti"><h3>错题本</h3>' +
+      '<p>本机答错的刷题与材料小题。可按单元筛选，一键跳到对应单元/课题复习。</p>' +
+      '<div class="go">打开错题本 →</div></button>' +
       '<button type="button" class="entry-card" data-go="zhongkao"><h3>中考趋势</h3>' +
       '<p>2021–2025 化学备考要点：计算、实验探究、推断与情境决策。</p>' +
-      '<div class="go">进入中考板块 →</div></button>' +
-      '<div class="entry-card" style="cursor:default"><h3>题库说明</h3>' +
+      '<div class="go">进入中考板块 →</div></button></div>' +
+      '<div class="entry-card" style="cursor:default;margin-top:1rem"><h3>题库说明</h3>' +
       '<p>刷题与材料题分栏存放，避免主池过重；材料题正式库 30 套（共约 97 小题）已可练。</p>' +
-      '<div class="go">正式 30 套可练</div></div></div>' +
+      '<div class="go">正式 30 套可练</div></div>' +
       '<div class="entry-card" style="cursor:default;margin-top:1rem"><h3>关于本站</h3>' +
       '<p>目录依据人教版九年级化学全一册。解读供复习提纲，不含教材原文。风格对齐语文六维站。</p>' +
       '<div class="go">顶栏点单元或「刷题」即可开始</div></div>' +
@@ -1646,6 +1663,219 @@ ul.plain li { margin-bottom: 0.3rem; }
   }
 
 
+  /* —— 错题本 —— */
+  var cuotiState = { filterUnit: '', loadedOnce: false };
+
+  function lessonTitle(lid) {
+    var L = DATA.lessons && DATA.lessons[lid];
+    return L ? (L.title || lid) : (lid || '');
+  }
+
+  function buildWrongIndex() {
+    var map = {};
+    (quizState.questions || []).forEach(function(q){
+      if (!q || !q.id) return;
+      map[q.id] = {
+        id: q.id,
+        stem: q.stem || '',
+        type: detectType(q),
+        difficulty: q.difficulty,
+        unitId: q.unitId || '',
+        lessonId: q.lessonId || '',
+        source: 'shuati',
+        packId: '',
+        packTitle: '',
+        explanation: q.explanation || ''
+      };
+    });
+    (matState.packs || []).forEach(function(pack){
+      if (!pack) return;
+      (pack.subQuestions || []).forEach(function(sub){
+        if (!sub || !sub.id) return;
+        map[sub.id] = {
+          id: sub.id,
+          stem: sub.stem || '',
+          type: detectType(sub),
+          difficulty: sub.difficulty != null ? sub.difficulty : pack.difficulty,
+          unitId: pack.unitId || '',
+          lessonId: pack.lessonId || '',
+          source: 'cailiao',
+          packId: pack.id || '',
+          packTitle: pack.title || pack.id || '',
+          explanation: sub.explanation || ''
+        };
+      });
+    });
+    return map;
+  }
+
+  function resolveWrongItems() {
+    var ids = readWrongIds();
+    var idx = buildWrongIndex();
+    return ids.map(function(id){
+      var hit = idx[id];
+      if (hit) return hit;
+      return {
+        id: id,
+        stem: '（题库中暂未找到该题，可能已删除或尚未加载）',
+        type: 'single',
+        difficulty: null,
+        unitId: '',
+        lessonId: '',
+        source: 'unknown',
+        packId: '',
+        packTitle: '',
+        explanation: ''
+      };
+    });
+  }
+
+  function reviewHashForItem(it) {
+    if (it.unitId && it.lessonId && DATA.lessons && DATA.lessons[it.lessonId]) {
+      return 'liudu/' + it.unitId + '/' + it.lessonId;
+    }
+    if (it.unitId && unitById(it.unitId)) return 'liudu/' + it.unitId;
+    return '';
+  }
+
+  function ensureWrongBookData() {
+    return Promise.all([loadQuizData(), loadMaterialData()]);
+  }
+
+  function viewCuoti() {
+    crumb([{label:'主页', hash:'home'},{label:'错题本', hash:'cuoti'}]);
+    updateSiteNav();
+    app.innerHTML = backBtn('home','返回主页') +
+      '<div class="hero"><h2>错题本</h2><p>正在读取本机错题…</p></div>';
+    ensureWrongBookData().then(function(){
+      renderCuotiUI();
+    });
+  }
+
+  function renderCuotiUI() {
+    if ((location.hash || '').replace(/^#/,'').split('?')[0].indexOf('cuoti') !== 0) return;
+    var items = resolveWrongItems();
+    if (cuotiState.filterUnit) {
+      items = items.filter(function(it){ return it.unitId === cuotiState.filterUnit; });
+    }
+    var unitOpts = DATA.units.map(function(u){
+      return '<option value="' + esc(u.id) + '"' + (cuotiState.filterUnit === u.id ? ' selected' : '') + '>' + esc(u.short) + '</option>';
+    }).join('');
+    var filters = '<div class="quiz-filters">' +
+      '<label>单元 <select id="cfUnit"><option value=""' + (!cuotiState.filterUnit?' selected':'') + '>全部</option>' + unitOpts + '</select></label>' +
+      '<button type="button" class="btn-ghost" id="cfClearAll"' + (readWrongIds().length ? '' : ' disabled') + '>清空错题本</button>' +
+      '<button type="button" class="btn-ghost" data-go="shuati">去刷题（只看错题）</button>' +
+      '</div>';
+    var meta = '<div class="quiz-meta"><span>本机错题 <strong>' + readWrongIds().length + '</strong></span>' +
+      '<span>当前筛选 <strong>' + items.length + '</strong></span></div>';
+
+    var body = '';
+    if (!readWrongIds().length) {
+      body = '<div class="quiz-empty">暂无本机错题。刷题或材料题答错后会出现在这里；可从这里跳到对应单元复习。</div>';
+    } else if (!items.length) {
+      body = '<div class="quiz-empty">当前单元筛选下没有错题，可换单元或选「全部」。</div>';
+    } else {
+      // group by unit
+      var groups = {};
+      var order = [];
+      items.forEach(function(it){
+        var key = it.unitId || '_none';
+        if (!groups[key]) { groups[key] = []; order.push(key); }
+        groups[key].push(it);
+      });
+      body = order.map(function(key){
+        var title = key === '_none' ? '未标注单元' : unitShortLabel(key);
+        var cards = groups[key].map(function(it){
+          var rev = reviewHashForItem(it);
+          var src = it.source === 'cailiao' ? ('材料·' + (it.packTitle || it.packId || '')) : (it.source === 'shuati' ? '刷题' : '未知来源');
+          var lessonBit = it.lessonId ? ('<span class="chip">' + esc(lessonTitle(it.lessonId)) + '</span>') : '';
+          var actions = '<div class="cuoti-actions">';
+          if (rev) {
+            actions += '<button type="button" class="btn-primary" data-go="' + esc(rev) + '">' +
+              (it.lessonId ? '复习本课题' : '复习本单元') + '</button>';
+          }
+          if (it.source === 'cailiao' && it.packId) {
+            actions += '<button type="button" class="btn-ghost" data-go="cailiao/' + esc(it.packId) + '">重练材料套卷</button>';
+          } else if (it.source === 'shuati') {
+            actions += '<button type="button" class="btn-ghost" data-cuoti-retry="' + esc(it.id) + '">重练该题</button>';
+          }
+          actions += '<button type="button" class="btn-ghost" data-cuoti-remove="' + esc(it.id) + '">移出</button></div>';
+          return '<div class="cuoti-card" data-qid="' + esc(it.id) + '">' +
+            '<div class="s">' +
+            '<span class="chip">' + esc(src) + '</span>' +
+            '<span class="chip type-chip-' + esc(it.type) + '">' + esc(typeLabel(it)) + '</span>' +
+            '<span class="chip">难度·' + esc(diffLabel(it.difficulty)) + '</span>' +
+            lessonBit +
+            '</div>' +
+            '<div class="stem">' + esc(it.stem) + '</div>' +
+            actions +
+            '</div>';
+        }).join('');
+        return '<section class="cuoti-group"><h3 class="cuoti-group-title">' + esc(title) +
+          ' <span class="panel-hint">' + groups[key].length + ' 题</span></h3>' + cards + '</section>';
+      }).join('');
+    }
+
+    app.innerHTML = backBtn('home','返回主页') +
+      '<div class="hero"><h2>错题本</h2>' +
+      '<p>本机答错记录（刷题 + 材料小题）。可按单元筛选；「复习本课题/本单元」跳到六维复习内容。</p></div>' +
+      filters + meta + body +
+      '<p class="footer-note">错题保存在本机浏览器 localStorage（键 hx-quiz-wrong-ids），换设备不会同步。</p>';
+    bindGoes(app);
+
+    var unitEl = document.getElementById('cfUnit');
+    if (unitEl) unitEl.onchange = function(){
+      cuotiState.filterUnit = unitEl.value || '';
+      renderCuotiUI();
+    };
+    var clearBtn = document.getElementById('cfClearAll');
+    if (clearBtn) clearBtn.onclick = function(){
+      if (!readWrongIds().length) return;
+      if (!window.confirm('确定清空本机全部错题？此操作不可撤销。')) return;
+      writeWrongIds([]);
+      showToast('已清空错题本');
+      renderCuotiUI();
+    };
+    app.querySelectorAll('[data-cuoti-remove]').forEach(function(btn){
+      btn.onclick = function(){
+        removeLocalWrong(btn.getAttribute('data-cuoti-remove'));
+        showToast('已移出');
+        renderCuotiUI();
+      };
+    });
+    app.querySelectorAll('[data-cuoti-retry]').forEach(function(btn){
+      btn.onclick = function(){
+        var qid = btn.getAttribute('data-cuoti-retry');
+        ensureWrongBookData().then(function(){
+          quizState.filterWrong = true;
+          quizState.filterDiff = 0;
+          quizState.filterUnit = '';
+          buildPool();
+          var i, found = -1;
+          for (i = 0; i < quizState.pool.length; i++) {
+            if (quizState.pool[i] && quizState.pool[i].id === qid) { found = i; break; }
+          }
+          if (found < 0) {
+            // force include this question even if wrong filter misses
+            var all = quizState.questions || [];
+            for (i = 0; i < all.length; i++) {
+              if (all[i] && all[i].id === qid) {
+                quizState.pool = [all[i]].concat(quizState.pool.filter(function(q){ return q.id !== qid; }));
+                found = 0;
+                break;
+              }
+            }
+          }
+          quizState.idx = found >= 0 ? found : 0;
+          quizState.selected = null;
+          quizState.revealed = false;
+          go('shuati');
+        });
+      };
+    });
+  }
+
+
   function render() {
     var r = parseRoute();
     r.parts = r.parts.map(function(p){ return p.split('?')[0]; });
@@ -1659,6 +1889,7 @@ ul.plain li { margin-bottom: 0.3rem; }
       if (r.parts.length >= 3) { viewLesson(r.parts[1], r.parts[2]); return; }
     }
     if (r.root === 'shuati') { viewShuati(); return; }
+    if (r.root === 'cuoti') { viewCuoti(); return; }
     if (r.root === 'cailiao') {
       if (r.parts.length >= 2 && r.parts[1]) { viewCailiaoPack(r.parts[1]); return; }
       viewCailiaoList(); return;
