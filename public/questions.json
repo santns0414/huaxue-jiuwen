@@ -2682,16 +2682,7 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：氧气可以用向下排空气法收集。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "氧气密度比空气大，应使用向上排空气法，不能用向下排空气法。",
     "tags": [
@@ -2821,16 +2812,7 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：长颈漏斗下端只要伸进容器口即可，不必伸入液面以下。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "必须伸入液面以下形成液封，否则气体会从漏斗逸出。",
     "tags": [
@@ -3216,16 +3198,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：密度比空气大的气体，采用瓶口向上的集气方式，称为向上排空气法。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "对",
     "explanation": "表述正确。",
     "tags": [
@@ -3356,16 +3329,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：化学变化中的最小粒子是电子。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "化学变化中的最小粒子是原子，不是电子。",
     "tags": [
@@ -3422,16 +3386,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：温度升高，分子运动通常更剧烈。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
@@ -3525,16 +3480,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：「氧分子由氧原子构成」这句话是对的。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "对",
     "explanation": "分子由原子构成，氧分子由氧原子构成。",
     "tags": [
@@ -3627,16 +3573,7 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：分子之间没有间隔。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "分子之间有间隔。",
     "tags": [
@@ -4021,16 +3958,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：同种元素的原子，中子数一定相同。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "同种元素质子数相同，中子数可能不同（同位素）。",
     "tags": [
@@ -4160,16 +4088,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：可以说「一个水分子含有两个氢元素」。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "元素只讲种类不讲个数；应说两个氢原子。",
     "tags": [
@@ -4370,16 +4289,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：元素既可以讲种类，也可以讲个数。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "元素只讲种类，不讲个数。",
     "tags": [
@@ -4729,16 +4639,7 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：化合物中各元素化合价代数和一定为0。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
@@ -4867,16 +4768,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：写化学式时可以把化合价数字直接写在元素符号右上角作为化学式的一部分。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "化合价标在元素正上方用于分析，不写入化学式。",
     "tags": [
@@ -5261,16 +5153,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：硬水是指含有较多可溶性钙、镁化合物的水。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
@@ -5615,16 +5498,7 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：水的化学式是H₂O₂。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "H₂O₂是过氧化氢，水是H₂O。",
     "tags": [
@@ -5827,16 +5701,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：化学式只表示物质由哪些元素组成，不表示原子个数。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "化学式既表示元素组成，也表示一个分子中各原子个数等。",
     "tags": [
@@ -6405,16 +6270,7 @@
     "difficulty": 1,
     "type": "judge",
     "stem": "判断：所有变化都遵守质量守恒定律。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "质量守恒定律适用于化学反应。",
     "tags": [
@@ -6835,16 +6691,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：化学方程式中的短线改成等号前必须配平。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "对",
     "explanation": "配平后才能将→或—改为等号（教材规范）。",
     "tags": [
@@ -8102,16 +7949,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：二氧化碳一般可用排水法大量收集。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "CO₂能溶于水且与水反应，一般不用排水法。",
     "tags": [
@@ -9491,16 +9329,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：化石燃料可以在短期内大量再生。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "化石燃料不可再生。",
     "tags": [
@@ -9812,16 +9641,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：制CO₂时长颈漏斗下端不必伸入稀盐酸液面以下。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "必须伸入液面以下液封。",
     "tags": [
@@ -10062,16 +9882,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：温度降低时，分子运动通常会更剧烈。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "错",
     "explanation": "温度降低，分子运动通常减缓。",
     "tags": [
@@ -10163,16 +9974,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：原子可以构成分子，分子也可以在化学变化中分成原子。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
@@ -11144,16 +10946,7 @@
     "difficulty": 2,
     "type": "judge",
     "stem": "判断：氧气密度比空气大，可用向上排空气法收集。",
-    "options": [
-      {
-        "key": "对",
-        "text": "对"
-      },
-      {
-        "key": "错",
-        "text": "错"
-      }
-    ],
+    "options": [],
     "answer": "对",
     "explanation": "正确。",
     "tags": [
@@ -11164,207 +10957,2382 @@
     ]
   },
   {
-    "id": "sz-fill-001",
-    "unitId": "u2",
-    "lessonId": "u2t3",
+    "id": "sz-2024-311",
+    "unitId": "u1",
+    "lessonId": "u1t1",
     "year": 2024,
-    "source": "深圳考情填空样例（九年级上册）",
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "有新物质生成的变化叫做____变化。",
+    "options": [],
+    "answer": "化学",
+    "explanation": "化学变化的本质特征是有新物质生成。",
+    "tags": [
+      "chemical_change"
+    ],
+    "knowledgePoints": [
+      "化学变化",
+      "物理变化"
+    ],
+    "answerAccept": [
+      "化学变化"
+    ]
+  },
+  {
+    "id": "sz-2024-312",
+    "unitId": "u1",
+    "lessonId": "u1t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "水结成冰属于____变化（填“物理”或“化学”）。",
+    "options": [],
+    "answer": "物理",
+    "explanation": "只是状态改变，没有新物质生成。",
+    "tags": [
+      "physical_change"
+    ],
+    "knowledgePoints": [
+      "物理变化"
+    ],
+    "answerAccept": [
+      "物理变化"
+    ]
+  },
+  {
+    "id": "sz-2024-313",
+    "unitId": "u1",
+    "lessonId": "u1t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "化学变化常伴随发光、放热等现象，但发光发热____（填“一定”或“不一定”）是化学变化。",
+    "options": [],
+    "answer": "不一定",
+    "explanation": "如电灯发光是物理变化；发光发热不是化学变化的本质特征。",
+    "tags": [
+      "chemical_change",
+      "易错"
+    ],
+    "knowledgePoints": [
+      "化学变化"
+    ],
+    "answerAccept": [
+      "不一定是"
+    ]
+  },
+  {
+    "id": "sz-2024-314",
+    "unitId": "u1",
+    "lessonId": "u1t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "实验室常用____灯给物质加热。",
+    "options": [],
+    "answer": "酒精",
+    "explanation": "初中化学实验室常用酒精灯加热。",
+    "tags": [
+      "lab_basic"
+    ],
+    "knowledgePoints": [
+      "酒精灯",
+      "实验室基本操作"
+    ],
+    "answerAccept": [
+      "酒精灯"
+    ]
+  },
+  {
+    "id": "sz-2024-315",
+    "unitId": "u1",
+    "lessonId": "u1t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "点燃酒精灯要用____去点，禁止用燃着的酒精灯去引燃另一只。",
+    "options": [],
+    "answer": "火柴",
+    "explanation": "安全规范：用火柴点燃，禁止灯对灯。",
+    "tags": [
+      "lab_safety"
+    ],
+    "knowledgePoints": [
+      "酒精灯",
+      "实验室安全"
+    ],
+    "answerAccept": [
+      "火柴"
+    ]
+  },
+  {
+    "id": "sz-2024-316",
+    "unitId": "u1",
+    "lessonId": "u1t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "给试管中液体加热时，液体体积一般不超过试管容积的____。",
+    "options": [],
+    "answer": "1/3",
+    "explanation": "防止沸腾溅出。",
+    "tags": [
+      "lab_basic",
+      "lab_safety"
+    ],
+    "knowledgePoints": [
+      "加热",
+      "试管"
+    ],
+    "answerAccept": [
+      "三分之一",
+      "三分之1"
+    ]
+  },
+  {
+    "id": "sz-2024-317",
+    "unitId": "u1",
+    "lessonId": "u1t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "熄灭酒精灯要用灯帽盖灭，不可用____吹灭。",
+    "options": [],
+    "answer": "嘴",
+    "explanation": "吹灭易引起火灾。",
+    "tags": [
+      "lab_safety"
+    ],
+    "knowledgePoints": [
+      "酒精灯"
+    ],
+    "answerAccept": [
+      "口"
+    ]
+  },
+  {
+    "id": "sz-2024-318",
+    "unitId": "u1",
+    "lessonId": "u1t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "镁条在空气中燃烧发出耀眼的____光，生成白色固体氧化镁。",
+    "options": [],
+    "answer": "白",
+    "explanation": "镁燃烧特征现象：耀眼白光、白烟、白色固体。",
+    "tags": [
+      "chemical_change",
+      "inquiry"
+    ],
+    "knowledgePoints": [
+      "镁燃烧",
+      "化学变化"
+    ],
+    "answerAccept": [
+      "白色"
+    ]
+  },
+  {
+    "id": "sz-2024-319",
+    "unitId": "u1",
+    "lessonId": "u1t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "碳酸氢铵受热分解产生刺激性气味的气体是____。",
+    "options": [],
+    "answer": "氨气",
+    "explanation": "NH₄HCO₃分解生成NH₃、H₂O、CO₂；刺激性气味气体为氨气。",
+    "tags": [
+      "inquiry"
+    ],
+    "knowledgePoints": [
+      "碳酸氢铵",
+      "分解"
+    ],
+    "answerAccept": [
+      "NH₃",
+      "氨"
+    ]
+  },
+  {
+    "id": "sz-2024-320",
+    "unitId": "u1",
+    "lessonId": "u1t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "对蜡烛燃烧探究时，罩在火焰上方的干冷烧杯内壁出现____，说明有水生成。",
+    "options": [],
+    "answer": "水雾",
+    "explanation": "干冷烧杯内壁有水雾（或水珠）证明有水生成。",
+    "tags": [
+      "inquiry",
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "蜡烛燃烧"
+    ],
+    "answerAccept": [
+      "水珠",
+      "水滴",
+      "雾"
+    ]
+  },
+  {
+    "id": "sz-2024-321",
+    "unitId": "u1",
+    "lessonId": "u1t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "蜡烛燃烧时，澄清石灰水变浑浊，说明生成了____。",
+    "options": [],
+    "answer": "二氧化碳",
+    "explanation": "澄清石灰水变浑浊是检验CO₂的特征现象。",
+    "tags": [
+      "inquiry",
+      "CO2_property"
+    ],
+    "knowledgePoints": [
+      "蜡烛燃烧",
+      "二氧化碳"
+    ],
+    "answerAccept": [
+      "CO₂",
+      "CO2"
+    ]
+  },
+  {
+    "id": "sz-2024-322",
+    "unitId": "u1",
+    "lessonId": "u1t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "物质的颜色、状态、气味、熔点、沸点等属于____性质。",
+    "options": [],
+    "answer": "物理",
+    "explanation": "不需要化学变化就能表现的性质是物理性质。",
+    "tags": [
+      "physical_change"
+    ],
+    "knowledgePoints": [
+      "物理性质"
+    ],
+    "answerAccept": [
+      "物理性质"
+    ]
+  },
+  {
+    "id": "sz-2024-323",
+    "unitId": "u1",
+    "lessonId": "u1t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "用药匙取用粉末药品后，多余药品应放回____（填“原瓶”或“指定容器”），不可随意丢弃或放回原瓶污染试剂。",
+    "options": [],
+    "answer": "指定容器",
+    "explanation": "多余药品一般放入指定容器，不放回原瓶。",
+    "tags": [
+      "lab_basic",
+      "lab_safety"
+    ],
+    "knowledgePoints": [
+      "药品取用"
+    ],
+    "answerAccept": [
+      "指定的容器"
+    ]
+  },
+  {
+    "id": "sz-2024-324",
+    "unitId": "u1",
+    "lessonId": "u1t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "铁丝在氧气中燃烧生成____色固体。",
+    "options": [],
+    "answer": "黑",
+    "explanation": "生成黑色的四氧化三铁。",
+    "tags": [
+      "oxygen_property",
+      "chemical_change"
+    ],
+    "knowledgePoints": [
+      "铁丝燃烧"
+    ],
+    "answerAccept": [
+      "黑色"
+    ]
+  },
+  {
+    "id": "sz-2024-325",
+    "unitId": "u2",
+    "lessonId": "u2t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "空气中氮气的体积分数约为____%。",
+    "options": [],
+    "answer": "78",
+    "explanation": "空气组成：N₂约78%，O₂约21%。",
+    "tags": [
+      "air_composition"
+    ],
+    "knowledgePoints": [
+      "空气组成",
+      "氮气"
+    ],
+    "answerAccept": [
+      "百分之七十八"
+    ]
+  },
+  {
+    "id": "sz-2024-326",
+    "unitId": "u2",
+    "lessonId": "u2t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "空气中氧气的体积分数约为____%。",
+    "options": [],
+    "answer": "21",
+    "explanation": "氧气约占空气体积的21%。",
+    "tags": [
+      "air_composition"
+    ],
+    "knowledgePoints": [
+      "空气组成",
+      "氧气"
+    ],
+    "answerAccept": [
+      "百分之二十一"
+    ]
+  },
+  {
+    "id": "sz-2024-327",
+    "unitId": "u2",
+    "lessonId": "u2t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 2,
     "type": "fill",
-    "stem": "实验室用高锰酸钾制取氧气，反应的化学方程式是 ____。",
+    "stem": "测定空气中氧气含量的实验常用____在密闭容器中燃烧，消耗氧气。",
     "options": [],
-    "answer": "2KMnO4=K2MnO4+MnO2+O2↑",
-    "answerAccept": [
-      "2KMnO4→K2MnO4+MnO2+O2↑",
-      "2KMnO₄=K₂MnO₄+MnO₂+O₂↑",
-      "2KMnO4△K2MnO4+MnO2+O2↑",
-      "2KMnO4=K2MnO4+MnO2+O2"
-    ],
-    "explanation": "高锰酸钾受热分解生成锰酸钾、二氧化锰和氧气。配平后氧气标↑；条件为加热。",
+    "answer": "红磷",
+    "explanation": "红磷燃烧只消耗氧气，产物为固体，便于测体积变化。",
     "tags": [
-      "oxygen_prep",
-      "chemical_equation"
+      "air_measure"
     ],
     "knowledgePoints": [
-      "高锰酸钾制氧",
-      "化学方程式"
+      "空气中氧气含量测定"
+    ],
+    "answerAccept": [
+      "磷"
     ]
   },
   {
-    "id": "sz-fill-002",
+    "id": "sz-2024-328",
+    "unitId": "u2",
+    "lessonId": "u2t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "氧气____（填“能”或“不能”）燃烧，但能支持燃烧。",
+    "options": [],
+    "answer": "不能",
+    "explanation": "氧气帮助燃烧（助燃），本身一般不燃烧。",
+    "tags": [
+      "oxygen_property",
+      "易错"
+    ],
+    "knowledgePoints": [
+      "氧气性质"
+    ],
+    "answerAccept": [
+      "不可以"
+    ]
+  },
+  {
+    "id": "sz-2024-329",
+    "unitId": "u2",
+    "lessonId": "u2t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "用带火星的木条伸入集气瓶，木条复燃，证明瓶内气体是____。",
+    "options": [],
+    "answer": "氧气",
+    "explanation": "带火星木条复燃是氧气的特征检验。",
+    "tags": [
+      "oxygen_property"
+    ],
+    "knowledgePoints": [
+      "氧气检验"
+    ],
+    "answerAccept": [
+      "O₂",
+      "O2"
+    ]
+  },
+  {
+    "id": "sz-2024-330",
+    "unitId": "u2",
+    "lessonId": "u2t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "氧气密度比空气____（填“大”或“小”），可用____排空气法收集。",
+    "options": [],
+    "answer": "大;向上",
+    "explanation": "比空气重用向上排空气法。",
+    "tags": [
+      "gas_collect_direction",
+      "oxygen_property"
+    ],
+    "knowledgePoints": [
+      "氧气密度",
+      "向上排空气法",
+      "气体收集方法"
+    ],
+    "answerAccept": [
+      "大；向上",
+      "大,向上",
+      "大，向上"
+    ]
+  },
+  {
+    "id": "sz-2024-331",
+    "unitId": "u2",
+    "lessonId": "u2t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "氢气密度比空气____，应用____排空气法收集。",
+    "options": [],
+    "answer": "小;向下",
+    "explanation": "比空气轻用向下排空气法。",
+    "tags": [
+      "gas_collect_direction"
+    ],
+    "knowledgePoints": [
+      "向下排空气法",
+      "气体密度与收集"
+    ],
+    "answerAccept": [
+      "小；向下",
+      "小,向下",
+      "小，向下"
+    ]
+  },
+  {
+    "id": "sz-2024-332",
     "unitId": "u2",
     "lessonId": "u2t3",
     "year": 2024,
-    "source": "深圳考情填空样例（九年级上册）",
+    "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 1,
     "type": "fill",
-    "stem": "过氧化氢在二氧化锰催化下分解制氧气的化学方程式是 ____。",
+    "stem": "实验室用高锰酸钾制氧气时，试管口应略向____倾斜。",
     "options": [],
-    "answer": "2H2O2=2H2O+O2↑",
-    "answerAccept": [
-      "2H2O2→2H2O+O2↑",
-      "2H₂O₂=2H₂O+O₂↑",
-      "2H2O2=MnO2=2H2O+O2↑",
-      "2H2O2→(MnO2)2H2O+O2↑",
-      "2H2O2=2H2O+O2"
-    ],
-    "explanation": "过氧化氢分解：2H₂O₂ →(MnO₂) 2H₂O + O₂↑。MnO₂是催化剂。判分时写对主要产物与配平即可。",
+    "answer": "下",
+    "explanation": "防止冷凝水倒流炸裂试管。",
     "tags": [
       "oxygen_prep",
-      "catalyst"
+      "lab_safety"
     ],
     "knowledgePoints": [
-      "过氧化氢制氧",
-      "催化剂"
+      "制取氧气",
+      "实验室制氧气"
+    ],
+    "answerAccept": [
+      "向下"
     ]
   },
   {
-    "id": "sz-fill-003",
-    "unitId": "u4",
-    "lessonId": "u4t3",
+    "id": "sz-2024-333",
+    "unitId": "u2",
+    "lessonId": "u2t3",
     "year": 2024,
-    "source": "深圳考情填空样例（九年级上册）",
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "加热高锰酸钾制氧结束时，应先____导管，再熄灭酒精灯，防止水槽中的水倒吸。",
+    "options": [],
+    "answer": "撤出",
+    "explanation": "先撤导管再熄灯是防倒吸的关键步骤。",
+    "tags": [
+      "oxygen_prep",
+      "lab_safety"
+    ],
+    "knowledgePoints": [
+      "制取氧气",
+      "实验故障分析"
+    ],
+    "answerAccept": [
+      "撤",
+      "取出",
+      "移出"
+    ]
+  },
+  {
+    "id": "sz-2024-334",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "用长颈漏斗向反应器加液体时，漏斗下端必须伸入____以下，否则漏气。",
+    "options": [],
+    "answer": "液面",
+    "explanation": "形成液封，防止气体从漏斗逸出。",
+    "tags": [
+      "long_neck_funnel",
+      "气体制备装置"
+    ],
+    "knowledgePoints": [
+      "长颈漏斗",
+      "气密性"
+    ],
+    "answerAccept": [
+      "液面下",
+      "溶液液面"
+    ]
+  },
+  {
+    "id": "sz-2024-335",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 1,
     "type": "fill",
-    "stem": "电解水时，与电源负极相连的一端产生的气体是 ____（写化学式）。",
+    "stem": "过氧化氢在二氧化锰催化下分解制氧气，二氧化锰作____剂。",
     "options": [],
-    "answer": "H2",
-    "answerAccept": [
-      "H₂",
-      "氢气",
-      "氢"
+    "answer": "催化",
+    "explanation": "催化剂改变化学反应速率，本身质量和化学性质反应前后不变。",
+    "tags": [
+      "oxygen_prep"
     ],
-    "explanation": "口诀「正氧负氢」：负极产生氢气 H₂，正极产生氧气 O₂，体积比约 2:1。",
+    "knowledgePoints": [
+      "催化剂",
+      "制取氧气"
+    ],
+    "answerAccept": [
+      "触媒"
+    ]
+  },
+  {
+    "id": "sz-2024-336",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "用分液漏斗或长颈漏斗加液体制气时，长颈漏斗下端应伸入液面下形成____，防止漏气。",
+    "options": [],
+    "answer": "液封",
+    "explanation": "长颈漏斗下端伸入液面以下形成液封，气体不会从漏斗逸出。",
+    "tags": [
+      "long_neck_funnel",
+      "气体制备装置"
+    ],
+    "knowledgePoints": [
+      "长颈漏斗",
+      "气密性",
+      "气体制备装置"
+    ],
+    "answerAccept": [
+      "液封",
+      "液封作用",
+      "液面下的液封"
+    ]
+  },
+  {
+    "id": "sz-2024-337",
+    "unitId": "u2",
+    "lessonId": "u2t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "造成空气污染的主要气体污染物包括二氧化硫、一氧化碳、二氧化氮和____等。",
+    "options": [],
+    "answer": "可吸入颗粒物",
+    "explanation": "常见还有粉尘/可吸入颗粒物等；答PM2.5、烟尘等亦可。",
+    "tags": [
+      "air_pollution",
+      "环保"
+    ],
+    "knowledgePoints": [
+      "空气污染"
+    ],
+    "answerAccept": [
+      "粉尘",
+      "烟尘",
+      "PM2.5",
+      "颗粒物"
+    ]
+  },
+  {
+    "id": "sz-2024-338",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "氧气验满时，应将带火星木条放在集气瓶____处。",
+    "options": [],
+    "answer": "瓶口",
+    "explanation": "验满在瓶口，检验在瓶内。",
+    "tags": [
+      "oxygen_property",
+      "oxygen_prep"
+    ],
+    "knowledgePoints": [
+      "氧气验满"
+    ],
+    "answerAccept": [
+      "口"
+    ]
+  },
+  {
+    "id": "sz-2024-339",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "保持物质化学性质的最小粒子是____。",
+    "options": [],
+    "answer": "分子",
+    "explanation": "分子保持物质化学性质；原子是化学变化中的最小粒子。",
+    "tags": [
+      "molecule_atom_constitute"
+    ],
+    "knowledgePoints": [
+      "分子",
+      "化学性质"
+    ],
+    "answerAccept": [
+      "分子"
+    ]
+  },
+  {
+    "id": "sz-2024-340",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "化学变化中的最小粒子是____。",
+    "options": [],
+    "answer": "原子",
+    "explanation": "化学变化中分子可再分，原子不能再分（初中结论）。",
+    "tags": [
+      "chem_change_min_particle",
+      "易错"
+    ],
+    "knowledgePoints": [
+      "化学变化中的最小粒子",
+      "原子"
+    ],
+    "answerAccept": [
+      "原子"
+    ]
+  },
+  {
+    "id": "sz-2024-341",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "温度升高时，分子运动一般变得更____。",
+    "options": [],
+    "answer": "剧烈",
+    "explanation": "温度越高，分子无规则运动越剧烈。",
+    "tags": [
+      "molecule_motion_temp"
+    ],
+    "knowledgePoints": [
+      "温度与分子运动",
+      "分子运动"
+    ],
+    "answerAccept": [
+      "快",
+      "激烈"
+    ]
+  },
+  {
+    "id": "sz-2024-342",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "一个氧分子由____个氧原子构成。",
+    "options": [],
+    "answer": "两",
+    "explanation": "O₂由两个氧原子构成。",
+    "tags": [
+      "molecule_atom_constitute"
+    ],
+    "knowledgePoints": [
+      "氧分子",
+      "分子构成"
+    ],
+    "answerAccept": [
+      "2",
+      "二"
+    ]
+  },
+  {
+    "id": "sz-2024-343",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "分子之间有____，所以物体有热胀冷缩等现象。",
+    "options": [],
+    "answer": "间隔",
+    "explanation": "分子间有间隔，受热间隔变大。",
+    "tags": [
+      "molecule_motion_temp"
+    ],
+    "knowledgePoints": [
+      "分子",
+      "微粒"
+    ],
+    "answerAccept": [
+      "空隙"
+    ]
+  },
+  {
+    "id": "sz-2024-344",
+    "unitId": "u3",
+    "lessonId": "u3t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "具有相同质子数（核电荷数）的一类原子总称为____。",
+    "options": [],
+    "answer": "元素",
+    "explanation": "元素定义：相同质子数的一类原子的总称。",
+    "tags": [
+      "element_definition",
+      "易错"
+    ],
+    "knowledgePoints": [
+      "元素",
+      "元素定义",
+      "质子数"
+    ],
+    "answerAccept": [
+      "化学元素"
+    ]
+  },
+  {
+    "id": "sz-2024-345",
+    "unitId": "u3",
+    "lessonId": "u3t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "决定元素种类的是原子的____数。",
+    "options": [],
+    "answer": "质子",
+    "explanation": "质子数（核电荷数）决定元素种类。",
+    "tags": [
+      "element_definition"
+    ],
+    "knowledgePoints": [
+      "质子数",
+      "元素"
+    ],
+    "answerAccept": [
+      "核电荷",
+      "核电荷数",
+      "质子数"
+    ]
+  },
+  {
+    "id": "sz-2024-346",
+    "unitId": "u3",
+    "lessonId": "u3t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "元素只讲____，不讲个数。",
+    "options": [],
+    "answer": "种类",
+    "explanation": "可以说由几种元素组成，不说几个元素。",
+    "tags": [
+      "element_definition"
+    ],
+    "knowledgePoints": [
+      "元素"
+    ],
+    "answerAccept": [
+      "种类多少"
+    ]
+  },
+  {
+    "id": "sz-2024-347",
+    "unitId": "u3",
+    "lessonId": "u3t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "钠的元素符号是____。",
+    "options": [],
+    "answer": "Na",
+    "explanation": "钠来自拉丁名Natrium。",
+    "tags": [
+      "element_definition"
+    ],
+    "knowledgePoints": [
+      "元素符号"
+    ],
+    "answerAccept": [
+      "na"
+    ]
+  },
+  {
+    "id": "sz-2024-348",
+    "unitId": "u3",
+    "lessonId": "u3t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "在原子中，质子数一般等于____电子数。",
+    "options": [],
+    "answer": "核外",
+    "explanation": "原子呈电中性：质子数=核外电子数。",
+    "tags": [
+      "atomic_structure"
+    ],
+    "knowledgePoints": [
+      "原子结构"
+    ],
+    "answerAccept": [
+      "核外电子",
+      "电子"
+    ]
+  },
+  {
+    "id": "sz-2024-349",
+    "unitId": "u3",
+    "lessonId": "u3t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "相对原子质量在数值上约等于质子数与____数之和。",
+    "options": [],
+    "answer": "中子",
+    "explanation": "相对原子质量≈质子数+中子数。",
+    "tags": [
+      "atomic_structure"
+    ],
+    "knowledgePoints": [
+      "相对原子质量",
+      "同位素"
+    ],
+    "answerAccept": [
+      "中子"
+    ]
+  },
+  {
+    "id": "sz-2024-350",
+    "unitId": "u3",
+    "lessonId": "u3t4",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "由同种元素组成的纯净物叫做____。",
+    "options": [],
+    "answer": "单质",
+    "explanation": "单质：同种元素组成的纯净物；化合物：不同种元素。",
+    "tags": [
+      "classification",
+      "element_definition"
+    ],
+    "knowledgePoints": [
+      "单质",
+      "元素与单质"
+    ],
+    "answerAccept": [
+      "单质"
+    ]
+  },
+  {
+    "id": "sz-2024-351",
+    "unitId": "u3",
+    "lessonId": "u3t4",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "由不同种元素组成的纯净物叫做____。",
+    "options": [],
+    "answer": "化合物",
+    "explanation": "化合物含两种或以上元素。",
+    "tags": [
+      "classification"
+    ],
+    "knowledgePoints": [
+      "化合物"
+    ],
+    "answerAccept": [
+      "化合物"
+    ]
+  },
+  {
+    "id": "sz-2024-352",
+    "unitId": "u3",
+    "lessonId": "u3t4",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "根据化合价，氯化钙的化学式是____。",
+    "options": [],
+    "answer": "CaCl₂",
+    "explanation": "Ca为+2，Cl为-1，交叉得CaCl₂；勿写成CaO。",
+    "tags": [
+      "formula_from_valence",
+      "易错"
+    ],
+    "knowledgePoints": [
+      "化合价",
+      "化学式书写",
+      "氯化钙",
+      "交叉对调"
+    ],
+    "answerAccept": [
+      "CaCl2",
+      "CaCl₂"
+    ]
+  },
+  {
+    "id": "sz-2024-353",
+    "unitId": "u3",
+    "lessonId": "u3t4",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "氧化铝中铝为+3、氧为-2，其化学式是____。",
+    "options": [],
+    "answer": "Al₂O₃",
+    "explanation": "交叉对调：Al₂O₃。",
+    "tags": [
+      "formula_from_valence"
+    ],
+    "knowledgePoints": [
+      "化合价",
+      "化学式书写",
+      "氧化铝"
+    ],
+    "answerAccept": [
+      "Al2O3",
+      "Al₂O₃"
+    ]
+  },
+  {
+    "id": "sz-2024-354",
+    "unitId": "u4",
+    "lessonId": "u4t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "含有较多可溶性钙、镁化合物的水叫做____水。",
+    "options": [],
+    "answer": "硬",
+    "explanation": "硬水含较多Ca²⁺、Mg²⁺的可溶性化合物。",
+    "tags": [
+      "hard_water"
+    ],
+    "knowledgePoints": [
+      "硬水"
+    ],
+    "answerAccept": [
+      "硬水"
+    ]
+  },
+  {
+    "id": "sz-2024-355",
+    "unitId": "u4",
+    "lessonId": "u4t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "生活中可用____水初步区分硬水和软水：泡沫多的一般是软水。",
+    "options": [],
+    "answer": "肥皂",
+    "explanation": "肥皂水：泡沫丰富多为软水。",
+    "tags": [
+      "hard_water"
+    ],
+    "knowledgePoints": [
+      "硬水",
+      "软水"
+    ],
+    "answerAccept": [
+      "肥皂"
+    ]
+  },
+  {
+    "id": "sz-2024-356",
+    "unitId": "u4",
+    "lessonId": "u4t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "煮沸可以降低水的暂时____度。",
+    "options": [],
+    "answer": "硬",
+    "explanation": "煮沸使部分钙镁化合物沉淀，降低暂时硬度。",
+    "tags": [
+      "hard_water",
+      "water_purify"
+    ],
+    "knowledgePoints": [
+      "硬水"
+    ],
+    "answerAccept": [
+      "硬度"
+    ]
+  },
+  {
+    "id": "sz-2024-357",
+    "unitId": "u4",
+    "lessonId": "u4t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "水的化学式是____。",
+    "options": [],
+    "answer": "H₂O",
+    "explanation": "勿与过氧化氢H₂O₂混淆。",
+    "tags": [
+      "water_formula",
+      "易错"
+    ],
+    "knowledgePoints": [
+      "水的化学式",
+      "H₂O",
+      "水"
+    ],
+    "answerAccept": [
+      "H2O",
+      "H₂O"
+    ]
+  },
+  {
+    "id": "sz-2024-358",
+    "unitId": "u4",
+    "lessonId": "u4t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "电解水时，正极产生____，负极产生氢气。",
+    "options": [],
+    "answer": "氧气",
+    "explanation": "正氧负氢；体积比氢:氧≈2:1。",
+    "tags": [
+      "water_electrolysis"
+    ],
+    "knowledgePoints": [
+      "水的组成",
+      "电解水"
+    ],
+    "answerAccept": [
+      "O₂",
+      "O2"
+    ]
+  },
+  {
+    "id": "sz-2024-359",
+    "unitId": "u4",
+    "lessonId": "u4t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "电解水得到的氢气与氧气体积比约为____。",
+    "options": [],
+    "answer": "2:1",
+    "explanation": "负极氢气∶正极氧气≈2∶1。",
     "tags": [
       "water_electrolysis"
     ],
     "knowledgePoints": [
       "电解水",
-      "氢气"
+      "水的组成"
+    ],
+    "answerAccept": [
+      "2∶1",
+      "2比1",
+      "2／1"
     ]
   },
   {
-    "id": "sz-fill-004",
-    "unitId": "u5",
-    "lessonId": "u5t1",
+    "id": "sz-2024-360",
+    "unitId": "u4",
+    "lessonId": "u4t2",
     "year": 2024,
-    "source": "深圳考情填空样例（九年级上册）",
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "电解水说明水是由____、____两种元素组成的。",
+    "options": [],
+    "answer": "氢;氧",
+    "explanation": "水是氢、氧元素组成的化合物。",
+    "tags": [
+      "water_electrolysis",
+      "water_formula"
+    ],
+    "knowledgePoints": [
+      "水的组成"
+    ],
+    "answerAccept": [
+      "氢，氧",
+      "氢、氧",
+      "氧;氢",
+      "氧，氢"
+    ]
+  },
+  {
+    "id": "sz-2024-361",
+    "unitId": "u4",
+    "lessonId": "u4t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 1,
     "type": "fill",
-    "stem": "质量守恒定律的微观本质是：化学反应前后，____ 的种类、数目、质量都不变。（填「原子」或「分子」）",
+    "stem": "H₂O的相对分子质量是____（H=1，O=16）。",
     "options": [],
-    "answer": "原子",
-    "answerAccept": [
-      "原子的",
-      "原子种类数目质量"
-    ],
-    "explanation": "分子会破裂重组，不变的是原子的种类、数目与质量。",
+    "answer": "18",
+    "explanation": "1×2+16=18。",
     "tags": [
-      "mass_conservation"
+      "water_formula",
+      "element_mass_calc"
     ],
     "knowledgePoints": [
-      "质量守恒定律"
+      "相对分子质量",
+      "水的化学式"
+    ],
+    "answerAccept": [
+      "十八"
     ]
   },
   {
-    "id": "sz-fill-005",
-    "unitId": "u6",
-    "lessonId": "u6t2",
+    "id": "sz-2024-362",
+    "unitId": "u4",
+    "lessonId": "u4t3",
     "year": 2024,
-    "source": "深圳考情填空样例（九年级上册）",
+    "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 2,
     "type": "fill",
-    "stem": "实验室用大理石（或石灰石）与稀盐酸制取二氧化碳的化学方程式是 ____。",
+    "stem": "18 g水中氧元素的质量是____g（H=1，O=16）。",
     "options": [],
-    "answer": "CaCO3+2HCl=CaCl2+H2O+CO2↑",
-    "answerAccept": [
-      "CaCO3+2HCl→CaCl2+H2O+CO2↑",
-      "CaCO₃+2HCl=CaCl₂+H₂O+CO₂↑",
-      "CaCO3+2HCl=CaCl2+H2O+CO2"
-    ],
-    "explanation": "CaCO₃ + 2HCl = CaCl₂ + H₂O + CO₂↑。一般不用稀硫酸（生成微溶 CaSO₄ 覆盖表面）。",
+    "answer": "16",
+    "explanation": "18×(16/18)=16 g；勿把比例算反。",
     "tags": [
-      "CO2_prep",
-      "chemical_equation"
+      "element_mass_calc",
+      "易错"
     ],
     "knowledgePoints": [
-      "二氧化碳制取"
+      "元素质量计算",
+      "水",
+      "元素质量分数"
+    ],
+    "answerAccept": [
+      "16克",
+      "16.0"
     ]
   },
   {
-    "id": "sz-fill-006",
-    "unitId": "u3",
-    "lessonId": "u3t4",
+    "id": "sz-2024-363",
+    "unitId": "u4",
+    "lessonId": "u4t3",
     "year": 2024,
-    "source": "深圳考情填空样例（九年级上册）",
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "CO₂中碳元素的质量分数约为____%（C=12，O=16，结果取整数）。",
+    "options": [],
+    "answer": "27",
+    "explanation": "12/44×100%≈27.3%，约27%。",
+    "tags": [
+      "element_mass_calc"
+    ],
+    "knowledgePoints": [
+      "元素质量分数",
+      "化学式计算"
+    ],
+    "answerAccept": [
+      "27.3",
+      "27%"
+    ]
+  },
+  {
+    "id": "sz-2024-364",
+    "unitId": "u4",
+    "lessonId": "u4t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 2,
     "type": "fill",
-    "stem": "铝元素化合价为 +3，氧元素化合价为 −2，氧化铝的化学式是 ____。",
+    "stem": "氢氧化钙的化学式是____。",
     "options": [],
-    "answer": "Al2O3",
-    "answerAccept": [
-      "Al₂O₃",
-      "al2o3"
+    "answer": "Ca(OH)₂",
+    "explanation": "Ca+2，OH−1，交叉得Ca(OH)₂。",
+    "tags": [
+      "formula_from_valence"
     ],
-    "explanation": "交叉互写：Al₂O₃。化合物中正负化合价代数和为 0。",
+    "knowledgePoints": [
+      "化合价",
+      "化学式书写",
+      "原子团"
+    ],
+    "answerAccept": [
+      "Ca(OH)2",
+      "Ca（OH）₂"
+    ]
+  },
+  {
+    "id": "sz-2024-365",
+    "unitId": "u4",
+    "lessonId": "u4t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "硫酸的化学式是____。",
+    "options": [],
+    "answer": "H₂SO₄",
+    "explanation": "氢+1，硫酸根-2。",
     "tags": [
       "formula_from_valence"
     ],
     "knowledgePoints": [
       "化学式",
-      "化合价"
+      "硫酸"
+    ],
+    "answerAccept": [
+      "H2SO4",
+      "H₂SO₄"
     ]
   },
   {
-    "id": "sz-fill-007",
-    "unitId": "u7",
-    "lessonId": "u7t1",
+    "id": "sz-2024-366",
+    "unitId": "u4",
+    "lessonId": "u4t1",
     "year": 2024,
-    "source": "深圳考情填空样例（九年级上册）",
+    "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 1,
     "type": "fill",
-    "stem": "燃烧需要同时满足的三个条件是：可燃物、____、温度达到着火点。",
+    "stem": "爱护水资源要做到节约用水和防止水体____。",
     "options": [],
-    "answer": "氧气",
-    "answerAccept": [
-      "O2",
-      "O₂",
-      "空气",
-      "氧气或空气",
-      "与氧气接触"
-    ],
-    "explanation": "燃烧三条件：可燃物、氧气（或空气）、温度达到着火点。灭火即破坏其中之一。",
+    "answer": "污染",
+    "explanation": "节约与防污并重。",
     "tags": [
-      "combustion"
+      "water_resource",
+      "环保"
     ],
     "knowledgePoints": [
-      "燃烧条件"
+      "水资源"
+    ],
+    "answerAccept": [
+      "污染"
     ]
   },
   {
-    "id": "sz-fill-008",
+    "id": "sz-2024-367",
+    "unitId": "u4",
+    "lessonId": "u4t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "碳酸钠的化学式是____。",
+    "options": [],
+    "answer": "Na₂CO₃",
+    "explanation": "Na+1，碳酸根-2。",
+    "tags": [
+      "formula_from_valence"
+    ],
+    "knowledgePoints": [
+      "化学式书写",
+      "碳酸钠",
+      "原子团"
+    ],
+    "answerAccept": [
+      "Na2CO3",
+      "Na₂CO₃"
+    ]
+  },
+  {
+    "id": "sz-2024-368",
+    "unitId": "u5",
+    "lessonId": "u5t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "参加化学反应的各物质的质量总和等于反应后生成各物质的质量总和，这叫做____定律。",
+    "options": [],
+    "answer": "质量守恒",
+    "explanation": "质量守恒定律。",
+    "tags": [
+      "mass_conservation"
+    ],
+    "knowledgePoints": [
+      "质量守恒"
+    ],
+    "answerAccept": [
+      "质量守恒定律"
+    ]
+  },
+  {
+    "id": "sz-2024-369",
+    "unitId": "u5",
+    "lessonId": "u5t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "质量守恒的微观原因是：化学反应前后原子的____、____都不变。",
+    "options": [],
+    "answer": "种类;数目",
+    "explanation": "原子种类、数目不变，质量也不变。",
+    "tags": [
+      "mass_conservation"
+    ],
+    "knowledgePoints": [
+      "质量守恒"
+    ],
+    "answerAccept": [
+      "种类，数目",
+      "种类、数目",
+      "数目;种类",
+      "种类和数目"
+    ]
+  },
+  {
+    "id": "sz-2024-370",
+    "unitId": "u5",
+    "lessonId": "u5t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "化学方程式中“→”左边是反应物，右边是____。",
+    "options": [],
+    "answer": "生成物",
+    "explanation": "反应物→生成物。",
+    "tags": [
+      "chemical_equation"
+    ],
+    "knowledgePoints": [
+      "化学方程式"
+    ],
+    "answerAccept": [
+      "产物"
+    ]
+  },
+  {
+    "id": "sz-2024-371",
+    "unitId": "u5",
+    "lessonId": "u5t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "配平化学方程式的原则是使左右两边各原子的____相等。",
+    "options": [],
+    "answer": "数目",
+    "explanation": "原子守恒配平。",
+    "tags": [
+      "chemical_equation"
+    ],
+    "knowledgePoints": [
+      "化学方程式配平"
+    ],
+    "answerAccept": [
+      "个数",
+      "原子数"
+    ]
+  },
+  {
+    "id": "sz-2024-372",
+    "unitId": "u5",
+    "lessonId": "u5t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "书写化学方程式要遵守____定律，并注明反应条件与沉淀、气体符号。",
+    "options": [],
+    "answer": "质量守恒",
+    "explanation": "以质量守恒为基础。",
+    "tags": [
+      "chemical_equation",
+      "mass_conservation"
+    ],
+    "knowledgePoints": [
+      "化学方程式",
+      "质量守恒"
+    ],
+    "answerAccept": [
+      "质量守恒定律"
+    ]
+  },
+  {
+    "id": "sz-2024-373",
+    "unitId": "u5",
+    "lessonId": "u5t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "加热高锰酸钾制氧气的化学方程式中，条件应标注____。",
+    "options": [],
+    "answer": "加热",
+    "explanation": "常用△表示加热。",
+    "tags": [
+      "oxygen_prep",
+      "chemical_equation"
+    ],
+    "knowledgePoints": [
+      "化学方程式",
+      "制取氧气"
+    ],
+    "answerAccept": [
+      "△",
+      "Δ"
+    ]
+  },
+  {
+    "id": "sz-2024-374",
+    "unitId": "u5",
+    "lessonId": "u5t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "根据化学方程式计算时，各物质的质量比等于相对分子质量与____的乘积之比。",
+    "options": [],
+    "answer": "化学计量数",
+    "explanation": "m比=相对分子质量×系数之比。",
+    "tags": [
+      "equation_calc"
+    ],
+    "knowledgePoints": [
+      "化学方程式计算"
+    ],
+    "answerAccept": [
+      "系数",
+      "计量数"
+    ]
+  },
+  {
+    "id": "sz-2024-375",
+    "unitId": "u5",
+    "lessonId": "u5t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "已知2H₂+O₂→2H₂O，完全反应生成36 g水，需要氢气____g。",
+    "options": [],
+    "answer": "4",
+    "explanation": "水36 g对应2×18；氢气2×2=4 g。",
+    "tags": [
+      "equation_calc",
+      "element_mass_calc"
+    ],
+    "knowledgePoints": [
+      "化学方程式计算"
+    ],
+    "answerAccept": [
+      "4克"
+    ]
+  },
+  {
+    "id": "sz-2024-376",
+    "unitId": "u5",
+    "lessonId": "u5t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "在密闭容器中反应前后，物质总质量____（填“改变”或“不变”）。",
+    "options": [],
+    "answer": "不变",
+    "explanation": "质量守恒：总质量不变。",
+    "tags": [
+      "mass_conservation"
+    ],
+    "knowledgePoints": [
+      "质量守恒"
+    ],
+    "answerAccept": [
+      "不改变"
+    ]
+  },
+  {
+    "id": "sz-2024-377",
+    "unitId": "u5",
+    "lessonId": "u5t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "过氧化氢分解的化学方程式可写为：2H₂O₂ →[MnO₂] ____ + O₂↑（填化学式）。",
+    "options": [],
+    "answer": "2H₂O",
+    "explanation": "2H₂O₂ =[MnO₂] 2H₂O + O₂↑。",
+    "tags": [
+      "chemical_equation",
+      "oxygen_prep"
+    ],
+    "knowledgePoints": [
+      "过氧化氢",
+      "化学方程式"
+    ],
+    "answerAccept": [
+      "2H2O",
+      "H₂O",
+      "2水"
+    ]
+  },
+  {
+    "id": "sz-2024-378",
+    "unitId": "u5",
+    "lessonId": "u5t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "化学反应中，____（填“分子”或“原子”）可再分，____不可再分。",
+    "options": [],
+    "answer": "分子;原子",
+    "explanation": "分子分裂为原子，原子重新组合。",
+    "tags": [
+      "chem_change_min_particle",
+      "mass_conservation"
+    ],
+    "knowledgePoints": [
+      "分子和原子",
+      "化学变化中的最小粒子"
+    ],
+    "answerAccept": [
+      "分子，原子",
+      "分子、原子"
+    ]
+  },
+  {
+    "id": "sz-2024-379",
+    "unitId": "u5",
+    "lessonId": "u5t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "镁在空气中燃烧：2Mg + O₂ →[点燃] ____。",
+    "options": [],
+    "answer": "2MgO",
+    "explanation": "生成氧化镁。",
+    "tags": [
+      "chemical_equation"
+    ],
+    "knowledgePoints": [
+      "化学方程式",
+      "镁燃烧"
+    ],
+    "answerAccept": [
+      "2MgO"
+    ]
+  },
+  {
+    "id": "sz-2024-380",
+    "unitId": "u5",
+    "lessonId": "u5t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "若反应物含杂质，计算纯净物质量时要用实际质量乘以____。",
+    "options": [],
+    "answer": "纯度",
+    "explanation": "纯物质质量=不纯物质质量×纯度。",
+    "tags": [
+      "equation_calc"
+    ],
+    "knowledgePoints": [
+      "化学方程式计算"
+    ],
+    "answerAccept": [
+      "纯度百分数",
+      "质量分数"
+    ]
+  },
+  {
+    "id": "sz-2024-381",
+    "unitId": "u5",
+    "lessonId": "u5t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "化学方程式中气体符号用____表示，沉淀用↓表示。",
+    "options": [],
+    "answer": "↑",
+    "explanation": "↑表示气体，↓表示沉淀。",
+    "tags": [
+      "chemical_equation"
+    ],
+    "knowledgePoints": [
+      "化学方程式"
+    ],
+    "answerAccept": [
+      "↑气体",
+      "上箭头"
+    ]
+  },
+  {
+    "id": "sz-2024-382",
+    "unitId": "u6",
+    "lessonId": "u6t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "金刚石、石墨和C₆₀都是由____元素组成的单质，互称同素异形体。",
+    "options": [],
+    "answer": "碳",
+    "explanation": "碳的同素异形体。",
+    "tags": [
+      "carbon_allotrope"
+    ],
+    "knowledgePoints": [
+      "碳",
+      "同素异形体"
+    ],
+    "answerAccept": [
+      "C"
+    ]
+  },
+  {
+    "id": "sz-2024-383",
+    "unitId": "u6",
+    "lessonId": "u6t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "金刚石很硬，石墨很软，说明碳原子的____方式不同导致性质不同。",
+    "options": [],
+    "answer": "排列",
+    "explanation": "原子排列方式不同，物理性质差异大。",
+    "tags": [
+      "carbon_allotrope",
+      "carbon_property"
+    ],
+    "knowledgePoints": [
+      "金刚石",
+      "石墨"
+    ],
+    "answerAccept": [
+      "结合",
+      "排列方式"
+    ]
+  },
+  {
+    "id": "sz-2024-384",
+    "unitId": "u6",
+    "lessonId": "u6t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "木炭具有____性，可除去冰箱异味或用于净水。",
+    "options": [],
+    "answer": "吸附",
+    "explanation": "疏松多孔，吸附性强。",
+    "tags": [
+      "carbon_property"
+    ],
+    "knowledgePoints": [
+      "木炭",
+      "吸附"
+    ],
+    "answerAccept": [
+      "吸附作用"
+    ]
+  },
+  {
+    "id": "sz-2024-385",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "二氧化碳____（填“能”或“不能”）燃烧，一般也不支持燃烧。",
+    "options": [],
+    "answer": "不能",
+    "explanation": "CO₂既不燃烧也不支持燃烧（少数例外不要求）。",
+    "tags": [
+      "CO2_property"
+    ],
+    "knowledgePoints": [
+      "二氧化碳性质"
+    ],
+    "answerAccept": [
+      "不可以"
+    ]
+  },
+  {
+    "id": "sz-2024-386",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "检验二氧化碳常用____石灰水，现象是变浑浊。",
+    "options": [],
+    "answer": "澄清",
+    "explanation": "澄清石灰水变浑浊。",
+    "tags": [
+      "CO2_property"
+    ],
+    "knowledgePoints": [
+      "二氧化碳",
+      "二氧化碳性质"
+    ],
+    "answerAccept": [
+      "氢氧化钙"
+    ]
+  },
+  {
+    "id": "sz-2024-387",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "二氧化碳密度比空气____，一般用____排空气法收集。",
+    "options": [],
+    "answer": "大;向上",
+    "explanation": "比空气重→向上排空气法。",
+    "tags": [
+      "gas_collect_direction",
+      "CO2_property"
+    ],
+    "knowledgePoints": [
+      "二氧化碳收集",
+      "向上排空气法"
+    ],
+    "answerAccept": [
+      "大；向上",
+      "大,向上",
+      "大，向上"
+    ]
+  },
+  {
+    "id": "sz-2024-388",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "实验室常用大理石（或石灰石）与____反应制取二氧化碳。",
+    "options": [],
+    "answer": "稀盐酸",
+    "explanation": "CaCO₃+2HCl→CaCl₂+H₂O+CO₂↑；不用稀硫酸（微溶盐覆盖）。",
+    "tags": [
+      "CO2_prep"
+    ],
+    "knowledgePoints": [
+      "二氧化碳制取"
+    ],
+    "answerAccept": [
+      "盐酸",
+      "稀HCl"
+    ]
+  },
+  {
+    "id": "sz-2024-389",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "制取CO₂时一般____（填“能”或“不能”）用排水法收集，因为二氧化碳能溶于水且与水反应。",
+    "options": [],
+    "answer": "不能",
+    "explanation": "可答“一般不能”；少量溶解时也常用向上排空气法。",
+    "tags": [
+      "CO2_prep",
+      "gas_collect_direction"
+    ],
+    "knowledgePoints": [
+      "二氧化碳收集"
+    ],
+    "answerAccept": [
+      "不可以",
+      "不宜"
+    ]
+  },
+  {
+    "id": "sz-2024-390",
     "unitId": "u6",
     "lessonId": "u6t3",
     "year": 2024,
-    "source": "深圳考情填空样例（九年级上册）",
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "一氧化碳有毒，是因为能与血液中的____蛋白结合。",
+    "options": [],
+    "answer": "血红",
+    "explanation": "CO与血红蛋白结合，使人缺氧。",
+    "tags": [
+      "CO_property"
+    ],
+    "knowledgePoints": [
+      "一氧化碳"
+    ],
+    "answerAccept": [
+      "血红素"
+    ]
+  },
+  {
+    "id": "sz-2024-391",
+    "unitId": "u6",
+    "lessonId": "u6t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
     "difficulty": 2,
     "type": "fill",
-    "stem": "检验二氧化碳的常用试剂是澄清石灰水，反应的化学方程式是 ____。",
+    "stem": "一氧化碳具有____性，可在冶金工业中作还原剂。",
     "options": [],
-    "answer": "CO2+Ca(OH)2=CaCO3↓+H2O",
-    "answerAccept": [
-      "CO2+Ca(OH)2→CaCO3↓+H2O",
-      "CO₂+Ca(OH)₂=CaCO₃↓+H₂O",
-      "Ca(OH)2+CO2=CaCO3↓+H2O",
-      "CO2+Ca(OH)2=CaCO3+H2O"
+    "answer": "还原",
+    "explanation": "CO能还原某些金属氧化物。",
+    "tags": [
+      "CO_property"
     ],
-    "explanation": "CO₂ + Ca(OH)₂ = CaCO₃↓ + H₂O，现象是澄清石灰水变浑浊。",
+    "knowledgePoints": [
+      "一氧化碳"
+    ],
+    "answerAccept": [
+      "还原性"
+    ]
+  },
+  {
+    "id": "sz-2024-392",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "干冰是固体____，升华吸热可作制冷剂。",
+    "options": [],
+    "answer": "二氧化碳",
+    "explanation": "干冰即固态CO₂。",
+    "tags": [
+      "CO2_property"
+    ],
+    "knowledgePoints": [
+      "二氧化碳",
+      "干冰"
+    ],
+    "answerAccept": [
+      "CO₂",
+      "CO2"
+    ]
+  },
+  {
+    "id": "sz-2024-393",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "CO₂通入澄清石灰水：CO₂ + Ca(OH)₂ → ____ + H₂O。",
+    "options": [],
+    "answer": "CaCO₃↓",
+    "explanation": "生成碳酸钙沉淀使溶液浑浊。",
     "tags": [
       "CO2_property",
       "chemical_equation"
     ],
     "knowledgePoints": [
-      "二氧化碳检验"
+      "二氧化碳性质",
+      "化学方程式"
+    ],
+    "answerAccept": [
+      "CaCO3",
+      "CaCO₃",
+      "CaCO₃↓"
+    ]
+  },
+  {
+    "id": "sz-2024-394",
+    "unitId": "u6",
+    "lessonId": "u6t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "碳在氧气中充分燃烧生成____，不充分燃烧可能生成一氧化碳。",
+    "options": [],
+    "answer": "二氧化碳",
+    "explanation": "充分燃烧→CO₂；不充分→可能CO。",
+    "tags": [
+      "carbon_property",
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "碳",
+      "燃烧"
+    ],
+    "answerAccept": [
+      "CO₂",
+      "CO2"
+    ]
+  },
+  {
+    "id": "sz-2024-395",
+    "unitId": "u6",
+    "lessonId": "u6t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "一氧化碳还原氧化铜的实验中，结束时应先____酒精灯，继续通CO至冷却，防止铜被氧化或倒吸。",
+    "options": [],
+    "answer": "熄灭加热氧化铜的",
+    "explanation": "先停加热、继续通气至冷却。",
+    "tags": [
+      "CO_property",
+      "lab_safety"
+    ],
+    "knowledgePoints": [
+      "一氧化碳",
+      "实验故障分析"
+    ],
+    "answerAccept": [
+      "熄灭",
+      "撤灯",
+      "停止加热"
+    ]
+  },
+  {
+    "id": "sz-2024-396",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "燃烧需要同时具备：可燃物、____和温度达到着火点。",
+    "options": [],
+    "answer": "氧气",
+    "explanation": "三条件缺一不可；氧气（或空气）支持燃烧。",
+    "tags": [
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "燃烧"
+    ],
+    "answerAccept": [
+      "空气",
+      "助燃物"
+    ]
+  },
+  {
+    "id": "sz-2024-397",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "灭火的原理是破坏燃烧的____之一即可。",
+    "options": [],
+    "answer": "条件",
+    "explanation": "清除可燃物、隔绝氧气或降温到着火点以下。",
+    "tags": [
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "灭火",
+      "燃烧"
+    ],
+    "answerAccept": [
+      "必要条件"
+    ]
+  },
+  {
+    "id": "sz-2024-398",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "着火点是物质燃烧所需的____温度。",
+    "options": [],
+    "answer": "最低",
+    "explanation": "着火点是开始燃烧的最低温度。",
+    "tags": [
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "着火点"
+    ],
+    "answerAccept": [
+      "最低"
+    ]
+  },
+  {
+    "id": "sz-2024-399",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "用液态二氧化碳灭火器灭火，主要是____氧气并降温。",
+    "options": [],
+    "answer": "隔绝",
+    "explanation": "CO₂覆盖隔绝空气，同时气化吸热降温。",
+    "tags": [
+      "combustion",
+      "CO2_property"
+    ],
+    "knowledgePoints": [
+      "灭火"
+    ],
+    "answerAccept": [
+      "隔离"
+    ]
+  },
+  {
+    "id": "sz-2024-400",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "白磷着火点较低，在热水中也可燃烧，说明燃烧____（填“一定”或“不一定”）需要空气中的氧气，但需要氧气（或氧化剂）。",
+    "options": [],
+    "answer": "不一定",
+    "explanation": "燃烧需要氧气（或氧化剂），但不一定来自空气；白磷可在热水中利用溶解氧燃烧。",
+    "tags": [
+      "combustion",
+      "inquiry"
+    ],
+    "knowledgePoints": [
+      "燃烧"
+    ],
+    "answerAccept": [
+      "不一定",
+      "不一定需要空气"
+    ]
+  },
+  {
+    "id": "sz-2024-401",
+    "unitId": "u7",
+    "lessonId": "u7t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "煤、石油、天然气都属于____燃料。",
+    "options": [],
+    "answer": "化石",
+    "explanation": "化石燃料不可再生。",
+    "tags": [
+      "fossil_fuel",
+      "energy"
+    ],
+    "knowledgePoints": [
+      "化石燃料"
+    ],
+    "answerAccept": [
+      "矿物"
+    ]
+  },
+  {
+    "id": "sz-2024-402",
+    "unitId": "u7",
+    "lessonId": "u7t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "天然气的主要成分是____。",
+    "options": [],
+    "answer": "甲烷",
+    "explanation": "CH₄。",
+    "tags": [
+      "fossil_fuel"
+    ],
+    "knowledgePoints": [
+      "天然气",
+      "甲烷"
+    ],
+    "answerAccept": [
+      "CH₄",
+      "CH4"
+    ]
+  },
+  {
+    "id": "sz-2024-403",
+    "unitId": "u7",
+    "lessonId": "u7t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "化石燃料____（填“能”或“不能”）在短期内从自然界得到补充。",
+    "options": [],
+    "answer": "不能",
+    "explanation": "不可再生能源。",
+    "tags": [
+      "fossil_fuel",
+      "环保"
+    ],
+    "knowledgePoints": [
+      "化石燃料"
+    ],
+    "answerAccept": [
+      "不可以"
+    ]
+  },
+  {
+    "id": "sz-2024-404",
+    "unitId": "u7",
+    "lessonId": "u7t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "燃料充分燃烧可以提高____利用率，并减少一氧化碳等污染物。",
+    "options": [],
+    "answer": "能量",
+    "explanation": "充分燃烧、提高利用率、减少污染。",
+    "tags": [
+      "energy",
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "燃料",
+      "能量"
+    ],
+    "answerAccept": [
+      "燃料"
+    ]
+  },
+  {
+    "id": "sz-2024-405",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "缓慢氧化是进行得很慢的氧化反应；若热量来不及散失可能引起____。",
+    "options": [],
+    "answer": "自燃",
+    "explanation": "自燃是由缓慢氧化引起的自发燃烧。",
+    "tags": [
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "缓慢氧化",
+      "自燃"
+    ],
+    "answerAccept": [
+      "燃烧"
+    ]
+  },
+  {
+    "id": "sz-2024-406",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "爆炸是可燃物在有限空间内____燃烧，在短时间内产生大量热和气体。",
+    "options": [],
+    "answer": "急剧",
+    "explanation": "急剧的燃烧可引起爆炸。",
+    "tags": [
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "爆炸"
+    ],
+    "answerAccept": [
+      "快速",
+      "剧烈"
+    ]
+  },
+  {
+    "id": "sz-2024-407",
+    "unitId": "u7",
+    "lessonId": "u7t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "甲烷完全燃烧的化学方程式：CH₄ + 2O₂ →[点燃] ____ + 2H₂O。",
+    "options": [],
+    "answer": "CO₂",
+    "explanation": "产物为CO₂和H₂O。",
+    "tags": [
+      "combustion",
+      "chemical_equation",
+      "fossil_fuel"
+    ],
+    "knowledgePoints": [
+      "甲烷",
+      "化学方程式"
+    ],
+    "answerAccept": [
+      "二氧化碳",
+      "CO2"
+    ]
+  },
+  {
+    "id": "sz-2024-408",
+    "unitId": "u7",
+    "lessonId": "u7t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "使用化石燃料时要注意____燃烧，并安装烟囱等高处排放，减少污染。",
+    "options": [],
+    "answer": "充分",
+    "explanation": "充分燃烧、处理尾气。",
+    "tags": [
+      "fossil_fuel",
+      "环保",
+      "air_pollution"
+    ],
+    "knowledgePoints": [
+      "燃料"
+    ],
+    "answerAccept": [
+      "完全"
+    ]
+  },
+  {
+    "id": "sz-2024-409",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "用水灭火时，水能____可燃物温度到着火点以下，并隔绝部分空气。",
+    "options": [],
+    "answer": "降低",
+    "explanation": "降温是水灭火的主要作用之一。",
+    "tags": [
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "灭火"
+    ],
+    "answerAccept": [
+      "冷却",
+      "降"
+    ]
+  },
+  {
+    "id": "sz-2024-410",
+    "unitId": "u7",
+    "lessonId": "u7t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·填空）",
+    "difficulty": 3,
+    "type": "fill",
+    "stem": "氢能源燃烧产物主要是____，被认为是较清洁的能源。",
+    "options": [],
+    "answer": "水",
+    "explanation": "2H₂+O₂→2H₂O。",
+    "tags": [
+      "energy",
+      "环保"
+    ],
+    "knowledgePoints": [
+      "氢能",
+      "燃烧"
+    ],
+    "answerAccept": [
+      "H₂O",
+      "H2O"
     ]
   }
 ]
