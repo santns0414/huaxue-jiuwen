@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "source": "化学聊天错题汇总",
+  "topics": [
+    {"id":"gas_collect_direction","name":"排空气法向上/向下","unit":"u2","fromMistakes":["氧气误选向下排空气"]},
+    {"id":"long_neck_funnel","name":"长颈漏斗伸入液面下","unit":"u2","fromMistakes":["漏斗下端是否需伸入液面"]},
+    {"id":"chem_change_min_particle","name":"化学变化最小粒子是原子","unit":"u3","fromMistakes":["误选电子"]},
+    {"id":"molecule_motion_temp","name":"温度与分子运动","unit":"u3","fromMistakes":["温度升高运动更剧烈判错"]},
+    {"id":"molecule_atom_constitute","name":"分子由原子构成","unit":"u3","fromMistakes":["氧分子由氧原子构成判错"]},
+    {"id":"element_definition","name":"元素定义≠单质","unit":"u3","fromMistakes":["相同质子数一类原子误选单质"]},
+    {"id":"water_formula","name":"水化学式H2O","unit":"u4","fromMistakes":["误选H2O2"]},
+    {"id":"element_mass_calc","name":"化合物中元素质量","unit":"u3-u4","fromMistakes":["18g水中氧质量算成约1.05g"]},
+    {"id":"formula_from_valence","name":"化合价写化学式","unit":"u3","fromMistakes":["氯化钙写成CaO"]}
+  ]
+}

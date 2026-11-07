@@ -426,6 +426,76 @@ ul.plain li { margin-bottom: 0.3rem; }
 .zk-year-card .meta-line { font-size: 0.78rem; color: var(--text-muted); }
 .back-btn { max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
+
+/* —— 刷题 —— */
+.quiz-filters {
+  display: flex; flex-wrap: wrap; gap: 0.55rem 0.75rem;
+  align-items: center; margin: 0.85rem 0 1rem;
+  padding: 0.75rem 0.85rem; background: var(--card);
+  border: 1px solid var(--card-border); border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.quiz-filters label {
+  font-size: 0.78rem; color: var(--text-muted);
+  display: inline-flex; align-items: center; gap: 0.35rem; flex-wrap: wrap;
+}
+.quiz-filters select, .quiz-filters .toggle-chip {
+  border: 1px solid var(--card-border); border-radius: 8px;
+  background: var(--bg-soft); color: var(--text); font-family: inherit;
+  font-size: 0.82rem; padding: 0.28rem 0.5rem;
+}
+.quiz-filters .toggle-chip {
+  cursor: pointer; user-select: none;
+}
+.quiz-filters .toggle-chip.on {
+  background: var(--accent); color: #1a1208; border-color: var(--accent); font-weight: 600;
+}
+.quiz-meta {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+  font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.75rem;
+}
+.quiz-meta strong { color: var(--heading); }
+.quiz-card {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: var(--radius); padding: 1.1rem 1.15rem;
+  box-shadow: var(--shadow); margin-bottom: 0.85rem;
+}
+.quiz-card .stem {
+  color: var(--heading); font-size: 1.02rem; font-weight: 600;
+  margin-bottom: 0.85rem; line-height: 1.65;
+}
+.quiz-card .q-meta {
+  font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.65rem;
+  display: flex; flex-wrap: wrap; gap: 0.35rem;
+}
+.opt-list { display: flex; flex-direction: column; gap: 0.45rem; }
+.opt-btn {
+  text-align: left; width: 100%; font-family: inherit; font-size: 0.92rem;
+  padding: 0.65rem 0.8rem; border-radius: 10px; cursor: pointer;
+  border: 1px solid var(--card-border); background: var(--bg-soft); color: var(--text);
+  line-height: 1.5;
+}
+.opt-btn:hover:not(:disabled) { border-color: var(--accent); }
+.opt-btn.selected { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 18%, var(--card)); }
+.opt-btn.correct { border-color: var(--d6b); background: var(--d6); color: var(--d6t); font-weight: 600; }
+.opt-btn.wrong { border-color: var(--d2b); background: var(--d2); color: var(--d2t); }
+.opt-btn:disabled { cursor: default; }
+.quiz-feedback {
+  margin-top: 0.85rem; padding: 0.75rem 0.85rem; border-radius: 10px;
+  font-size: 0.9rem; border: 1px solid var(--card-border);
+}
+.quiz-feedback.ok { background: var(--d6); color: var(--d6t); border-color: color-mix(in srgb, var(--d6b) 45%, transparent); }
+.quiz-feedback.bad { background: var(--d2); color: var(--d2t); border-color: color-mix(in srgb, var(--d2b) 45%, transparent); }
+.quiz-actions { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.85rem; }
+.quiz-empty {
+  padding: 1.2rem; text-align: center; color: var(--text-muted);
+  background: var(--card); border: 1px dashed var(--card-border); border-radius: var(--radius);
+}
+@media (max-width: 720px) {
+  .quiz-filters { gap: 0.45rem; padding: 0.65rem 0.7rem; }
+  .quiz-card .stem { font-size: 0.98rem; }
+}
+
 </style>
 </head>
 <body>
@@ -445,6 +515,7 @@ ul.plain li { margin-bottom: 0.3rem; }
     <button type="button" class="nav-link" data-nav="liudu/u10">10单元</button>
     <button type="button" class="nav-link" data-nav="liudu/u11">11单元</button>
     <button type="button" class="nav-link" data-nav="liudu/u12">12单元</button>
+    <button type="button" class="nav-link" data-nav="shuati">刷题</button>
     <button type="button" class="nav-link" data-nav="zhongkao">中考趋势</button>
   </nav>
   <div class="theme-row">
@@ -542,6 +613,7 @@ ul.plain li { margin-bottom: 0.3rem; }
       var active = false;
       if (target === 'home') active = (h === 'home');
       else if (target === 'zhongkao') active = h.indexOf('zhongkao') === 0;
+      else if (target === 'shuati') active = h.indexOf('shuati') === 0;
       else active = h === target || h.indexOf(target + '/') === 0;
       btn.classList.toggle('active', active);
     });
@@ -657,17 +729,20 @@ ul.plain li { margin-bottom: 0.3rem; }
     }).join('');
     app.innerHTML =
       '<div class="hero"><h1>人教版九年级化学 · 六维复习</h1>' +
-      '<p>手机友好复习站。顶栏进入<strong>一至十二单元</strong>课题列表；另有<strong>中考趋势</strong>。每课含六维卡片，笔记保存在本机。</p>' +
+      '<p>手机友好复习站。顶栏进入<strong>一至十二单元</strong>课题列表；另有<strong>刷题</strong>与<strong>中考趋势</strong>。每课含六维卡片，笔记保存在本机。</p>' +
       '<div class="dims-legend">' + legend + '</div></div>' +
       '<h3 style="color:var(--heading);font-size:1rem;margin:0 0 0.55rem">按单元进入</h3>' +
       '<div class="home-unit-grid">' + units + '</div>' +
       '<div class="grid-2" style="margin-top:1rem">' +
+      '<button type="button" class="entry-card" data-go="shuati"><h3>刷题练习</h3>' +
+      '<p>深圳风格九年级化学选择题。可按错题、难度、单元筛选；错题本保存在本机。</p>' +
+      '<div class="go">开始刷题 →</div></button>' +
       '<button type="button" class="entry-card" data-go="zhongkao"><h3>中考趋势</h3>' +
       '<p>2021–2025 化学备考要点：计算、实验探究、推断与情境决策。</p>' +
-      '<div class="go">进入中考板块 →</div></button>' +
-      '<div class="entry-card" style="cursor:default"><h3>关于本站</h3>' +
+      '<div class="go">进入中考板块 →</div></button></div>' +
+      '<div class="entry-card" style="cursor:default;margin-top:1rem"><h3>关于本站</h3>' +
       '<p>目录依据人教版九年级化学全一册。解读供复习提纲，不含教材原文。风格对齐语文六维站。</p>' +
-      '<div class="go">顶栏点单元即可开读</div></div></div>' +
+      '<div class="go">顶栏点单元或「刷题」即可开始</div></div>' +
       '<p class="footer-note">本站为复习提纲，请结合课本与本地中考说明使用。</p>';
     bindGoes(app);
   }
@@ -836,6 +911,286 @@ ul.plain li { margin-bottom: 0.3rem; }
     bindGoes(app);
   }
 
+
+  /* —— 刷题模块 —— */
+  var QUIZ_WRONG_KEY = 'hx-quiz-wrong-ids';
+  var quizState = {
+    questions: null,
+    wrongTopics: null,
+    topicMap: null,
+    loaded: false,
+    loading: false,
+    filterWrong: false,
+    filterDiff: 0,
+    filterUnit: '',
+    pool: [],
+    idx: 0,
+    selected: null,
+    revealed: false,
+    sessionCorrect: 0,
+    sessionAnswered: 0
+  };
+
+  function readWrongIds() {
+    try {
+      var raw = localStorage.getItem(QUIZ_WRONG_KEY);
+      var arr = raw ? JSON.parse(raw) : [];
+      return Array.isArray(arr) ? arr.filter(Boolean) : [];
+    } catch (e) { return []; }
+  }
+  function writeWrongIds(ids) {
+    var uniq = Array.from(new Set(ids.filter(Boolean)));
+    localStorage.setItem(QUIZ_WRONG_KEY, JSON.stringify(uniq));
+  }
+  function addLocalWrong(qid) {
+    var ids = readWrongIds();
+    if (ids.indexOf(qid) < 0) { ids.push(qid); writeWrongIds(ids); }
+  }
+  function removeLocalWrong(qid) {
+    writeWrongIds(readWrongIds().filter(function(id){ return id !== qid; }));
+  }
+
+  function loadQuizData() {
+    if (quizState.loaded || quizState.loading) return Promise.resolve();
+    quizState.loading = true;
+    return Promise.all([
+      fetch('questions.json', { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : []; }).catch(function(){ return []; }),
+      fetch('wrong-topics.json', { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : {}; }).catch(function(){ return {}; }),
+      fetch('wrong-topic-map.json', { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; })
+    ]).then(function(res){
+      quizState.questions = Array.isArray(res[0]) ? res[0] : [];
+      quizState.wrongTopics = res[1] || {};
+      quizState.topicMap = res[2];
+      quizState.loaded = true;
+      quizState.loading = false;
+    }).catch(function(){
+      quizState.questions = quizState.questions || [];
+      quizState.wrongTopics = quizState.wrongTopics || {};
+      quizState.loaded = true;
+      quizState.loading = false;
+    });
+  }
+
+  function unitShortLabel(uid) {
+    var u = unitById(uid);
+    if (!u) return uid;
+    return u.short || u.name || uid;
+  }
+
+  function matchWrongQuestion(q) {
+    var wt = quizState.wrongTopics || {};
+    var localIds = readWrongIds();
+    if (localIds.indexOf(q.id) >= 0) return true;
+    var ids = Array.isArray(wt.questionIds) ? wt.questionIds : [];
+    if (ids.length) return ids.indexOf(q.id) >= 0;
+    var kps = Array.isArray(wt.knowledgePoints) ? wt.knowledgePoints : [];
+    var topicIds = Array.isArray(wt.topicIds) ? wt.topicIds : [];
+    // also accept topic ids from wrong-topic-map
+    if (quizState.topicMap && Array.isArray(quizState.topicMap.topics)) {
+      quizState.topicMap.topics.forEach(function(t){
+        if (t && t.id && topicIds.indexOf(t.id) < 0) topicIds.push(t.id);
+      });
+    }
+    var tags = Array.isArray(q.tags) ? q.tags : [];
+    var qkps = Array.isArray(q.knowledgePoints) ? q.knowledgePoints : [];
+    var i, t;
+    for (i = 0; i < topicIds.length; i++) {
+      t = topicIds[i];
+      if (tags.indexOf(t) >= 0) return true;
+    }
+    for (i = 0; i < kps.length; i++) {
+      t = kps[i];
+      if (qkps.indexOf(t) >= 0 || tags.indexOf(t) >= 0) return true;
+    }
+    return false;
+  }
+
+  function buildPool() {
+    var list = (quizState.questions || []).slice();
+    if (quizState.filterWrong) {
+      list = list.filter(matchWrongQuestion);
+    }
+    if (quizState.filterDiff >= 1 && quizState.filterDiff <= 3) {
+      list = list.filter(function(q){ return Number(q.difficulty) === quizState.filterDiff; });
+    }
+    if (quizState.filterUnit) {
+      list = list.filter(function(q){ return q.unitId === quizState.filterUnit; });
+    }
+    // shuffle lightly
+    for (var i = list.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = list[i]; list[i] = list[j]; list[j] = tmp;
+    }
+    quizState.pool = list;
+    quizState.idx = 0;
+    quizState.selected = null;
+    quizState.revealed = false;
+  }
+
+  function diffLabel(d) {
+    if (d === 1) return '易';
+    if (d === 2) return '中';
+    if (d === 3) return '难';
+    return '—';
+  }
+
+  function viewShuati() {
+    crumb([{label:'主页', hash:'home'},{label:'刷题', hash:'shuati'}]);
+    updateSiteNav();
+    app.innerHTML = '<div class="hero"><h2>刷题练习</h2><p>加载题库中…</p></div>';
+    loadQuizData().then(function(){
+      if ((location.hash || '').replace(/^#/,'').split('?')[0].indexOf('shuati') !== 0) return;
+      buildPool();
+      renderShuatiUI();
+    });
+  }
+
+  function renderShuatiUI() {
+    var unitOpts = DATA.units.map(function(u){
+      return '<option value="' + esc(u.id) + '"' + (quizState.filterUnit === u.id ? ' selected' : '') + '>' + esc(u.short) + '</option>';
+    }).join('');
+    var filters =
+      '<div class="quiz-filters">' +
+      '<button type="button" class="toggle-chip' + (quizState.filterWrong ? ' on' : '') + '" id="qfWrong">只看错题</button>' +
+      '<label>难度 <select id="qfDiff">' +
+      '<option value="0"' + (quizState.filterDiff===0?' selected':'') + '>全部</option>' +
+      '<option value="1"' + (quizState.filterDiff===1?' selected':'') + '>易</option>' +
+      '<option value="2"' + (quizState.filterDiff===2?' selected':'') + '>中</option>' +
+      '<option value="3"' + (quizState.filterDiff===3?' selected':'') + '>难</option>' +
+      '</select></label>' +
+      '<label>单元 <select id="qfUnit"><option value=""' + (!quizState.filterUnit?' selected':'') + '>全部</option>' + unitOpts + '</select></label>' +
+      '<button type="button" class="btn-ghost" id="qfRestart">按筛选重开</button>' +
+      '</div>';
+
+    var totalQ = (quizState.questions || []).length;
+    var poolN = quizState.pool.length;
+    var answered = quizState.sessionAnswered;
+    var remain = Math.max(0, poolN - quizState.idx - (quizState.revealed ? 1 : 0));
+    if (!quizState.revealed && poolN) remain = Math.max(0, poolN - quizState.idx);
+    var score = quizState.sessionCorrect;
+    var meta = '<div class="quiz-meta">' +
+      '<span>题库 <strong>' + totalQ + '</strong> 道</span>' +
+      '<span>当前池 <strong>' + poolN + '</strong></span>' +
+      '<span>本局已答 <strong>' + answered + '</strong></span>' +
+      '<span>剩余约 <strong>' + remain + '</strong></span>' +
+      '<span>本局得分 <strong>' + score + '</strong> / ' + answered + '</span>' +
+      '<span>本机错题 <strong>' + readWrongIds().length + '</strong></span></div>';
+
+    var body = '';
+    if (!poolN) {
+      body = '<div class="quiz-empty">当前筛选下没有题目。可关闭「只看错题」或换单元/难度；答错的题目会进入本机错题。</div>';
+    } else if (quizState.idx >= poolN) {
+      body = '<div class="quiz-empty"><p>本轮已刷完（' + answered + ' 题，对 ' + score + '）。</p>' +
+        '<div class="quiz-actions" style="justify-content:center"><button type="button" class="btn-primary" id="qfAgain">再来一轮</button></div></div>';
+    } else {
+      var q = quizState.pool[quizState.idx];
+      var opts = (q.options || []).map(function(o){
+        var cls = 'opt-btn';
+        if (quizState.revealed) {
+          if (o.key === q.answer) cls += ' correct';
+          else if (quizState.selected === o.key) cls += ' wrong';
+        } else if (quizState.selected === o.key) {
+          cls += ' selected';
+        }
+        return '<button type="button" class="' + cls + '" data-key="' + esc(o.key) + '"' +
+          (quizState.revealed ? ' disabled' : '') + '><strong>' + esc(o.key) + '.</strong> ' + esc(o.text) + '</button>';
+      }).join('');
+      var fb = '';
+      if (quizState.revealed) {
+        var ok = quizState.selected === q.answer;
+        fb = '<div class="quiz-feedback ' + (ok ? 'ok' : 'bad') + '">' +
+          (ok ? '✓ 回答正确' : '✗ 回答错误，正确答案：' + esc(q.answer)) +
+          (q.explanation ? '<br/>' + esc(q.explanation) : '') + '</div>';
+      }
+      var actions = '<div class="quiz-actions">';
+      if (!quizState.revealed) {
+        actions += '<button type="button" class="btn-primary" id="qfSubmit" ' + (!quizState.selected ? 'disabled' : '') + '>提交</button>';
+      } else {
+        actions += '<button type="button" class="btn-primary" id="qfNext">下一题</button>';
+      }
+      actions += '<button type="button" class="btn-ghost" id="qfSkip">跳过</button></div>';
+      body = '<div class="quiz-card">' +
+        '<div class="q-meta"><span class="chip">' + esc(unitShortLabel(q.unitId)) + '</span>' +
+        '<span class="chip">难度·' + esc(diffLabel(q.difficulty)) + '</span>' +
+        '<span class="chip">' + esc(q.source || '') + (q.year ? ' · ' + q.year : '') + '</span>' +
+        '<span class="chip">第 ' + (quizState.idx + 1) + ' / ' + poolN + ' 题</span></div>' +
+        '<div class="stem">' + esc(q.stem) + '</div>' +
+        '<div class="opt-list">' + opts + '</div>' + fb + actions + '</div>';
+    }
+
+    app.innerHTML = backBtn('home','返回主页') +
+      '<div class="hero"><h2>刷题练习</h2>' +
+      '<p>深圳九年级化学选择题（当前为样例题库，后续可替换为完整题库 JSON）。支持错题 / 难度 / 单元筛选；答错自动记入本机错题。</p></div>' +
+      filters + meta + body +
+      '<p class="footer-note">错题筛选：本机答错 ∪ wrong-topics.json（优先 questionIds；否则匹配 knowledgePoints / tags / topicIds，并兼容 wrong-topic-map 中的 topic id）。</p>';
+
+    bindGoes(app);
+    var wrongBtn = document.getElementById('qfWrong');
+    if (wrongBtn) wrongBtn.onclick = function(){
+      quizState.filterWrong = !quizState.filterWrong;
+      quizState.sessionAnswered = 0; quizState.sessionCorrect = 0;
+      buildPool(); renderShuatiUI();
+    };
+    var diffEl = document.getElementById('qfDiff');
+    if (diffEl) diffEl.onchange = function(){
+      quizState.filterDiff = parseInt(diffEl.value, 10) || 0;
+      quizState.sessionAnswered = 0; quizState.sessionCorrect = 0;
+      buildPool(); renderShuatiUI();
+    };
+    var unitEl = document.getElementById('qfUnit');
+    if (unitEl) unitEl.onchange = function(){
+      quizState.filterUnit = unitEl.value || '';
+      quizState.sessionAnswered = 0; quizState.sessionCorrect = 0;
+      buildPool(); renderShuatiUI();
+    };
+    var restart = document.getElementById('qfRestart');
+    if (restart) restart.onclick = function(){
+      quizState.sessionAnswered = 0; quizState.sessionCorrect = 0;
+      buildPool(); renderShuatiUI();
+    };
+    var again = document.getElementById('qfAgain');
+    if (again) again.onclick = function(){
+      quizState.sessionAnswered = 0; quizState.sessionCorrect = 0;
+      buildPool(); renderShuatiUI();
+    };
+    app.querySelectorAll('.opt-btn[data-key]').forEach(function(btn){
+      btn.onclick = function(){
+        if (quizState.revealed) return;
+        quizState.selected = btn.getAttribute('data-key');
+        renderShuatiUI();
+      };
+    });
+    var submit = document.getElementById('qfSubmit');
+    if (submit) submit.onclick = function(){
+      if (!quizState.selected || quizState.revealed) return;
+      var q = quizState.pool[quizState.idx];
+      quizState.revealed = true;
+      quizState.sessionAnswered += 1;
+      if (quizState.selected === q.answer) {
+        quizState.sessionCorrect += 1;
+        removeLocalWrong(q.id);
+      } else {
+        addLocalWrong(q.id);
+      }
+      renderShuatiUI();
+    };
+    var next = document.getElementById('qfNext');
+    if (next) next.onclick = function(){
+      quizState.idx += 1;
+      quizState.selected = null;
+      quizState.revealed = false;
+      renderShuatiUI();
+    };
+    var skip = document.getElementById('qfSkip');
+    if (skip) skip.onclick = function(){
+      quizState.idx += 1;
+      quizState.selected = null;
+      quizState.revealed = false;
+      renderShuatiUI();
+    };
+  }
+
+
   function render() {
     var r = parseRoute();
     r.parts = r.parts.map(function(p){ return p.split('?')[0]; });
@@ -848,6 +1203,7 @@ ul.plain li { margin-bottom: 0.3rem; }
       if (r.parts.length === 2) { viewUnit(r.parts[1]); return; }
       if (r.parts.length >= 3) { viewLesson(r.parts[1], r.parts[2]); return; }
     }
+    if (r.root === 'shuati') { viewShuati(); return; }
     if (r.root === 'zhongkao') {
       if (r.parts.length === 1) { viewZkHome(); return; }
       var sub = r.parts[1];

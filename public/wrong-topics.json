@@ -1,0 +1,25 @@
+{
+  "knowledgePoints": [
+    "氧气的收集方法",
+    "长颈漏斗使用",
+    "化学变化最小粒子",
+    "分子运动",
+    "分子由原子构成",
+    "元素概念",
+    "水的组成",
+    "元素质量分数",
+    "化合价写化学式"
+  ],
+  "questionIds": [],
+  "topicIds": [
+    "gas_collect_direction",
+    "long_neck_funnel",
+    "chem_change_min_particle",
+    "molecule_motion_temp",
+    "molecule_atom_constitute",
+    "element_definition",
+    "water_formula",
+    "element_mass_calc",
+    "formula_from_valence"
+  ]
+}

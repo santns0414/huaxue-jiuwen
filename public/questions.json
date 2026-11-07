@@ -1,0 +1,521 @@
+[
+  {
+    "id": "sz-sample-001",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2023,
+    "source": "深圳中考风格样例",
+    "difficulty": 1,
+    "type": "single",
+    "stem": "实验室用高锰酸钾制取氧气时，收集氧气一般采用排水法或向上排空气法。下列说法正确的是",
+    "options": [
+      {
+        "key": "A",
+        "text": "氧气密度比空气小，应用向下排空气法收集"
+      },
+      {
+        "key": "B",
+        "text": "氧气不易溶于水，可用排水法收集"
+      },
+      {
+        "key": "C",
+        "text": "氧气易溶于水，不能用排水法收集"
+      },
+      {
+        "key": "D",
+        "text": "排空气法收集时导管只需伸入瓶口即可"
+      }
+    ],
+    "answer": "B",
+    "explanation": "氧气不易溶于水，可用排水法；密度比空气略大，用向上排空气法，导管应伸到瓶底。",
+    "tags": [
+      "gas_collect_direction",
+      "制取氧气"
+    ],
+    "knowledgePoints": [
+      "氧气的收集方法",
+      "排空气法"
+    ]
+  },
+  {
+    "id": "sz-sample-002",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2022,
+    "source": "深圳区统考风格样例",
+    "difficulty": 2,
+    "type": "single",
+    "stem": "用过氧化氢溶液和二氧化锰制取氧气时，长颈漏斗下端应",
+    "options": [
+      {
+        "key": "A",
+        "text": "伸入液面以下，防止气体从漏斗逸出"
+      },
+      {
+        "key": "B",
+        "text": "在液面以上，方便加液"
+      },
+      {
+        "key": "C",
+        "text": "刚好接触液面即可"
+      },
+      {
+        "key": "D",
+        "text": "无需伸入瓶内"
+      }
+    ],
+    "answer": "A",
+    "explanation": "长颈漏斗下端必须伸入液面以下形成液封，否则产生的氧气会从漏斗逸出。",
+    "tags": [
+      "long_neck_funnel",
+      "气体制备装置"
+    ],
+    "knowledgePoints": [
+      "长颈漏斗使用",
+      "固液不加热制氧"
+    ]
+  },
+  {
+    "id": "sz-sample-003",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2024,
+    "source": "深圳中考风格样例",
+    "difficulty": 1,
+    "type": "single",
+    "stem": "在化学变化中，下列粒子中最小的是",
+    "options": [
+      {
+        "key": "A",
+        "text": "分子"
+      },
+      {
+        "key": "B",
+        "text": "原子"
+      },
+      {
+        "key": "C",
+        "text": "电子"
+      },
+      {
+        "key": "D",
+        "text": "质子"
+      }
+    ],
+    "answer": "B",
+    "explanation": "化学变化中分子可再分，原子不可再分，原子是化学变化中的最小粒子。电子、质子虽更小，但不作为化学变化中的“最小粒子”这一教材结论。",
+    "tags": [
+      "chem_change_min_particle"
+    ],
+    "knowledgePoints": [
+      "分子和原子",
+      "化学变化最小粒子"
+    ]
+  },
+  {
+    "id": "sz-sample-004",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2023,
+    "source": "深圳期末风格样例",
+    "difficulty": 1,
+    "type": "single",
+    "stem": "关于分子的说法，正确的是",
+    "options": [
+      {
+        "key": "A",
+        "text": "温度升高，分子体积变大"
+      },
+      {
+        "key": "B",
+        "text": "温度升高，分子运动通常更剧烈"
+      },
+      {
+        "key": "C",
+        "text": "分子停止运动时物质才稳定"
+      },
+      {
+        "key": "D",
+        "text": "同种分子质量一定不同"
+      }
+    ],
+    "answer": "B",
+    "explanation": "分子在不断运动；温度越高，分子运动通常越剧烈。热胀冷缩主要是分子间隔变化，不是分子本身体积变大。",
+    "tags": [
+      "molecule_motion_temp"
+    ],
+    "knowledgePoints": [
+      "分子运动",
+      "温度影响"
+    ]
+  },
+  {
+    "id": "sz-sample-005",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2022,
+    "source": "深圳中考风格样例",
+    "difficulty": 1,
+    "type": "single",
+    "stem": "一个氧分子（O₂）是由",
+    "options": [
+      {
+        "key": "A",
+        "text": "两个氧元素构成"
+      },
+      {
+        "key": "B",
+        "text": "两个氧原子构成"
+      },
+      {
+        "key": "C",
+        "text": "一个氧原子构成"
+      },
+      {
+        "key": "D",
+        "text": "两个氧离子构成"
+      }
+    ],
+    "answer": "B",
+    "explanation": "分子由原子构成；一个氧分子由两个氧原子构成。元素只讲种类不论个数。",
+    "tags": [
+      "molecule_atom_constitute"
+    ],
+    "knowledgePoints": [
+      "分子由原子构成",
+      "化学式意义"
+    ]
+  },
+  {
+    "id": "sz-sample-006",
+    "unitId": "u3",
+    "lessonId": "u3t3",
+    "year": 2024,
+    "source": "深圳中考风格样例",
+    "difficulty": 2,
+    "type": "single",
+    "stem": "元素是指",
+    "options": [
+      {
+        "key": "A",
+        "text": "一类单质的总称"
+      },
+      {
+        "key": "B",
+        "text": "质子数（核电荷数）相同的一类原子的总称"
+      },
+      {
+        "key": "C",
+        "text": "相对原子质量相同的一类原子"
+      },
+      {
+        "key": "D",
+        "text": "电子数相同的一类分子"
+      }
+    ],
+    "answer": "B",
+    "explanation": "元素是质子数（核电荷数）相同的一类原子的总称，不等于单质。",
+    "tags": [
+      "element_definition"
+    ],
+    "knowledgePoints": [
+      "元素概念"
+    ]
+  },
+  {
+    "id": "sz-sample-007",
+    "unitId": "u4",
+    "lessonId": "u4t3",
+    "year": 2023,
+    "source": "深圳区统考风格样例",
+    "difficulty": 1,
+    "type": "single",
+    "stem": "水的化学式是",
+    "options": [
+      {
+        "key": "A",
+        "text": "H₂O₂"
+      },
+      {
+        "key": "B",
+        "text": "H₂O"
+      },
+      {
+        "key": "C",
+        "text": "HO"
+      },
+      {
+        "key": "D",
+        "text": "H₂"
+      }
+    ],
+    "answer": "B",
+    "explanation": "水由氢、氧元素组成，化学式为 H₂O；H₂O₂ 是过氧化氢。",
+    "tags": [
+      "water_formula"
+    ],
+    "knowledgePoints": [
+      "水的组成",
+      "化学式"
+    ]
+  },
+  {
+    "id": "sz-sample-008",
+    "unitId": "u3",
+    "lessonId": "u3t4",
+    "year": 2024,
+    "source": "深圳中考风格样例",
+    "difficulty": 2,
+    "type": "single",
+    "stem": "18 g 水中氧元素的质量约为",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 g"
+      },
+      {
+        "key": "B",
+        "text": "2 g"
+      },
+      {
+        "key": "C",
+        "text": "8 g"
+      },
+      {
+        "key": "D",
+        "text": "16 g"
+      }
+    ],
+    "answer": "D",
+    "explanation": "H₂O 中 H:O 质量比为 1:8，相对分子质量 18。氧的质量分数为 16/18，18 g 水中氧元素质量为 16 g。",
+    "tags": [
+      "element_mass_calc"
+    ],
+    "knowledgePoints": [
+      "元素质量分数",
+      "相对分子质量"
+    ]
+  },
+  {
+    "id": "sz-sample-009",
+    "unitId": "u3",
+    "lessonId": "u3t4",
+    "year": 2022,
+    "source": "深圳期末风格样例",
+    "difficulty": 2,
+    "type": "single",
+    "stem": "钙显+2 价，氯显−1 价，氯化钙的化学式是",
+    "options": [
+      {
+        "key": "A",
+        "text": "CaO"
+      },
+      {
+        "key": "B",
+        "text": "CaCl"
+      },
+      {
+        "key": "C",
+        "text": "CaCl₂"
+      },
+      {
+        "key": "D",
+        "text": "Ca₂Cl"
+      }
+    ],
+    "answer": "C",
+    "explanation": "正负化合价代数和为 0：Ca 为 +2，需要两个 Cl（各 −1），化学式为 CaCl₂。CaO 是氧化钙。",
+    "tags": [
+      "formula_from_valence"
+    ],
+    "knowledgePoints": [
+      "化合价写化学式"
+    ]
+  },
+  {
+    "id": "sz-sample-010",
+    "unitId": "u5",
+    "lessonId": "u5t1",
+    "year": 2023,
+    "source": "深圳中考风格样例",
+    "difficulty": 2,
+    "type": "single",
+    "stem": "下列现象中，能用质量守恒定律直接解释的是",
+    "options": [
+      {
+        "key": "A",
+        "text": "敞口烧杯中镁条燃烧后固体质量增加"
+      },
+      {
+        "key": "B",
+        "text": "密闭容器中白磷燃烧前后总质量不变"
+      },
+      {
+        "key": "C",
+        "text": "蜡烛燃烧后变短"
+      },
+      {
+        "key": "D",
+        "text": "铁钉生锈后质量变大"
+      }
+    ],
+    "answer": "B",
+    "explanation": "质量守恒针对参加反应的各物质质量总和。密闭体系中反应前后总质量不变可直接体现；敞口体系因吸收氧气或气体逸出，表观质量会变。",
+    "tags": [
+      "质量守恒"
+    ],
+    "knowledgePoints": [
+      "质量守恒定律",
+      "密闭体系"
+    ]
+  },
+  {
+    "id": "sz-sample-011",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳中考风格样例",
+    "difficulty": 2,
+    "type": "single",
+    "stem": "实验室制取二氧化碳，通常选用的药品是",
+    "options": [
+      {
+        "key": "A",
+        "text": "大理石与稀硫酸"
+      },
+      {
+        "key": "B",
+        "text": "大理石与稀盐酸"
+      },
+      {
+        "key": "C",
+        "text": "碳与氧气"
+      },
+      {
+        "key": "D",
+        "text": "碳酸钠粉末与稀盐酸（作为首选常规方案）"
+      }
+    ],
+    "answer": "B",
+    "explanation": "实验室常用大理石（或石灰石）与稀盐酸。稀硫酸生成微溶 CaSO₄ 覆盖表面使反应减弱；碳燃烧不便于实验室制纯净 CO₂。",
+    "tags": [
+      "二氧化碳制取"
+    ],
+    "knowledgePoints": [
+      "实验室制CO₂",
+      "药品选择"
+    ]
+  },
+  {
+    "id": "sz-sample-012",
+    "unitId": "u8",
+    "lessonId": "u8t2",
+    "year": 2023,
+    "source": "深圳区统考风格样例",
+    "difficulty": 3,
+    "type": "single",
+    "stem": "下列金属中，能与稀盐酸反应产生氢气，且能把铜从其盐溶液中置换出来的是",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ag"
+      },
+      {
+        "key": "B",
+        "text": "Cu"
+      },
+      {
+        "key": "C",
+        "text": "Fe"
+      },
+      {
+        "key": "D",
+        "text": "Au"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Fe 排在 H、Cu 之前，能与稀盐酸反应放 H₂，也能置换铜盐中的铜。Ag、Au、Cu 不能与稀盐酸反应放氢。",
+    "tags": [
+      "金属活动性"
+    ],
+    "knowledgePoints": [
+      "金属活动性顺序",
+      "置换反应"
+    ]
+  },
+  {
+    "id": "sz-sample-013",
+    "unitId": "u9",
+    "lessonId": "u9t3",
+    "year": 2022,
+    "source": "深圳期末风格样例",
+    "difficulty": 2,
+    "type": "single",
+    "stem": "配制 50 g 溶质质量分数为 10% 的氯化钠溶液，需要氯化钠和水的质量分别是",
+    "options": [
+      {
+        "key": "A",
+        "text": "5 g 和 45 g"
+      },
+      {
+        "key": "B",
+        "text": "10 g 和 40 g"
+      },
+      {
+        "key": "C",
+        "text": "5 g 和 50 g"
+      },
+      {
+        "key": "D",
+        "text": "10 g 和 50 g"
+      }
+    ],
+    "answer": "A",
+    "explanation": "溶质质量 = 50×10% = 5 g；溶剂质量 = 50 − 5 = 45 g。",
+    "tags": [
+      "溶质质量分数"
+    ],
+    "knowledgePoints": [
+      "溶液配制",
+      "溶质质量分数计算"
+    ]
+  },
+  {
+    "id": "sz-sample-014",
+    "unitId": "u10",
+    "lessonId": "u10t2",
+    "year": 2024,
+    "source": "深圳中考风格样例",
+    "difficulty": 1,
+    "type": "single",
+    "stem": "常温下，下列溶液的 pH 一定小于 7 的是",
+    "options": [
+      {
+        "key": "A",
+        "text": "食盐水"
+      },
+      {
+        "key": "B",
+        "text": "稀盐酸"
+      },
+      {
+        "key": "C",
+        "text": "氢氧化钠溶液"
+      },
+      {
+        "key": "D",
+        "text": "蒸馏水"
+      }
+    ],
+    "answer": "B",
+    "explanation": "稀盐酸显酸性，pH < 7；蒸馏水和食盐水接近中性；氢氧化钠溶液显碱性。",
+    "tags": [
+      "pH",
+      "酸碱"
+    ],
+    "knowledgePoints": [
+      "溶液酸碱度",
+      "pH"
+    ]
+  }
+]
