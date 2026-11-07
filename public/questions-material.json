@@ -1,0 +1,319 @@
+[
+  {
+    "id": "sz-mat-001",
+    "type": "material",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2024,
+    "source": "深圳九年级上册·样例材料题",
+    "difficulty": 2,
+    "title": "实验室制取氧气",
+    "material": "小明小组在实验室用高锰酸钾制取氧气。实验步骤大致为：检查装置气密性→装入药品（试管口放一团棉花）→固定试管（管口略向下倾斜）→加热→用排水法收集氧气→实验结束时先撤导管再熄灭酒精灯。收集到的氧气用于铁丝燃烧演示：铁丝绕成螺旋状，一端系火柴，点燃后伸入集气瓶，瓶底预先放少量水。",
+    "tags": [
+      "oxygen_prep",
+      "gas_collect"
+    ],
+    "knowledgePoints": [
+      "高锰酸钾制氧",
+      "排水法收集",
+      "铁丝燃烧"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-001-1",
+        "type": "single",
+        "stem": "试管口放置棉花的主要作用是",
+        "options": [
+          {
+            "key": "A",
+            "text": "防止加热时试管炸裂"
+          },
+          {
+            "key": "B",
+            "text": "防止固体粉末进入导管堵塞"
+          },
+          {
+            "key": "C",
+            "text": "吸收反应生成的水分"
+          },
+          {
+            "key": "D",
+            "text": "加快氧气产生的速率"
+          }
+        ],
+        "answer": "B",
+        "explanation": "加热高锰酸钾时，棉花可挡住固体粉末，防止进入导管堵塞。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-001-2",
+        "type": "single",
+        "stem": "用排水法收集氧气结束后，正确的操作顺序是",
+        "options": [
+          {
+            "key": "A",
+            "text": "先熄灭酒精灯，再撤出导管"
+          },
+          {
+            "key": "B",
+            "text": "先撤出导管，再熄灭酒精灯"
+          },
+          {
+            "key": "C",
+            "text": "同时熄灯并撤导管"
+          },
+          {
+            "key": "D",
+            "text": "先打开橡皮塞，再熄灯"
+          }
+        ],
+        "answer": "B",
+        "explanation": "先撤导管再熄灯，可防止水槽中的水倒吸入热试管导致炸裂。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-001-3",
+        "type": "fill",
+        "stem": "写出加热高锰酸钾制取氧气的化学方程式（可用 = 或 →）。",
+        "answer": "2KMnO₄=加热=K₂MnO₄+MnO₂+O₂↑",
+        "answerAccept": [
+          "2KMnO₄→(加热)K₂MnO₄+MnO₂+O₂↑",
+          "2KMnO4=(加热)K2MnO4+MnO2+O2↑",
+          "2KMnO₄=△=K₂MnO₄+MnO₂+O₂↑",
+          "2KMnO4→K2MnO4+MnO2+O2↑",
+          "2KMnO₄→K₂MnO₄+MnO₂+O₂↑"
+        ],
+        "explanation": "2KMnO₄ →(加热) K₂MnO₄ + MnO₂ + O₂↑",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-001-4",
+        "type": "judge",
+        "stem": "铁丝在氧气中燃烧时，集气瓶底放少量水是为了防止高温熔融物溅落炸裂瓶底。",
+        "options": [
+          {
+            "key": "A",
+            "text": "正确"
+          },
+          {
+            "key": "B",
+            "text": "错误"
+          }
+        ],
+        "answer": "A",
+        "explanation": "瓶底放水（或细沙）可缓冲高温熔融物，防止炸裂。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-002",
+    "type": "material",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2023,
+    "source": "深圳九年级上册·样例材料题",
+    "difficulty": 2,
+    "title": "二氧化碳的实验室制取",
+    "material": "实验室常用大理石（主要成分为碳酸钙）与稀盐酸反应制取二氧化碳。发生装置属于固液不加热型。收集时一般采用向上排空气法；检验时可将气体通入澄清石灰水，若变浑浊则证明是二氧化碳；验满时可将燃着的木条放在集气瓶口，木条熄灭说明已满。有同学提出改用稀硫酸代替稀盐酸，或改用碳酸钠粉末代替大理石。",
+    "tags": [
+      "co2_prep",
+      "acid_carbonate"
+    ],
+    "knowledgePoints": [
+      "实验室制CO₂",
+      "澄清石灰水检验",
+      "验满"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-002-1",
+        "type": "single",
+        "stem": "实验室制取 CO₂ 一般不用稀硫酸与大理石反应，主要原因是",
+        "options": [
+          {
+            "key": "A",
+            "text": "稀硫酸不能与碳酸钙反应"
+          },
+          {
+            "key": "B",
+            "text": "生成微溶的硫酸钙覆盖表面使反应逐渐停止"
+          },
+          {
+            "key": "C",
+            "text": "反应会放出有毒气体"
+          },
+          {
+            "key": "D",
+            "text": "稀硫酸具有强氧化性"
+          }
+        ],
+        "answer": "B",
+        "explanation": "生成微溶 CaSO₄ 覆盖在大理石表面，阻碍反应继续进行。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-002-2",
+        "type": "fill",
+        "stem": "写出大理石与稀盐酸反应的化学方程式。",
+        "answer": "CaCO₃+2HCl=CaCl₂+H₂O+CO₂↑",
+        "answerAccept": [
+          "CaCO3+2HCl=CaCl2+H2O+CO2↑",
+          "CaCO₃+2HCl→CaCl₂+H₂O+CO₂↑",
+          "CaCO3+2HCl→CaCl2+H2O+CO2↑"
+        ],
+        "explanation": "CaCO₃ + 2HCl = CaCl₂ + H₂O + CO₂↑",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-002-3",
+        "type": "single",
+        "stem": "下列关于 CO₂ 收集与检验的说法正确的是",
+        "options": [
+          {
+            "key": "A",
+            "text": "常用排水法大量收集，因为 CO₂ 极易溶于水"
+          },
+          {
+            "key": "B",
+            "text": "验满方法是将燃着木条伸入瓶内观察是否熄灭"
+          },
+          {
+            "key": "C",
+            "text": "通入澄清石灰水变浑浊可用于检验 CO₂"
+          },
+          {
+            "key": "D",
+            "text": "密度比空气小，应采用向下排空气法收集"
+          }
+        ],
+        "answer": "C",
+        "explanation": "CO₂ 能溶于水且可与水反应，一般不宜用排水法；验满在瓶口；密度比空气大，用向上排空气法；石灰水变浑浊是检验方法。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-002-4",
+        "type": "judge",
+        "stem": "用碳酸钠粉末代替大理石与稀盐酸反应，反应速率往往过快，不易控制收集。",
+        "options": [
+          {
+            "key": "A",
+            "text": "正确"
+          },
+          {
+            "key": "B",
+            "text": "错误"
+          }
+        ],
+        "answer": "A",
+        "explanation": "粉末与酸接触面积大，反应剧烈，实验室通常选用块状大理石/石灰石以便控制。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-003",
+    "type": "material",
+    "unitId": "u8",
+    "lessonId": "u8t2",
+    "year": 2025,
+    "source": "深圳九年级上册·样例材料题",
+    "difficulty": 3,
+    "title": "金属活动性顺序的探究",
+    "material": "兴趣小组为比较锌、铁、铜三种金属的活动性强弱，进行了下列实验：①将三种金属分别放入等浓度的稀盐酸中，观察反应剧烈程度；②将锌片、铁片分别插入硫酸铜溶液中，观察金属表面与溶液颜色变化。已知金属活动性顺序：Zn > Fe > H > Cu。实验中还观察到：铁钉表面覆盖一层红色固体，溶液由蓝色逐渐变为浅绿色。",
+    "tags": [
+      "metal_activity",
+      "displacement"
+    ],
+    "knowledgePoints": [
+      "金属活动性顺序",
+      "置换反应",
+      "Fe与CuSO₄"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-003-1",
+        "type": "single",
+        "stem": "三种金属与稀盐酸反应时，无明显气泡产生的是",
+        "options": [
+          {
+            "key": "A",
+            "text": "锌"
+          },
+          {
+            "key": "B",
+            "text": "铁"
+          },
+          {
+            "key": "C",
+            "text": "铜"
+          },
+          {
+            "key": "D",
+            "text": "锌和铁"
+          }
+        ],
+        "answer": "C",
+        "explanation": "铜在氢之后，不能与稀盐酸反应置换出氢气。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-003-2",
+        "type": "fill",
+        "stem": "写出铁与硫酸铜溶液反应的化学方程式。",
+        "answer": "Fe+CuSO₄=FeSO₄+Cu",
+        "answerAccept": [
+          "Fe+CuSO4=FeSO4+Cu",
+          "Fe+CuSO₄→FeSO₄+Cu",
+          "Fe+CuSO4→FeSO4+Cu"
+        ],
+        "explanation": "Fe + CuSO₄ = FeSO₄ + Cu。生成的 Fe²⁺使溶液呈浅绿色，析出的铜为红色。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-003-3",
+        "type": "single",
+        "stem": "根据实验现象与活动性顺序，下列推断正确的是",
+        "options": [
+          {
+            "key": "A",
+            "text": "锌能把铁从其盐溶液中置换出来"
+          },
+          {
+            "key": "B",
+            "text": "铜能把铁从其盐溶液中置换出来"
+          },
+          {
+            "key": "C",
+            "text": "铁与稀盐酸反应生成 FeCl₃ 和 H₂"
+          },
+          {
+            "key": "D",
+            "text": "锌与稀盐酸不反应"
+          }
+        ],
+        "answer": "A",
+        "explanation": "活动性 Zn > Fe，锌可置换铁盐中的铁；铜不能置换铁；铁与酸通常生成 Fe²⁺（如 FeCl₂），不是 FeCl₃。",
+        "difficulty": 3
+      },
+      {
+        "id": "sz-mat-003-4",
+        "type": "judge",
+        "stem": "铁与酸、多数盐溶液反应时，通常生成 Fe²⁺ 而不是 Fe³⁺。",
+        "options": [
+          {
+            "key": "A",
+            "text": "正确"
+          },
+          {
+            "key": "B",
+            "text": "错误"
+          }
+        ],
+        "answer": "A",
+        "explanation": "初中阶段铁与稀盐酸、稀硫酸、硫酸铜等反应产物按 Fe²⁺ 书写（FeCl₂、FeSO₄）。",
+        "difficulty": 2
+      }
+    ]
+  }
+]

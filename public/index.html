@@ -510,6 +510,33 @@ ul.plain li { margin-bottom: 0.3rem; }
   .quiz-card .stem { font-size: 0.98rem; }
 }
 
+
+/* —— 材料题 —— */
+.mat-passage {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: var(--radius); padding: 1rem 1.1rem; margin-bottom: 0.85rem;
+  box-shadow: var(--shadow); white-space: pre-wrap; line-height: 1.75; font-size: 0.95rem;
+}
+.mat-passage-sticky {
+  position: sticky; top: 3.2rem; z-index: 20;
+  max-height: 42vh; overflow: auto;
+  border-left: 3px solid var(--accent);
+}
+.mat-passage h3 { color: var(--heading); font-size: 0.95rem; margin-bottom: 0.45rem; }
+.mat-pack-card {
+  display: block; width: 100%; text-align: left;
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 10px; padding: 0.9rem 1rem; margin-bottom: 0.55rem;
+  box-shadow: var(--shadow); cursor: pointer; font-family: inherit; color: inherit;
+}
+.mat-pack-card:hover { border-color: var(--accent); }
+.mat-pack-card .t { color: var(--heading); font-weight: 600; font-size: 0.98rem; }
+.mat-pack-card .s { color: var(--text-muted); font-size: 0.8rem; margin-top: 0.2rem; display:flex; flex-wrap:wrap; gap:0.35rem; }
+.mat-sub-progress { font-size: 0.82rem; color: var(--text-muted); margin: 0.35rem 0 0.75rem; }
+@media (max-width: 720px) {
+  .mat-passage-sticky { top: 4.5rem; max-height: 36vh; }
+}
+
 </style>
 </head>
 <body>
@@ -530,6 +557,7 @@ ul.plain li { margin-bottom: 0.3rem; }
     <button type="button" class="nav-link" data-nav="liudu/u11">11单元</button>
     <button type="button" class="nav-link" data-nav="liudu/u12">12单元</button>
     <button type="button" class="nav-link" data-nav="shuati">刷题</button>
+    <button type="button" class="nav-link" data-nav="cailiao">材料题</button>
     <button type="button" class="nav-link" data-nav="zhongkao">中考趋势</button>
   </nav>
   <div class="theme-row">
@@ -628,6 +656,7 @@ ul.plain li { margin-bottom: 0.3rem; }
       if (target === 'home') active = (h === 'home');
       else if (target === 'zhongkao') active = h.indexOf('zhongkao') === 0;
       else if (target === 'shuati') active = h.indexOf('shuati') === 0;
+      else if (target === 'cailiao') active = h.indexOf('cailiao') === 0;
       else active = h === target || h.indexOf(target + '/') === 0;
       btn.classList.toggle('active', active);
     });
@@ -743,7 +772,7 @@ ul.plain li { margin-bottom: 0.3rem; }
     }).join('');
     app.innerHTML =
       '<div class="hero"><h1>人教版九年级化学 · 六维复习</h1>' +
-      '<p>手机友好复习站。顶栏进入<strong>一至十二单元</strong>课题列表；另有<strong>刷题</strong>与<strong>中考趋势</strong>。每课含六维卡片，笔记保存在本机。</p>' +
+      '<p>手机友好复习站。顶栏进入<strong>一至十二单元</strong>课题列表；另有<strong>刷题</strong>、<strong>材料题</strong>与<strong>中考趋势</strong>。每课含六维卡片，笔记保存在本机。</p>' +
       '<div class="dims-legend">' + legend + '</div></div>' +
       '<h3 style="color:var(--heading);font-size:1rem;margin:0 0 0.55rem">按单元进入</h3>' +
       '<div class="home-unit-grid">' + units + '</div>' +
@@ -751,9 +780,16 @@ ul.plain li { margin-bottom: 0.3rem; }
       '<button type="button" class="entry-card" data-go="shuati"><h3>刷题练习</h3>' +
       '<p>深圳风格九年级化学练习（单选 / 判断 / 填空）。可按错题、难度、单元筛选；错题本保存在本机。</p>' +
       '<div class="go">开始刷题 →</div></button>' +
+      '<button type="button" class="entry-card" data-go="cailiao"><h3>材料题</h3>' +
+      '<p>阅读材料后作答小题（单选 / 判断 / 填空）。独立题库，可按难度、单元筛选。</p>' +
+      '<div class="go">进入材料题 →</div></button></div>' +
+      '<div class="grid-2" style="margin-top:1rem">' +
       '<button type="button" class="entry-card" data-go="zhongkao"><h3>中考趋势</h3>' +
       '<p>2021–2025 化学备考要点：计算、实验探究、推断与情境决策。</p>' +
-      '<div class="go">进入中考板块 →</div></button></div>' +
+      '<div class="go">进入中考板块 →</div></button>' +
+      '<div class="entry-card" style="cursor:default"><h3>题库说明</h3>' +
+      '<p>刷题与材料题分栏存放，避免主池过重；材料题约 30 套将由化学 bot 补充。</p>' +
+      '<div class="go">样例已可练</div></div></div>' +
       '<div class="entry-card" style="cursor:default;margin-top:1rem"><h3>关于本站</h3>' +
       '<p>目录依据人教版九年级化学全一册。解读供复习提纲，不含教材原文。风格对齐语文六维站。</p>' +
       '<div class="go">顶栏点单元或「刷题」即可开始</div></div>' +
@@ -1326,6 +1362,290 @@ ul.plain li { margin-bottom: 0.3rem; }
   }
 
 
+
+  /* —— 材料题模块 —— */
+  var matState = {
+    packs: null,
+    loaded: false,
+    loading: false,
+    filterDiff: 0,
+    filterUnit: '',
+    packId: '',
+    subIdx: 0,
+    selected: null,
+    revealed: false,
+    sessionCorrect: 0,
+    sessionAnswered: 0
+  };
+
+  function loadMaterialData() {
+    if (matState.loaded || matState.loading) return Promise.resolve();
+    matState.loading = true;
+    return fetch('questions-material.json', { cache: 'no-store' })
+      .then(function(r){ return r.ok ? r.json() : []; })
+      .catch(function(){ return []; })
+      .then(function(arr){
+        matState.packs = Array.isArray(arr) ? arr : [];
+        matState.loaded = true;
+        matState.loading = false;
+      });
+  }
+
+  function filteredMaterialPacks() {
+    var list = (matState.packs || []).slice();
+    if (matState.filterDiff >= 1 && matState.filterDiff <= 3) {
+      list = list.filter(function(p){ return Number(p.difficulty) === matState.filterDiff; });
+    }
+    if (matState.filterUnit) {
+      list = list.filter(function(p){ return p.unitId === matState.filterUnit; });
+    }
+    return list;
+  }
+
+  function findMaterialPack(id) {
+    var list = matState.packs || [];
+    for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i];
+    return null;
+  }
+
+  function isSubCorrect(sub, selected) {
+    var t = detectType(sub);
+    if (t === 'fill') return isFillCorrect(sub, selected || '');
+    return selected === sub.answer;
+  }
+
+  function viewCailiaoList() {
+    crumb([{label:'主页', hash:'home'},{label:'材料题', hash:'cailiao'}]);
+    updateSiteNav();
+    app.innerHTML = '<div class="hero"><h2>材料题</h2><p>加载题库中…</p></div>';
+    loadMaterialData().then(function(){
+      if ((location.hash || '').replace(/^#/,'').split('?')[0].indexOf('cailiao') !== 0) return;
+      // if deep link without trailing id when already on pack route handled elsewhere
+      renderCailiaoListUI();
+    });
+  }
+
+  function renderCailiaoListUI() {
+    var unitOpts = DATA.units.map(function(u){
+      return '<option value="' + esc(u.id) + '"' + (matState.filterUnit === u.id ? ' selected' : '') + '>' + esc(u.short) + '</option>';
+    }).join('');
+    var filters =
+      '<div class="quiz-filters">' +
+      '<label>难度 <select id="mfDiff">' +
+      '<option value="0"' + (matState.filterDiff===0?' selected':'') + '>全部</option>' +
+      '<option value="1"' + (matState.filterDiff===1?' selected':'') + '>易</option>' +
+      '<option value="2"' + (matState.filterDiff===2?' selected':'') + '>中</option>' +
+      '<option value="3"' + (matState.filterDiff===3?' selected':'') + '>难</option>' +
+      '</select></label>' +
+      '<label>单元 <select id="mfUnit"><option value=""' + (!matState.filterUnit?' selected':'') + '>全部</option>' + unitOpts + '</select></label>' +
+      '</div>';
+    var packs = filteredMaterialPacks();
+    var total = (matState.packs || []).length;
+    var meta = '<div class="quiz-meta"><span>材料套卷 <strong>' + total + '</strong></span>' +
+      '<span>当前筛选 <strong>' + packs.length + '</strong></span>' +
+      '<span>本机错题 <strong>' + readWrongIds().length + '</strong></span></div>';
+    var body = '';
+    if (!packs.length) {
+      body = '<div class="quiz-empty">当前筛选下没有材料题。可换难度或单元；完整约 30 套将陆续补充。</div>';
+    } else {
+      body = packs.map(function(p){
+        var n = (p.subQuestions || []).length;
+        return '<button type="button" class="mat-pack-card" data-go="cailiao/' + esc(p.id) + '">' +
+          '<div class="t">' + esc(p.title || p.id) + '</div>' +
+          '<div class="s">' +
+          '<span class="chip">' + esc(unitShortLabel(p.unitId)) + '</span>' +
+          '<span class="chip">难度·' + esc(diffLabel(p.difficulty)) + '</span>' +
+          '<span class="chip">' + n + ' 小题</span>' +
+          '<span class="chip">' + esc(p.source || '') + (p.year ? ' · ' + p.year : '') + '</span>' +
+          '</div></button>';
+      }).join('');
+    }
+    app.innerHTML = backBtn('home','返回主页') +
+      '<div class="hero"><h2>材料题</h2>' +
+      '<p>先读材料，再逐题作答（单选 / 判断 / 填空）。独立于刷题主池，可按难度与单元筛选。答错记入本机错题。</p></div>' +
+      filters + meta + body +
+      '<p class="footer-note">题库文件：questions-material.json。样例 3 套可练；完整约 30 套由化学 bot 补充后合并。</p>';
+    bindGoes(app);
+    var diffEl = document.getElementById('mfDiff');
+    if (diffEl) diffEl.onchange = function(){
+      matState.filterDiff = parseInt(diffEl.value, 10) || 0;
+      renderCailiaoListUI();
+    };
+    var unitEl = document.getElementById('mfUnit');
+    if (unitEl) unitEl.onchange = function(){
+      matState.filterUnit = unitEl.value || '';
+      renderCailiaoListUI();
+    };
+  }
+
+  function viewCailiaoPack(packId) {
+    crumb([{label:'主页', hash:'home'},{label:'材料题', hash:'cailiao'},{label:'作答', hash:'cailiao/'+packId}]);
+    updateSiteNav();
+    app.innerHTML = '<div class="hero"><h2>材料题</h2><p>加载中…</p></div>';
+    loadMaterialData().then(function(){
+      if ((location.hash || '').replace(/^#/,'').split('?')[0] !== ('cailiao/' + packId)) return;
+      var pack = findMaterialPack(packId);
+      if (!pack) { go('cailiao'); return; }
+      if (matState.packId !== packId) {
+        matState.packId = packId;
+        matState.subIdx = 0;
+        matState.selected = null;
+        matState.revealed = false;
+        matState.sessionCorrect = 0;
+        matState.sessionAnswered = 0;
+      }
+      renderCailiaoPackUI(pack);
+    });
+  }
+
+  function renderCailiaoPackUI(pack) {
+    var subs = pack.subQuestions || [];
+    var body = '';
+    var passage =
+      '<div class="mat-passage mat-passage-sticky"><h3>材料 · ' + esc(pack.title || '') + '</h3>' +
+      esc(pack.material || '') + '</div>';
+
+    if (!subs.length) {
+      body = '<div class="quiz-empty">该套材料暂无小题。</div>';
+    } else if (matState.subIdx >= subs.length) {
+      body = '<div class="quiz-empty"><p>本套已完成（' + matState.sessionAnswered + ' 题，对 ' + matState.sessionCorrect + '）。</p>' +
+        '<div class="quiz-actions" style="justify-content:center">' +
+        '<button type="button" class="btn-primary" id="mfAgain">再做一遍</button>' +
+        '<button type="button" class="btn-ghost" data-go="cailiao">返回列表</button></div></div>';
+    } else {
+      var sub = subs[matState.subIdx];
+      var qType = detectType(sub);
+      var isFill = qType === 'fill';
+      var answerArea = '';
+      if (isFill) {
+        var fillCls = 'fill-input';
+        if (matState.revealed) fillCls += (isSubCorrect(sub, matState.selected || '') ? ' ok' : ' bad');
+        answerArea =
+          '<div class="fill-row">' +
+          '<input type="text" class="' + fillCls + '" id="mfFill" placeholder="在此填写答案" ' +
+          (matState.revealed ? 'disabled ' : '') +
+          'value="' + esc(matState.selected || '') + '" autocomplete="off" spellcheck="false" />' +
+          '<div class="fill-hint">填空：忽略大小写与空格；方程式可用 = 或 →。</div></div>';
+      } else {
+        var opts = (sub.options || []).map(function(o){
+          var cls = 'opt-btn';
+          if (matState.revealed) {
+            if (o.key === sub.answer) cls += ' correct';
+            else if (matState.selected === o.key) cls += ' wrong';
+          } else if (matState.selected === o.key) {
+            cls += ' selected';
+          }
+          return '<button type="button" class="' + cls + '" data-key="' + esc(o.key) + '"' +
+            (matState.revealed ? ' disabled' : '') + '><strong>' + esc(o.key) + '.</strong> ' + esc(o.text) + '</button>';
+        }).join('');
+        answerArea = '<div class="opt-list">' + opts + '</div>';
+      }
+      var fb = '';
+      if (matState.revealed) {
+        var ok = isSubCorrect(sub, matState.selected || '');
+        fb = '<div class="quiz-feedback ' + (ok ? 'ok' : 'bad') + '">' +
+          (ok ? '✓ 回答正确' : ('✗ 回答错误，正确答案：' + esc(String(sub.answer || '')))) +
+          (sub.explanation ? '<br/>' + esc(sub.explanation) : '') + '</div>';
+      }
+      var canSubmit = isFill ? !!(matState.selected && String(matState.selected).trim()) : !!matState.selected;
+      var actions = '<div class="quiz-actions">';
+      if (!matState.revealed) {
+        actions += '<button type="button" class="btn-primary" id="mfSubmit" ' + (!canSubmit ? 'disabled' : '') + '>提交</button>';
+      } else {
+        actions += '<button type="button" class="btn-primary" id="mfNext">下一题</button>';
+      }
+      actions += '<button type="button" class="btn-ghost" id="mfSkip">跳过</button>' +
+        '<button type="button" class="btn-ghost" data-go="cailiao">返回列表</button></div>';
+      body = '<div class="mat-sub-progress">小题 <strong>' + (matState.subIdx + 1) + '</strong> / ' + subs.length +
+        ' · 本套得分 <strong>' + matState.sessionCorrect + '</strong> / ' + matState.sessionAnswered + '</div>' +
+        '<div class="quiz-card">' +
+        '<div class="q-meta"><span class="chip">' + esc(unitShortLabel(pack.unitId)) + '</span>' +
+        '<span class="chip">难度·' + esc(diffLabel(sub.difficulty != null ? sub.difficulty : pack.difficulty)) + '</span>' +
+        '<span class="chip type-chip-' + esc(qType) + '">' + esc(typeLabel(sub)) + '</span></div>' +
+        '<div class="stem">' + esc(sub.stem) + '</div>' +
+        answerArea + fb + actions + '</div>';
+    }
+
+    app.innerHTML = backBtn('cailiao','返回材料题列表') +
+      '<div class="hero"><h2>' + esc(pack.title || '材料题') + '</h2>' +
+      '<p>' + esc(unitShortLabel(pack.unitId)) + ' · 难度·' + esc(diffLabel(pack.difficulty)) +
+      (pack.source ? ' · ' + esc(pack.source) : '') + (pack.year ? ' · ' + pack.year : '') + '</p></div>' +
+      passage + body;
+
+    bindGoes(app);
+    var again = document.getElementById('mfAgain');
+    if (again) again.onclick = function(){
+      matState.subIdx = 0; matState.selected = null; matState.revealed = false;
+      matState.sessionCorrect = 0; matState.sessionAnswered = 0;
+      renderCailiaoPackUI(pack);
+    };
+    app.querySelectorAll('.opt-btn[data-key]').forEach(function(btn){
+      btn.onclick = function(){
+        if (matState.revealed) return;
+        matState.selected = btn.getAttribute('data-key');
+        renderCailiaoPackUI(pack);
+      };
+    });
+    var fillEl = document.getElementById('mfFill');
+    if (fillEl) {
+      fillEl.oninput = function(){
+        if (matState.revealed) return;
+        matState.selected = fillEl.value;
+        var subBtn = document.getElementById('mfSubmit');
+        if (subBtn) subBtn.disabled = !String(fillEl.value || '').trim();
+      };
+      fillEl.onkeydown = function(ev){
+        if (ev.key === 'Enter') {
+          ev.preventDefault();
+          var subBtn = document.getElementById('mfSubmit');
+          if (subBtn && !subBtn.disabled) subBtn.click();
+        }
+      };
+      if (!matState.revealed) {
+        try { fillEl.focus(); fillEl.setSelectionRange(fillEl.value.length, fillEl.value.length); } catch (e) {}
+      }
+    }
+    var submit = document.getElementById('mfSubmit');
+    if (submit) submit.onclick = function(){
+      if (matState.revealed) return;
+      var sub = (pack.subQuestions || [])[matState.subIdx];
+      if (!sub) return;
+      var isFill = detectType(sub) === 'fill';
+      if (isFill) {
+        var fillNow = document.getElementById('mfFill');
+        if (fillNow) matState.selected = fillNow.value;
+      }
+      if (!matState.selected || (isFill && !String(matState.selected).trim())) return;
+      matState.revealed = true;
+      matState.sessionAnswered += 1;
+      var ok = isSubCorrect(sub, matState.selected);
+      if (ok) {
+        matState.sessionCorrect += 1;
+        removeLocalWrong(sub.id);
+        // if all subs of pack correct eventually, also clear pack id if present
+      } else {
+        addLocalWrong(sub.id);
+        addLocalWrong(pack.id);
+      }
+      renderCailiaoPackUI(pack);
+    };
+    var next = document.getElementById('mfNext');
+    if (next) next.onclick = function(){
+      matState.subIdx += 1;
+      matState.selected = null;
+      matState.revealed = false;
+      renderCailiaoPackUI(pack);
+    };
+    var skip = document.getElementById('mfSkip');
+    if (skip) skip.onclick = function(){
+      matState.subIdx += 1;
+      matState.selected = null;
+      matState.revealed = false;
+      renderCailiaoPackUI(pack);
+    };
+  }
+
+
   function render() {
     var r = parseRoute();
     r.parts = r.parts.map(function(p){ return p.split('?')[0]; });
@@ -1339,6 +1659,10 @@ ul.plain li { margin-bottom: 0.3rem; }
       if (r.parts.length >= 3) { viewLesson(r.parts[1], r.parts[2]); return; }
     }
     if (r.root === 'shuati') { viewShuati(); return; }
+    if (r.root === 'cailiao') {
+      if (r.parts.length >= 2 && r.parts[1]) { viewCailiaoPack(r.parts[1]); return; }
+      viewCailiaoList(); return;
+    }
     if (r.root === 'zhongkao') {
       if (r.parts.length === 1) { viewZkHome(); return; }
       var sub = r.parts[1];
