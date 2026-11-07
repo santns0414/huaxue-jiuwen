@@ -11162,5 +11162,209 @@
     "knowledgePoints": [
       "向上排空气法"
     ]
+  },
+  {
+    "id": "sz-fill-001",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2024,
+    "source": "深圳考情填空样例（九年级上册）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "实验室用高锰酸钾制取氧气，反应的化学方程式是 ____。",
+    "options": [],
+    "answer": "2KMnO4=K2MnO4+MnO2+O2↑",
+    "answerAccept": [
+      "2KMnO4→K2MnO4+MnO2+O2↑",
+      "2KMnO₄=K₂MnO₄+MnO₂+O₂↑",
+      "2KMnO4△K2MnO4+MnO2+O2↑",
+      "2KMnO4=K2MnO4+MnO2+O2"
+    ],
+    "explanation": "高锰酸钾受热分解生成锰酸钾、二氧化锰和氧气。配平后氧气标↑；条件为加热。",
+    "tags": [
+      "oxygen_prep",
+      "chemical_equation"
+    ],
+    "knowledgePoints": [
+      "高锰酸钾制氧",
+      "化学方程式"
+    ]
+  },
+  {
+    "id": "sz-fill-002",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2024,
+    "source": "深圳考情填空样例（九年级上册）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "过氧化氢在二氧化锰催化下分解制氧气的化学方程式是 ____。",
+    "options": [],
+    "answer": "2H2O2=2H2O+O2↑",
+    "answerAccept": [
+      "2H2O2→2H2O+O2↑",
+      "2H₂O₂=2H₂O+O₂↑",
+      "2H2O2=MnO2=2H2O+O2↑",
+      "2H2O2→(MnO2)2H2O+O2↑",
+      "2H2O2=2H2O+O2"
+    ],
+    "explanation": "过氧化氢分解：2H₂O₂ →(MnO₂) 2H₂O + O₂↑。MnO₂是催化剂。判分时写对主要产物与配平即可。",
+    "tags": [
+      "oxygen_prep",
+      "catalyst"
+    ],
+    "knowledgePoints": [
+      "过氧化氢制氧",
+      "催化剂"
+    ]
+  },
+  {
+    "id": "sz-fill-003",
+    "unitId": "u4",
+    "lessonId": "u4t3",
+    "year": 2024,
+    "source": "深圳考情填空样例（九年级上册）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "电解水时，与电源负极相连的一端产生的气体是 ____（写化学式）。",
+    "options": [],
+    "answer": "H2",
+    "answerAccept": [
+      "H₂",
+      "氢气",
+      "氢"
+    ],
+    "explanation": "口诀「正氧负氢」：负极产生氢气 H₂，正极产生氧气 O₂，体积比约 2:1。",
+    "tags": [
+      "water_electrolysis"
+    ],
+    "knowledgePoints": [
+      "电解水",
+      "氢气"
+    ]
+  },
+  {
+    "id": "sz-fill-004",
+    "unitId": "u5",
+    "lessonId": "u5t1",
+    "year": 2024,
+    "source": "深圳考情填空样例（九年级上册）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "质量守恒定律的微观本质是：化学反应前后，____ 的种类、数目、质量都不变。（填「原子」或「分子」）",
+    "options": [],
+    "answer": "原子",
+    "answerAccept": [
+      "原子的",
+      "原子种类数目质量"
+    ],
+    "explanation": "分子会破裂重组，不变的是原子的种类、数目与质量。",
+    "tags": [
+      "mass_conservation"
+    ],
+    "knowledgePoints": [
+      "质量守恒定律"
+    ]
+  },
+  {
+    "id": "sz-fill-005",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情填空样例（九年级上册）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "实验室用大理石（或石灰石）与稀盐酸制取二氧化碳的化学方程式是 ____。",
+    "options": [],
+    "answer": "CaCO3+2HCl=CaCl2+H2O+CO2↑",
+    "answerAccept": [
+      "CaCO3+2HCl→CaCl2+H2O+CO2↑",
+      "CaCO₃+2HCl=CaCl₂+H₂O+CO₂↑",
+      "CaCO3+2HCl=CaCl2+H2O+CO2"
+    ],
+    "explanation": "CaCO₃ + 2HCl = CaCl₂ + H₂O + CO₂↑。一般不用稀硫酸（生成微溶 CaSO₄ 覆盖表面）。",
+    "tags": [
+      "CO2_prep",
+      "chemical_equation"
+    ],
+    "knowledgePoints": [
+      "二氧化碳制取"
+    ]
+  },
+  {
+    "id": "sz-fill-006",
+    "unitId": "u3",
+    "lessonId": "u3t4",
+    "year": 2024,
+    "source": "深圳考情填空样例（九年级上册）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "铝元素化合价为 +3，氧元素化合价为 −2，氧化铝的化学式是 ____。",
+    "options": [],
+    "answer": "Al2O3",
+    "answerAccept": [
+      "Al₂O₃",
+      "al2o3"
+    ],
+    "explanation": "交叉互写：Al₂O₃。化合物中正负化合价代数和为 0。",
+    "tags": [
+      "formula_from_valence"
+    ],
+    "knowledgePoints": [
+      "化学式",
+      "化合价"
+    ]
+  },
+  {
+    "id": "sz-fill-007",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情填空样例（九年级上册）",
+    "difficulty": 1,
+    "type": "fill",
+    "stem": "燃烧需要同时满足的三个条件是：可燃物、____、温度达到着火点。",
+    "options": [],
+    "answer": "氧气",
+    "answerAccept": [
+      "O2",
+      "O₂",
+      "空气",
+      "氧气或空气",
+      "与氧气接触"
+    ],
+    "explanation": "燃烧三条件：可燃物、氧气（或空气）、温度达到着火点。灭火即破坏其中之一。",
+    "tags": [
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "燃烧条件"
+    ]
+  },
+  {
+    "id": "sz-fill-008",
+    "unitId": "u6",
+    "lessonId": "u6t3",
+    "year": 2024,
+    "source": "深圳考情填空样例（九年级上册）",
+    "difficulty": 2,
+    "type": "fill",
+    "stem": "检验二氧化碳的常用试剂是澄清石灰水，反应的化学方程式是 ____。",
+    "options": [],
+    "answer": "CO2+Ca(OH)2=CaCO3↓+H2O",
+    "answerAccept": [
+      "CO2+Ca(OH)2→CaCO3↓+H2O",
+      "CO₂+Ca(OH)₂=CaCO₃↓+H₂O",
+      "Ca(OH)2+CO2=CaCO3↓+H2O",
+      "CO2+Ca(OH)2=CaCO3+H2O"
+    ],
+    "explanation": "CO₂ + Ca(OH)₂ = CaCO₃↓ + H₂O，现象是澄清石灰水变浑浊。",
+    "tags": [
+      "CO2_property",
+      "chemical_equation"
+    ],
+    "knowledgePoints": [
+      "二氧化碳检验"
+    ]
   }
 ]

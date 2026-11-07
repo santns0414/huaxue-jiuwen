@@ -491,6 +491,20 @@ ul.plain li { margin-bottom: 0.3rem; }
   padding: 1.2rem; text-align: center; color: var(--text-muted);
   background: var(--card); border: 1px dashed var(--card-border); border-radius: var(--radius);
 }
+
+.fill-row { display: flex; flex-direction: column; gap: 0.45rem; margin-bottom: 0.25rem; }
+.fill-input {
+  width: 100%; font-family: inherit; font-size: 0.95rem;
+  padding: 0.7rem 0.85rem; border-radius: 10px;
+  border: 1px solid var(--card-border); background: var(--bg-soft); color: var(--text);
+  line-height: 1.5;
+}
+.fill-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 25%, transparent); }
+.fill-input:disabled { opacity: 0.85; }
+.fill-input.ok { border-color: var(--d6b); background: var(--d6); color: var(--d6t); }
+.fill-input.bad { border-color: var(--d2b); background: var(--d2); color: var(--d2t); }
+.fill-hint { font-size: 0.78rem; color: var(--text-muted); }
+.type-chip-fill { border-color: color-mix(in srgb, var(--d4b) 70%, var(--card-border)); }
 @media (max-width: 720px) {
   .quiz-filters { gap: 0.45rem; padding: 0.65rem 0.7rem; }
   .quiz-card .stem { font-size: 0.98rem; }
@@ -735,7 +749,7 @@ ul.plain li { margin-bottom: 0.3rem; }
       '<div class="home-unit-grid">' + units + '</div>' +
       '<div class="grid-2" style="margin-top:1rem">' +
       '<button type="button" class="entry-card" data-go="shuati"><h3>刷题练习</h3>' +
-      '<p>深圳风格九年级化学选择题。可按错题、难度、单元筛选；错题本保存在本机。</p>' +
+      '<p>深圳风格九年级化学练习（单选 / 判断 / 填空）。可按错题、难度、单元筛选；错题本保存在本机。</p>' +
       '<div class="go">开始刷题 →</div></button>' +
       '<button type="button" class="entry-card" data-go="zhongkao"><h3>中考趋势</h3>' +
       '<p>2021–2025 化学备考要点：计算、实验探究、推断与情境决策。</p>' +
@@ -1034,6 +1048,82 @@ ul.plain li { margin-bottom: 0.3rem; }
     return '—';
   }
 
+  function typeLabel(q) {
+    var t = detectType(q);
+    if (t === 'fill') return '填空';
+    if (t === 'judge') return '判断';
+    return '单选';
+  }
+
+  function detectType(q) {
+    if (!q) return 'single';
+    if (q.type === 'fill' || q.type === 'judge' || q.type === 'single') return q.type;
+    var opts = q.options || [];
+    var ans = (q.answer == null ? '' : String(q.answer)).trim();
+    if ((!opts || !opts.length) && ans && !/^[A-Da-d对错√×YN]$/i.test(ans) && ans.length > 1) return 'fill';
+    if (opts && opts.length === 2) {
+      var texts = opts.map(function(o){ return String(o.text || ''); });
+      if (texts.indexOf('正确') >= 0 || texts.indexOf('错误') >= 0 || texts.indexOf('对') >= 0) return 'judge';
+    }
+    return 'single';
+  }
+
+  function normalizeFillAnswer(s) {
+    if (s == null) return '';
+    var t = String(s);
+    // fullwidth -> halfwidth digits/letters/punct common in chem
+    t = t.replace(/[\uFF01-\uFF5E]/g, function(ch) {
+      return String.fromCharCode(ch.charCodeAt(0) - 0xFEE0);
+    });
+    t = t.replace(/\u3000/g, ' ');
+    // unify arrows / equals variants
+    t = t.replace(/＝/g, '=').replace(/→|⟶|ｰ>|—>|－>/g, '→');
+    t = t.replace(/↑/g, '↑').replace(/↓/g, '↓');
+    t = t.replace(/△/g, 'Δ');
+    // strip spaces and common separators noise
+    t = t.replace(/\s+/g, '');
+    // lowercase latin
+    t = t.toLowerCase();
+    // Chinese condition synonyms light normalize
+    t = t.replace(/加热/g, '加热').replace(/点燃/g, '点燃');
+    return t;
+  }
+
+  function fillAnswersEqual(user, expected) {
+    var a = normalizeFillAnswer(user);
+    var b = normalizeFillAnswer(expected);
+    if (!a || !b) return false;
+    if (a === b) return true;
+    // also try without condition markers in parentheses/above arrow noise
+    var stripCond = function(x){
+      return x.replace(/[\(（][^）\)]*[\)）]/g, '')
+              .replace(/→[^↑↓=]*$/,'→')
+              .replace(/[=＝][^↑↓]*$/,'=');
+    };
+    // more lenient: remove heat/catalyst words for formula-only compare when both have formula chars
+    var stripWords = function(x){
+      return x.replace(/加热|点燃|通电|催化剂|mno2|mnо2|高温|条件/gi, '');
+    };
+    if (stripWords(a) && stripWords(a) === stripWords(b)) return true;
+    return false;
+  }
+
+  function isFillCorrect(q, userInput) {
+    var cands = [];
+    if (q.answer != null && String(q.answer).trim() !== '') cands.push(String(q.answer));
+    var acc = q.answerAccept;
+    if (Array.isArray(acc)) {
+      acc.forEach(function(x){ if (x != null && String(x).trim() !== '') cands.push(String(x)); });
+    } else if (typeof acc === 'string' && acc.trim()) {
+      cands.push(acc);
+    }
+    for (var i = 0; i < cands.length; i++) {
+      if (fillAnswersEqual(userInput, cands[i])) return true;
+    }
+    return false;
+  }
+
+
   function viewShuati() {
     crumb([{label:'主页', hash:'home'},{label:'刷题', hash:'shuati'}]);
     updateSiteNav();
@@ -1084,27 +1174,45 @@ ul.plain li { margin-bottom: 0.3rem; }
         '<div class="quiz-actions" style="justify-content:center"><button type="button" class="btn-primary" id="qfAgain">再来一轮</button></div></div>';
     } else {
       var q = quizState.pool[quizState.idx];
-      var opts = (q.options || []).map(function(o){
-        var cls = 'opt-btn';
-        if (quizState.revealed) {
-          if (o.key === q.answer) cls += ' correct';
-          else if (quizState.selected === o.key) cls += ' wrong';
-        } else if (quizState.selected === o.key) {
-          cls += ' selected';
-        }
-        return '<button type="button" class="' + cls + '" data-key="' + esc(o.key) + '"' +
-          (quizState.revealed ? ' disabled' : '') + '><strong>' + esc(o.key) + '.</strong> ' + esc(o.text) + '</button>';
-      }).join('');
+      var qType = detectType(q);
+      var isFill = qType === 'fill';
+      var answerArea = '';
+      if (isFill) {
+        var fillCls = 'fill-input';
+        if (quizState.revealed) fillCls += (isFillCorrect(q, quizState.selected || '') ? ' ok' : ' bad');
+        answerArea =
+          '<div class="fill-row">' +
+          '<input type="text" class="' + fillCls + '" id="qfFill" placeholder="在此填写答案（化学式 / 方程式 / 简答）" ' +
+          (quizState.revealed ? 'disabled ' : '') +
+          'value="' + esc(quizState.selected || '') + '" autocomplete="off" spellcheck="false" />' +
+          '<div class="fill-hint">填空题：忽略大小写与空格；可用半角。方程式可用 = 或 →。</div>' +
+          '</div>';
+      } else {
+        var opts = (q.options || []).map(function(o){
+          var cls = 'opt-btn';
+          if (quizState.revealed) {
+            if (o.key === q.answer) cls += ' correct';
+            else if (quizState.selected === o.key) cls += ' wrong';
+          } else if (quizState.selected === o.key) {
+            cls += ' selected';
+          }
+          return '<button type="button" class="' + cls + '" data-key="' + esc(o.key) + '"' +
+            (quizState.revealed ? ' disabled' : '') + '><strong>' + esc(o.key) + '.</strong> ' + esc(o.text) + '</button>';
+        }).join('');
+        answerArea = '<div class="opt-list">' + opts + '</div>';
+      }
       var fb = '';
       if (quizState.revealed) {
-        var ok = quizState.selected === q.answer;
+        var ok = isFill ? isFillCorrect(q, quizState.selected || '') : (quizState.selected === q.answer);
+        var ansShow = isFill ? String(q.answer || '') : String(q.answer || '');
         fb = '<div class="quiz-feedback ' + (ok ? 'ok' : 'bad') + '">' +
-          (ok ? '✓ 回答正确' : '✗ 回答错误，正确答案：' + esc(q.answer)) +
+          (ok ? '✓ 回答正确' : ('✗ 回答错误，正确答案：' + esc(ansShow))) +
           (q.explanation ? '<br/>' + esc(q.explanation) : '') + '</div>';
       }
+      var canSubmit = isFill ? !!(quizState.selected && String(quizState.selected).trim()) : !!quizState.selected;
       var actions = '<div class="quiz-actions">';
       if (!quizState.revealed) {
-        actions += '<button type="button" class="btn-primary" id="qfSubmit" ' + (!quizState.selected ? 'disabled' : '') + '>提交</button>';
+        actions += '<button type="button" class="btn-primary" id="qfSubmit" ' + (!canSubmit ? 'disabled' : '') + '>提交</button>';
       } else {
         actions += '<button type="button" class="btn-primary" id="qfNext">下一题</button>';
       }
@@ -1112,15 +1220,16 @@ ul.plain li { margin-bottom: 0.3rem; }
       body = '<div class="quiz-card">' +
         '<div class="q-meta"><span class="chip">' + esc(unitShortLabel(q.unitId)) + '</span>' +
         '<span class="chip">难度·' + esc(diffLabel(q.difficulty)) + '</span>' +
+        '<span class="chip type-chip-' + esc(qType) + '">' + esc(typeLabel(q)) + '</span>' +
         '<span class="chip">' + esc(q.source || '') + (q.year ? ' · ' + q.year : '') + '</span>' +
         '<span class="chip">第 ' + (quizState.idx + 1) + ' / ' + poolN + ' 题</span></div>' +
         '<div class="stem">' + esc(q.stem) + '</div>' +
-        '<div class="opt-list">' + opts + '</div>' + fb + actions + '</div>';
+        answerArea + fb + actions + '</div>';
     }
 
     app.innerHTML = backBtn('home','返回主页') +
       '<div class="hero"><h2>刷题练习</h2>' +
-      '<p>深圳九年级上册化学练习（约 310 道，含单选与判断）。支持错题 / 难度 / 单元筛选；答错自动记入本机错题。</p></div>' +
+      '<p>深圳九年级上册化学练习（单选 / 判断 / 填空）。支持错题 / 难度 / 单元筛选；答错自动记入本机错题。</p></div>' +
       filters + meta + body +
       '<p class="footer-note">错题筛选：本机答错 ∪ wrong-topics.json（优先 questionIds；否则匹配 knowledgePoints / tags / topicIds，并兼容 wrong-topic-map 中的 topic id）。</p>';
 
@@ -1160,13 +1269,39 @@ ul.plain li { margin-bottom: 0.3rem; }
         renderShuatiUI();
       };
     });
+    var fillEl = document.getElementById('qfFill');
+    if (fillEl) {
+      fillEl.oninput = function(){
+        if (quizState.revealed) return;
+        quizState.selected = fillEl.value;
+        var sub = document.getElementById('qfSubmit');
+        if (sub) sub.disabled = !String(fillEl.value || '').trim();
+      };
+      fillEl.onkeydown = function(ev){
+        if (ev.key === 'Enter') {
+          ev.preventDefault();
+          var sub = document.getElementById('qfSubmit');
+          if (sub && !sub.disabled) sub.click();
+        }
+      };
+      if (!quizState.revealed) {
+        try { fillEl.focus(); fillEl.setSelectionRange(fillEl.value.length, fillEl.value.length); } catch (e) {}
+      }
+    }
     var submit = document.getElementById('qfSubmit');
     if (submit) submit.onclick = function(){
-      if (!quizState.selected || quizState.revealed) return;
+      if (quizState.revealed) return;
       var q = quizState.pool[quizState.idx];
+      var isFill = detectType(q) === 'fill';
+      if (isFill) {
+        var fillNow = document.getElementById('qfFill');
+        if (fillNow) quizState.selected = fillNow.value;
+      }
+      if (!quizState.selected || (isFill && !String(quizState.selected).trim())) return;
       quizState.revealed = true;
       quizState.sessionAnswered += 1;
-      if (quizState.selected === q.answer) {
+      var ok = isFill ? isFillCorrect(q, quizState.selected) : (quizState.selected === q.answer);
+      if (ok) {
         quizState.sessionCorrect += 1;
         removeLocalWrong(q.id);
       } else {
