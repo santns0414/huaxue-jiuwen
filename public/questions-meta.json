@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "generatedAt": "2026-11-07T13:35:00+08:00",
+  "version": 3,
+  "generatedAt": "2026-11-07T14:10:00+08:00",
   "source": "深圳考情原创（九年级上册）",
   "total": 410,
   "byUnit": {
@@ -116,5 +116,45 @@
     "first": "sz-2024-311",
     "last": "sz-2024-410"
   },
-  "notes": "含单选/判断/填空；填空 type=fill，stem 含 ____；原创非试卷原文；可按难度/错题知识点筛选。"
+  "notes": "含单选/判断/填空共410道（questions.json）；另有材料题30组见 questions-material.json；可按难度/错题知识点筛选。",
+  "material": {
+    "file": "questions-material.json",
+    "count": 30,
+    "idRange": {
+      "first": "sz-mat-001",
+      "last": "sz-mat-030"
+    },
+    "byUnit": {
+      "u1": 4,
+      "u2": 5,
+      "u3": 5,
+      "u4": 4,
+      "u5": 4,
+      "u6": 4,
+      "u7": 4
+    },
+    "byDifficulty": {
+      "1": 9,
+      "2": 14,
+      "3": 7
+    },
+    "subQuestionCount": 97,
+    "subByType": {
+      "single": 34,
+      "fill": 38,
+      "judge": 25
+    },
+    "wrongTopicTagsOnSets": {
+      "gas_collect_direction": 3,
+      "long_neck_funnel": 2,
+      "chem_change_min_particle": 2,
+      "molecule_motion_temp": 2,
+      "molecule_atom_constitute": 1,
+      "element_definition": 2,
+      "formula_from_valence": 1,
+      "water_formula": 3,
+      "element_mass_calc": 2
+    },
+    "notes": "材料题独立题库，不并入 questions.json 扁平列表；type=material，含 material + subQuestions。"
+  }
 }

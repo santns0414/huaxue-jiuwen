@@ -2,317 +2,2493 @@
   {
     "id": "sz-mat-001",
     "type": "material",
-    "unitId": "u2",
-    "lessonId": "u2t3",
+    "unitId": "u1",
+    "lessonId": "u1t1",
     "year": 2024,
-    "source": "深圳九年级上册·样例材料题",
-    "difficulty": 2,
-    "title": "实验室制取氧气",
-    "material": "小明小组在实验室用高锰酸钾制取氧气。实验步骤大致为：检查装置气密性→装入药品（试管口放一团棉花）→固定试管（管口略向下倾斜）→加热→用排水法收集氧气→实验结束时先撤导管再熄灭酒精灯。收集到的氧气用于铁丝燃烧演示：铁丝绕成螺旋状，一端系火柴，点燃后伸入集气瓶，瓶底预先放少量水。",
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 1,
+    "title": "对蜡烛燃烧的探究",
+    "material": "某小组按教材步骤观察蜡烛燃烧：点燃前记录蜡烛外观与状态；点燃后观察火焰分层、石蜡熔化与灯芯周围白烟；熄灭后迅速用燃着的木条去引白烟。实验中还用一只干燥冷烧杯罩在火焰上方，烧杯内壁出现水雾；另用内壁涂有澄清石灰水的烧杯罩住火焰片刻。",
     "tags": [
-      "oxygen_prep",
-      "gas_collect"
+      "chemical_change",
+      "combustion",
+      "inquiry"
     ],
     "knowledgePoints": [
-      "高锰酸钾制氧",
-      "排水法收集",
-      "铁丝燃烧"
+      "物理变化与化学变化",
+      "蜡烛燃烧产物"
     ],
     "subQuestions": [
       {
         "id": "sz-mat-001-1",
         "type": "single",
-        "stem": "试管口放置棉花的主要作用是",
+        "stem": "石蜡受热熔化属于：",
         "options": [
           {
             "key": "A",
-            "text": "防止加热时试管炸裂"
+            "text": "化学变化"
           },
           {
             "key": "B",
-            "text": "防止固体粉末进入导管堵塞"
+            "text": "物理变化"
           },
           {
             "key": "C",
-            "text": "吸收反应生成的水分"
+            "text": "既是物理又是化学变化"
           },
           {
             "key": "D",
-            "text": "加快氧气产生的速率"
+            "text": "无法判断"
           }
         ],
         "answer": "B",
-        "explanation": "加热高锰酸钾时，棉花可挡住固体粉末，防止进入导管堵塞。",
+        "explanation": "熔化只改变状态，没有新物质生成，属于物理变化。",
         "difficulty": 1
       },
       {
         "id": "sz-mat-001-2",
         "type": "single",
-        "stem": "用排水法收集氧气结束后，正确的操作顺序是",
+        "stem": "用燃着的木条去引熄灭后的白烟，白烟能燃烧，说明白烟主要是：",
         "options": [
           {
             "key": "A",
-            "text": "先熄灭酒精灯，再撤出导管"
+            "text": "水蒸气"
           },
           {
             "key": "B",
-            "text": "先撤出导管，再熄灭酒精灯"
+            "text": "二氧化碳"
           },
           {
             "key": "C",
-            "text": "同时熄灯并撤导管"
+            "text": "石蜡蒸气"
           },
           {
             "key": "D",
-            "text": "先打开橡皮塞，再熄灯"
+            "text": "氮气"
           }
         ],
-        "answer": "B",
-        "explanation": "先撤导管再熄灯，可防止水槽中的水倒吸入热试管导致炸裂。",
+        "answer": "C",
+        "explanation": "熄灭瞬间逸出的白烟主要是石蜡蒸气，可被点燃。",
         "difficulty": 2
       },
       {
         "id": "sz-mat-001-3",
         "type": "fill",
-        "stem": "写出加热高锰酸钾制取氧气的化学方程式（可用 = 或 →）。",
-        "answer": "2KMnO₄=加热=K₂MnO₄+MnO₂+O₂↑",
+        "stem": "烧杯内壁出现水雾，说明蜡烛燃烧产物之一是____；石灰水变浑浊说明产物还有____。",
+        "options": [],
+        "answer": "水（或H₂O）；二氧化碳（或CO₂）",
         "answerAccept": [
-          "2KMnO₄→(加热)K₂MnO₄+MnO₂+O₂↑",
-          "2KMnO4=(加热)K2MnO4+MnO2+O2↑",
-          "2KMnO₄=△=K₂MnO₄+MnO₂+O₂↑",
-          "2KMnO4→K2MnO4+MnO2+O2↑",
-          "2KMnO₄→K₂MnO₄+MnO₂+O₂↑"
+          "H₂O；CO₂",
+          "水；二氧化碳",
+          "H2O；CO2",
+          "水；CO₂"
         ],
-        "explanation": "2KMnO₄ →(加热) K₂MnO₄ + MnO₂ + O₂↑",
+        "explanation": "蜡烛燃烧生成水和二氧化碳，可用冷烧杯与石灰水分别检验。",
         "difficulty": 2
-      },
-      {
-        "id": "sz-mat-001-4",
-        "type": "judge",
-        "stem": "铁丝在氧气中燃烧时，集气瓶底放少量水是为了防止高温熔融物溅落炸裂瓶底。",
-        "options": [
-          {
-            "key": "A",
-            "text": "正确"
-          },
-          {
-            "key": "B",
-            "text": "错误"
-          }
-        ],
-        "answer": "A",
-        "explanation": "瓶底放水（或细沙）可缓冲高温熔融物，防止炸裂。",
-        "difficulty": 1
       }
     ]
   },
   {
     "id": "sz-mat-002",
     "type": "material",
-    "unitId": "u6",
-    "lessonId": "u6t2",
-    "year": 2023,
-    "source": "深圳九年级上册·样例材料题",
+    "unitId": "u1",
+    "lessonId": "u1t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
     "difficulty": 2,
-    "title": "二氧化碳的实验室制取",
-    "material": "实验室常用大理石（主要成分为碳酸钙）与稀盐酸反应制取二氧化碳。发生装置属于固液不加热型。收集时一般采用向上排空气法；检验时可将气体通入澄清石灰水，若变浑浊则证明是二氧化碳；验满时可将燃着的木条放在集气瓶口，木条熄灭说明已满。有同学提出改用稀硫酸代替稀盐酸，或改用碳酸钠粉末代替大理石。",
+    "title": "实验室仪器选用与操作",
+    "material": "小明配制并加热某溶液时依次用到：托盘天平称取固体、量筒量取液体、烧杯溶解、玻璃棒搅拌、酒精灯加热。操作中出现：①天平砝码放左盘、药品放右盘；②量取液体时俯视凹液面最低处；③加热烧杯时未垫石棉网；④用完酒精灯后用嘴吹灭。",
     "tags": [
-      "co2_prep",
-      "acid_carbonate"
+      "lab_basic",
+      "lab_safety"
     ],
     "knowledgePoints": [
-      "实验室制CO₂",
-      "澄清石灰水检验",
-      "验满"
+      "常用仪器",
+      "基本实验操作"
     ],
     "subQuestions": [
       {
         "id": "sz-mat-002-1",
         "type": "single",
-        "stem": "实验室制取 CO₂ 一般不用稀硫酸与大理石反应，主要原因是",
+        "stem": "上述错误操作中，直接违反酒精灯使用规则的是：",
         "options": [
           {
             "key": "A",
-            "text": "稀硫酸不能与碳酸钙反应"
+            "text": "①"
           },
           {
             "key": "B",
-            "text": "生成微溶的硫酸钙覆盖表面使反应逐渐停止"
+            "text": "②"
           },
           {
             "key": "C",
-            "text": "反应会放出有毒气体"
+            "text": "③"
           },
           {
             "key": "D",
-            "text": "稀硫酸具有强氧化性"
+            "text": "④"
           }
         ],
-        "answer": "B",
-        "explanation": "生成微溶 CaSO₄ 覆盖在大理石表面，阻碍反应继续进行。",
-        "difficulty": 2
+        "answer": "D",
+        "explanation": "酒精灯应用灯帽盖灭，禁止用嘴吹灭。",
+        "difficulty": 1
       },
       {
         "id": "sz-mat-002-2",
         "type": "fill",
-        "stem": "写出大理石与稀盐酸反应的化学方程式。",
-        "answer": "CaCO₃+2HCl=CaCl₂+H₂O+CO₂↑",
+        "stem": "托盘天平称量时应遵循「____物____码」；加热烧杯需垫____。",
+        "options": [],
+        "answer": "左；右；石棉网",
         "answerAccept": [
-          "CaCO3+2HCl=CaCl2+H2O+CO2↑",
-          "CaCO₃+2HCl→CaCl₂+H₂O+CO₂↑",
-          "CaCO3+2HCl→CaCl2+H2O+CO2↑"
+          "左;右;石棉网",
+          "左 右 石棉网"
         ],
-        "explanation": "CaCO₃ + 2HCl = CaCl₂ + H₂O + CO₂↑",
+        "explanation": "左物右码；烧杯加热必须垫石棉网防炸裂。",
         "difficulty": 2
       },
       {
         "id": "sz-mat-002-3",
-        "type": "single",
-        "stem": "下列关于 CO₂ 收集与检验的说法正确的是",
-        "options": [
-          {
-            "key": "A",
-            "text": "常用排水法大量收集，因为 CO₂ 极易溶于水"
-          },
-          {
-            "key": "B",
-            "text": "验满方法是将燃着木条伸入瓶内观察是否熄灭"
-          },
-          {
-            "key": "C",
-            "text": "通入澄清石灰水变浑浊可用于检验 CO₂"
-          },
-          {
-            "key": "D",
-            "text": "密度比空气小，应采用向下排空气法收集"
-          }
-        ],
-        "answer": "C",
-        "explanation": "CO₂ 能溶于水且可与水反应，一般不宜用排水法；验满在瓶口；密度比空气大，用向上排空气法；石灰水变浑浊是检验方法。",
-        "difficulty": 2
-      },
-      {
-        "id": "sz-mat-002-4",
         "type": "judge",
-        "stem": "用碳酸钠粉末代替大理石与稀盐酸反应，反应速率往往过快，不易控制收集。",
+        "stem": "俯视量筒读数会使量取的实际液体体积偏小。",
         "options": [
           {
-            "key": "A",
-            "text": "正确"
+            "key": "对",
+            "text": "对"
           },
           {
-            "key": "B",
-            "text": "错误"
+            "key": "错",
+            "text": "错"
           }
         ],
-        "answer": "A",
-        "explanation": "粉末与酸接触面积大，反应剧烈，实验室通常选用块状大理石/石灰石以便控制。",
-        "difficulty": 1
+        "answer": "对",
+        "explanation": "俯视时读数偏大，实际体积偏小。",
+        "difficulty": 2
       }
     ]
   },
   {
     "id": "sz-mat-003",
     "type": "material",
-    "unitId": "u8",
-    "lessonId": "u8t2",
-    "year": 2025,
-    "source": "深圳九年级上册·样例材料题",
-    "difficulty": 3,
-    "title": "金属活动性顺序的探究",
-    "material": "兴趣小组为比较锌、铁、铜三种金属的活动性强弱，进行了下列实验：①将三种金属分别放入等浓度的稀盐酸中，观察反应剧烈程度；②将锌片、铁片分别插入硫酸铜溶液中，观察金属表面与溶液颜色变化。已知金属活动性顺序：Zn > Fe > H > Cu。实验中还观察到：铁钉表面覆盖一层红色固体，溶液由蓝色逐渐变为浅绿色。",
+    "unitId": "u1",
+    "lessonId": "u1t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 1,
+    "title": "物质变化与性质辨析",
+    "material": "给出四组现象：甲—铁丝在空气中缓慢生锈；乙—碘在加热后变为紫色蒸气，冷却后又凝结为固体；丙—石灰石与稀盐酸反应产生气泡；丁—粗盐溶解后过滤得到滤液。同学甲说「有气泡或变色就一定是化学变化」，同学乙说「丁一定发生了化学变化」。",
     "tags": [
-      "metal_activity",
-      "displacement"
+      "chemical_change",
+      "physical_change",
+      "classification"
     ],
     "knowledgePoints": [
-      "金属活动性顺序",
-      "置换反应",
-      "Fe与CuSO₄"
+      "化学变化判断",
+      "过滤"
     ],
     "subQuestions": [
       {
         "id": "sz-mat-003-1",
         "type": "single",
-        "stem": "三种金属与稀盐酸反应时，无明显气泡产生的是",
+        "stem": "属于化学变化的组合是：",
         "options": [
           {
             "key": "A",
-            "text": "锌"
+            "text": "甲、乙"
           },
           {
             "key": "B",
-            "text": "铁"
+            "text": "甲、丙"
           },
           {
             "key": "C",
-            "text": "铜"
+            "text": "乙、丁"
           },
           {
             "key": "D",
-            "text": "锌和铁"
+            "text": "丙、丁"
           }
         ],
-        "answer": "C",
-        "explanation": "铜在氢之后，不能与稀盐酸反应置换出氢气。",
-        "difficulty": 1
+        "answer": "B",
+        "explanation": "生锈、酸碱盐反应有新物质；碘升华是物理变化；过滤是分离混合物。",
+        "difficulty": 2
       },
       {
         "id": "sz-mat-003-2",
-        "type": "fill",
-        "stem": "写出铁与硫酸铜溶液反应的化学方程式。",
-        "answer": "Fe+CuSO₄=FeSO₄+Cu",
-        "answerAccept": [
-          "Fe+CuSO4=FeSO4+Cu",
-          "Fe+CuSO₄→FeSO₄+Cu",
-          "Fe+CuSO4→FeSO4+Cu"
+        "type": "judge",
+        "stem": "有气泡或变色就一定是化学变化。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
         ],
-        "explanation": "Fe + CuSO₄ = FeSO₄ + Cu。生成的 Fe²⁺使溶液呈浅绿色，析出的铜为红色。",
+        "answer": "错",
+        "explanation": "物理变化也可能有气泡（如沸腾）或颜色变化观感，要以是否生成新物质为准。",
         "difficulty": 2
       },
       {
         "id": "sz-mat-003-3",
+        "type": "fill",
+        "stem": "丁过程的主要目的是除去____，属于____变化。",
+        "options": [],
+        "answer": "难溶性杂质；物理",
+        "answerAccept": [
+          "不溶物；物理",
+          "固体杂质；物理",
+          "难溶杂质；物理"
+        ],
+        "explanation": "过滤分离不溶物，无新物质生成。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-004",
+    "type": "material",
+    "unitId": "u1",
+    "lessonId": "u1t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 1,
+    "title": "药品取用与安全",
+    "material": "实验室规则摘录：①不能用手直接接触药品；②不要把鼻孔凑到容器口闻气味；③禁止用嘴尝药品；④剩余药品不得放回原瓶，应放入指定容器。某同学用完稀盐酸后，将剩余盐酸倒回原试剂瓶，并把滴管尖嘴朝上放置在桌边。",
+    "tags": [
+      "lab_safety",
+      "lab_basic"
+    ],
+    "knowledgePoints": [
+      "药品取用",
+      "实验安全"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-004-1",
         "type": "single",
-        "stem": "根据实验现象与活动性顺序，下列推断正确的是",
+        "stem": "该同学的错误主要违反了哪一条？",
         "options": [
           {
             "key": "A",
-            "text": "锌能把铁从其盐溶液中置换出来"
+            "text": "①"
           },
           {
             "key": "B",
-            "text": "铜能把铁从其盐溶液中置换出来"
+            "text": "②"
           },
           {
             "key": "C",
-            "text": "铁与稀盐酸反应生成 FeCl₃ 和 H₂"
+            "text": "③"
           },
           {
             "key": "D",
-            "text": "锌与稀盐酸不反应"
+            "text": "④"
           }
         ],
-        "answer": "A",
-        "explanation": "活动性 Zn > Fe，锌可置换铁盐中的铁；铜不能置换铁；铁与酸通常生成 Fe²⁺（如 FeCl₂），不是 FeCl₃。",
-        "difficulty": 3
+        "answer": "D",
+        "explanation": "剩余药品不得倒回原瓶，以免污染试剂。",
+        "difficulty": 1
       },
       {
-        "id": "sz-mat-003-4",
+        "id": "sz-mat-004-2",
+        "type": "fill",
+        "stem": "闻气体气味的正确方法是____（用手在瓶口轻轻扇动）。",
+        "options": [],
+        "answer": "扇闻法",
+        "answerAccept": [
+          "扇闻",
+          "用手扇闻",
+          "轻轻扇动"
+        ],
+        "explanation": "用手在瓶口轻轻扇动，使极少量气体飘进鼻孔。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-004-3",
         "type": "judge",
-        "stem": "铁与酸、多数盐溶液反应时，通常生成 Fe²⁺ 而不是 Fe³⁺。",
+        "stem": "滴管使用后尖嘴应朝上放置，防止残留液体腐蚀胶帽。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "滴管尖嘴应朝下，不能平放或倒置，防止液体倒流腐蚀胶帽。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-005",
+    "type": "material",
+    "unitId": "u2",
+    "lessonId": "u2t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "测定空气中氧气含量",
+    "material": "用带刻度的集气瓶收集一瓶空气，放入少量红磷，塞紧带导管的塞子后点燃红磷，燃烧结束冷却至室温，打开止水夹，水沿导管进入集气瓶。读数显示进入水的体积约占原空气体积的1/5。实验中有一组测得进入水的体积明显小于1/5。",
+    "tags": [
+      "air_composition",
+      "air_measure",
+      "oxygen_property"
+    ],
+    "knowledgePoints": [
+      "空气组成",
+      "红磷测定氧气含量"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-005-1",
+        "type": "single",
+        "stem": "水进入集气瓶的原因是：",
         "options": [
           {
             "key": "A",
-            "text": "正确"
+            "text": "红磷燃烧生成了水"
           },
           {
             "key": "B",
-            "text": "错误"
+            "text": "氧气被消耗导致气压减小"
+          },
+          {
+            "key": "C",
+            "text": "氮气被红磷吸收"
+          },
+          {
+            "key": "D",
+            "text": "装置漏气使外界气压增大"
+          }
+        ],
+        "answer": "B",
+        "explanation": "红磷消耗氧气，冷却后瓶内气压减小，水被压入。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-005-2",
+        "type": "fill",
+        "stem": "该实验说明空气中氧气约占体积分数的____。",
+        "options": [],
+        "answer": "1/5",
+        "answerAccept": [
+          "20%",
+          "约1/5",
+          "五分之一"
+        ],
+        "explanation": "经典结论：氧气约占空气体积的1/5。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-005-3",
+        "type": "single",
+        "stem": "测得进入水体积明显偏小，不可能的原因是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "红磷量不足，氧气未耗尽"
+          },
+          {
+            "key": "B",
+            "text": "装置漏气"
+          },
+          {
+            "key": "C",
+            "text": "未冷却到室温就打开止水夹"
+          },
+          {
+            "key": "D",
+            "text": "红磷过量"
+          }
+        ],
+        "answer": "D",
+        "explanation": "红磷过量有利于耗尽氧气；不足、漏气、未冷却都会使结果偏小。",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-006",
+    "type": "material",
+    "unitId": "u2",
+    "lessonId": "u2t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "氧气的实验室制取与收集",
+    "material": "小组用高锰酸钾制取氧气：试管口略向下倾斜，靠近管口处放一团棉花，用酒精灯加热，用排水法收集两瓶气体。另有同学主张改用向上排空气法，还有同学误把装置画成向下排空气法。实验结束时，一位同学先熄灭酒精灯再把导管从水中取出。",
+    "tags": [
+      "oxygen_prep",
+      "gas_collect_direction",
+      "lab_safety"
+    ],
+    "knowledgePoints": [
+      "高锰酸钾制氧",
+      "气体收集方法"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-006-1",
+        "type": "single",
+        "stem": "氧气可用的收集方法组合正确的是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "仅向下排空气法"
+          },
+          {
+            "key": "B",
+            "text": "排水法或向上排空气法"
+          },
+          {
+            "key": "C",
+            "text": "仅向下排空气法或排水法"
+          },
+          {
+            "key": "D",
+            "text": "只能排水法"
+          }
+        ],
+        "answer": "B",
+        "explanation": "氧气不易溶于水且密度比空气大，可用排水法或向上排空气法。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-006-2",
+        "type": "fill",
+        "stem": "密度比空气大的气体一般用____排空气法收集；氧气属于此类，瓶口应朝____。",
+        "options": [],
+        "answer": "向上；上",
+        "answerAccept": [
+          "向上;上",
+          "向上；上"
+        ],
+        "explanation": "向上排空气法：瓶口向上。这是易错点 gas_collect_direction。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-006-3",
+        "type": "judge",
+        "stem": "实验结束应先熄灭酒精灯，再把导管从水槽中取出。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "应先撤导管再熄灯，防止水倒吸炸裂试管。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-006-4",
+        "type": "fill",
+        "stem": "管口棉花的作用是防止____进入导管。",
+        "options": [],
+        "answer": "固体粉末（或高锰酸钾粉末）",
+        "answerAccept": [
+          "粉末",
+          "高锰酸钾粉末",
+          "固体粉末",
+          "药品粉末"
+        ],
+        "explanation": "棉花挡住粉末，避免堵塞导管或进入水槽。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-007",
+    "type": "material",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 3,
+    "title": "过氧化氢制氧与催化剂",
+    "material": "常温下向盛有过氧化氢溶液的锥形瓶中加入少量二氧化锰，迅速产生气泡，用带火星木条检验瓶口气体复燃。对比实验：不加二氧化锰几乎无明显气泡；改加少量氧化铜也能加快产生气体；反应结束后过滤、洗涤、干燥，称量剩余黑色固体质量几乎不变，再投入新鲜过氧化氢仍能催化。",
+    "tags": [
+      "oxygen_prep",
+      "catalyst",
+      "oxygen_property"
+    ],
+    "knowledgePoints": [
+      "过氧化氢制氧",
+      "催化剂"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-007-1",
+        "type": "single",
+        "stem": "带火星木条复燃说明生成的气体是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "氢气"
+          },
+          {
+            "key": "B",
+            "text": "二氧化碳"
+          },
+          {
+            "key": "C",
+            "text": "氧气"
+          },
+          {
+            "key": "D",
+            "text": "氮气"
+          }
+        ],
+        "answer": "C",
+        "explanation": "氧气能使带火星木条复燃。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-007-2",
+        "type": "fill",
+        "stem": "二氧化锰在该反应中作____，反应前后其____和化学性质不变。",
+        "options": [],
+        "answer": "催化剂；质量",
+        "answerAccept": [
+          "催化剂;质量",
+          "触媒；质量"
+        ],
+        "explanation": "催化剂改变化学反应速率，本身质量和化学性质反应前后不变。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-007-3",
+        "type": "judge",
+        "stem": "氧化铜也能加快过氧化氢分解，因此氧化铜一定是该反应唯一可用的催化剂。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "多种物质可能有催化作用；「能加快」不等于「唯一」。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-007-4",
+        "type": "single",
+        "stem": "下列关于催化剂的说法正确的是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "催化剂只能加快反应"
+          },
+          {
+            "key": "B",
+            "text": "催化剂一定参加反应但质量减少"
+          },
+          {
+            "key": "C",
+            "text": "催化剂可改变化学反应速率"
+          },
+          {
+            "key": "D",
+            "text": "没有催化剂反应一定不能发生"
+          }
+        ],
+        "answer": "C",
+        "explanation": "催化剂改变化学反应速率（可加快或减慢），本身质量和化学性质不变。",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-008",
+    "type": "material",
+    "unitId": "u2",
+    "lessonId": "u2t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "长颈漏斗制气装置气密性",
+    "material": "用大理石与稀盐酸制取二氧化碳的发生装置中装有长颈漏斗。检查气密性后开始实验：甲组把长颈漏斗下端放在液面以上；乙组把下端伸入液面以下。甲组发现瓶内气压稍大时气体从漏斗口逸出，收集到的气体很少；乙组能顺利用向上排空气法收集。",
+    "tags": [
+      "long_neck_funnel",
+      "CO2_prep",
+      "gas_collect_direction"
+    ],
+    "knowledgePoints": [
+      "长颈漏斗使用",
+      "二氧化碳制取"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-008-1",
+        "type": "single",
+        "stem": "甲组气体从漏斗逸出的主要原因是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "盐酸太稀"
+          },
+          {
+            "key": "B",
+            "text": "漏斗下端未液封"
+          },
+          {
+            "key": "C",
+            "text": "大理石过量"
+          },
+          {
+            "key": "D",
+            "text": "收集方法错误"
+          }
+        ],
+        "answer": "B",
+        "explanation": "长颈漏斗下端必须伸入液面以下形成液封，否则漏气。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-008-2",
+        "type": "fill",
+        "stem": "长颈漏斗下端应伸入____以下；二氧化碳用____排空气法收集。",
+        "options": [],
+        "answer": "液面；向上",
+        "answerAccept": [
+          "液面;向上",
+          "液面以下；向上"
+        ],
+        "explanation": "液封防漏气；CO₂密度比空气大，用向上排空气法。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-008-3",
+        "type": "judge",
+        "stem": "二氧化碳一般可用排水法大量收集。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "二氧化碳能溶于水且与水反应，一般不用排水法（或需特殊处理）。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-009",
+    "type": "material",
+    "unitId": "u2",
+    "lessonId": "u2t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 1,
+    "title": "氧气性质与用途对照",
+    "material": "资料卡：①铁丝在氧气中剧烈燃烧，火星四射，生成黑色固体；②木炭在氧气中比在空气中燃烧更旺，生成使石灰水变浑浊的气体；③硫在氧气中燃烧发出明亮蓝紫色火焰；④氧气用于炼钢、气焊、急救、宇航等。同学据此完成填空与判断。",
+    "tags": [
+      "oxygen_property",
+      "combustion"
+    ],
+    "knowledgePoints": [
+      "氧气化学性质",
+      "氧气用途"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-009-1",
+        "type": "fill",
+        "stem": "铁丝在氧气中燃烧的文字表达式可写成：铁＋氧气____四氧化三铁（条件：点燃）。",
+        "options": [],
+        "answer": "→",
+        "answerAccept": [
+          "→",
+          "=",
+          "→(点燃)"
+        ],
+        "explanation": "反应条件为点燃，生成物为Fe₃O₄。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-009-2",
+        "type": "single",
+        "stem": "木炭燃烧产物使石灰水变浑浊，该产物是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "CO"
+          },
+          {
+            "key": "B",
+            "text": "CO₂"
+          },
+          {
+            "key": "C",
+            "text": "SO₂"
+          },
+          {
+            "key": "D",
+            "text": "H₂O"
+          }
+        ],
+        "answer": "B",
+        "explanation": "碳充分燃烧生成二氧化碳。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-009-3",
+        "type": "judge",
+        "stem": "氧气具有可燃性，因而可用于气焊。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "氧气支持燃烧（助燃），本身一般不称为可燃性气体；气焊利用氧气助燃产生高温。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-010",
+    "type": "material",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "分子原子概念情境",
+    "material": "阅读材料：①保持水的化学性质的最小粒子是水分子；②水电解生成氢气和氧气时，水分子分成氢原子和氧原子，原子重新组合成氢分子和氧分子；③升温后湿衣服更快干；④同温同压下，1升氧气与1升臭氧所含分子数相同，但氧原子总数不同。",
+    "tags": [
+      "chem_change_min_particle",
+      "molecule_motion_temp",
+      "molecule_atom_constitute"
+    ],
+    "knowledgePoints": [
+      "分子",
+      "原子",
+      "分子运动"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-010-1",
+        "type": "single",
+        "stem": "化学变化中的最小粒子是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "分子"
+          },
+          {
+            "key": "B",
+            "text": "原子"
+          },
+          {
+            "key": "C",
+            "text": "电子"
+          },
+          {
+            "key": "D",
+            "text": "质子"
+          }
+        ],
+        "answer": "B",
+        "explanation": "化学变化中分子可分，原子是最小粒子。易错：不要选电子。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-010-2",
+        "type": "fill",
+        "stem": "一个氧分子由____个氧原子构成；温度升高，分子运动通常更____。",
+        "options": [],
+        "answer": "两；剧烈",
+        "answerAccept": [
+          "2；剧烈",
+          "二；剧烈",
+          "两;剧烈"
+        ],
+        "explanation": "O₂由2个O原子构成；升温分子运动更剧烈。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-010-3",
+        "type": "judge",
+        "stem": "保持物质化学性质的最小粒子一定是原子。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "由分子构成的物质，保持化学性质的最小粒子是分子。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-011",
+    "type": "material",
+    "unitId": "u3",
+    "lessonId": "u3t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "原子结构与离子",
+    "material": "表中给出三种粒子：甲—质子数11、中子数12、核外电子数11；乙—质子数8、中子数8、核外电子数10；丙—质子数17、中子数18、核外电子数17。某题问：谁是原子？谁是阴离子？钠元素与氯元素如何判断？",
+    "tags": [
+      "atomic_structure",
+      "element_definition"
+    ],
+    "knowledgePoints": [
+      "原子结构",
+      "离子",
+      "元素"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-011-1",
+        "type": "single",
+        "stem": "属于阴离子的是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "甲"
+          },
+          {
+            "key": "B",
+            "text": "乙"
+          },
+          {
+            "key": "C",
+            "text": "丙"
+          },
+          {
+            "key": "D",
+            "text": "甲和丙"
+          }
+        ],
+        "answer": "B",
+        "explanation": "乙质子数8＜电子数10，为O²⁻类阴离子。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-011-2",
+        "type": "fill",
+        "stem": "决定元素种类的是____数；甲粒子属于____元素。",
+        "options": [],
+        "answer": "质子（或核电荷）；钠（或Na）",
+        "answerAccept": [
+          "质子；钠",
+          "核电荷；钠",
+          "质子数；钠",
+          "质子；Na",
+          "核电荷数；钠"
+        ],
+        "explanation": "质子数决定元素种类；甲质子数11为钠。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-011-3",
+        "type": "judge",
+        "stem": "具有相同质子数的一类原子统称为单质。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "统称为元素，不是单质。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-012",
+    "type": "material",
+    "unitId": "u3",
+    "lessonId": "u3t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 1,
+    "title": "元素符号与物质分类",
+    "material": "给出物质：O₂、Fe、H₂O、CO₂、空气、金刚石与石墨。要求从「元素种类」「单质/化合物/混合物」角度分类，并纠正错写符号：CL、ca、ZN。",
+    "tags": [
+      "element_definition",
+      "classification"
+    ],
+    "knowledgePoints": [
+      "元素符号",
+      "单质化合物混合物"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-012-1",
+        "type": "single",
+        "stem": "属于化合物的是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "O₂"
+          },
+          {
+            "key": "B",
+            "text": "Fe"
+          },
+          {
+            "key": "C",
+            "text": "H₂O"
+          },
+          {
+            "key": "D",
+            "text": "空气"
+          }
+        ],
+        "answer": "C",
+        "explanation": "H₂O由不同种元素组成的纯净物；空气是混合物。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-012-2",
+        "type": "fill",
+        "stem": "正确的锌元素符号是____；氯元素符号是____。",
+        "options": [],
+        "answer": "Zn；Cl",
+        "answerAccept": [
+          "Zn;Cl",
+          "Zn，Cl"
+        ],
+        "explanation": "双字母符号：首字母大写，第二字母小写。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-012-3",
+        "type": "judge",
+        "stem": "可以说「一个水分子含有两个氢元素」。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "元素只讲种类不讲个数；应说两个氢原子。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-013",
+    "type": "material",
+    "unitId": "u3",
+    "lessonId": "u3t4",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 3,
+    "title": "化合价与化学式书写",
+    "material": "已知常见化合价：Na、K、Ag、H为+1；Ca、Mg、Ba、Zn、Cu为+2；Al为+3；O为-2；Cl为-1；SO₄为-2；OH为-1；CO₃为-2。小组练习书写：氯化钙、氧化铝、氢氧化钙、碳酸钠，并有人把氯化钙写成CaO。",
+    "tags": [
+      "formula_from_valence",
+      "易错"
+    ],
+    "knowledgePoints": [
+      "化合价",
+      "化学式书写"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-013-1",
+        "type": "fill",
+        "stem": "氯化钙的化学式是____；氧化铝的化学式是____。",
+        "options": [],
+        "answer": "CaCl₂；Al₂O₃",
+        "answerAccept": [
+          "CaCl2；Al2O3",
+          "CaCl₂;Al₂O₃",
+          "CaCl2;Al2O3"
+        ],
+        "explanation": "Ca(+2)与Cl(-1)交叉得CaCl₂；Al(+3)与O(-2)得Al₂O₃。勿写成CaO。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-013-2",
+        "type": "fill",
+        "stem": "氢氧化钙的化学式是____；碳酸钠的化学式是____。",
+        "options": [],
+        "answer": "Ca(OH)₂；Na₂CO₃",
+        "answerAccept": [
+          "Ca(OH)2；Na2CO3",
+          "Ca(OH)₂;Na₂CO₃"
+        ],
+        "explanation": "原子团整体标价后交叉约简。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-013-3",
+        "type": "single",
+        "stem": "把氯化钙写成CaO，错在：",
+        "options": [
+          {
+            "key": "A",
+            "text": "钙的化合价记错为+1"
+          },
+          {
+            "key": "B",
+            "text": "误用了氧化钙的化学式"
+          },
+          {
+            "key": "C",
+            "text": "氯应写在前面"
+          },
+          {
+            "key": "D",
+            "text": "缺少括号"
+          }
+        ],
+        "answer": "B",
+        "explanation": "CaO是氧化钙；氯化钙应为CaCl₂。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-013-4",
+        "type": "judge",
+        "stem": "化合物中正负化合价代数和一定为0。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "对",
+        "explanation": "这是书写与检验化学式的基本规则。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-014",
+    "type": "material",
+    "unitId": "u3",
+    "lessonId": "u3t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "分子间隔与扩散",
+    "material": "演示：①50 mL酒精与50 mL水混合后体积小于100 mL；②墙角打开一瓶香水，远处很快闻到香味；③给瘪乒乓球加热后重新鼓起。讨论：这些现象分别说明分子的什么性质？",
+    "tags": [
+      "molecule_motion_temp",
+      "inquiry"
+    ],
+    "knowledgePoints": [
+      "分子间隔",
+      "分子运动"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-014-1",
+        "type": "single",
+        "stem": "酒精与水混合体积减小，主要说明：",
+        "options": [
+          {
+            "key": "A",
+            "text": "分子质量变小"
+          },
+          {
+            "key": "B",
+            "text": "分子间有间隔"
+          },
+          {
+            "key": "C",
+            "text": "分子种类改变"
+          },
+          {
+            "key": "D",
+            "text": "发生了化学变化"
+          }
+        ],
+        "answer": "B",
+        "explanation": "分子挤入彼此间隔，总体积减小。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-014-2",
+        "type": "fill",
+        "stem": "闻到香味说明分子在不断____；加热使乒乓球鼓起，说明温度升高分子间隔____。",
+        "options": [],
+        "answer": "运动；增大",
+        "answerAccept": [
+          "运动;增大",
+          "做无规则运动；变大"
+        ],
+        "explanation": "扩散体现分子运动；升温间隔一般增大。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-014-3",
+        "type": "judge",
+        "stem": "温度升高，分子运动通常更缓慢。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "温度升高分子运动更剧烈。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-015",
+    "type": "material",
+    "unitId": "u4",
+    "lessonId": "u4t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "电解水实验数据分析",
+    "material": "电解水装置接通直流电一段时间后，与负极相连的玻璃管内气体体积约为与正极相连管内气体的2倍。用燃着木条检验负极气体，气体安静燃烧；用带火星木条检验正极气体，木条复燃。有的组别测得体积比略偏离2:1。",
+    "tags": [
+      "water_electrolysis",
+      "water_formula"
+    ],
+    "knowledgePoints": [
+      "电解水",
+      "水的组成"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-015-1",
+        "type": "fill",
+        "stem": "负极产生____，正极产生____；体积比约为____。",
+        "options": [],
+        "answer": "氢气；氧气；2:1",
+        "answerAccept": [
+          "H₂；O₂；2:1",
+          "氢气;氧气;2∶1",
+          "氢气；氧气；2∶1"
+        ],
+        "explanation": "氢∶氧≈2∶1（负极∶正极）。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-015-2",
+        "type": "single",
+        "stem": "该实验直接证明水是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "单质"
+          },
+          {
+            "key": "B",
+            "text": "由氢、氧元素组成的化合物"
+          },
+          {
+            "key": "C",
+            "text": "混合物"
+          },
+          {
+            "key": "D",
+            "text": "只含氧元素"
+          }
+        ],
+        "answer": "B",
+        "explanation": "电解生成氢气和氧气，说明水由H、O两种元素组成。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-015-3",
+        "type": "fill",
+        "stem": "水的化学式是____（勿与过氧化氢混淆）。",
+        "options": [],
+        "answer": "H₂O",
+        "answerAccept": [
+          "H2O"
+        ],
+        "explanation": "水是H₂O；H₂O₂是过氧化氢。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-015-4",
+        "type": "judge",
+        "stem": "体积比偏离2:1可能与氧气在水中溶解度略大等因素有关。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "对",
+        "explanation": "O₂溶解度略大于H₂、电极消耗等可导致偏离。",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-016",
+    "type": "material",
+    "unitId": "u4",
+    "lessonId": "u4t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 1,
+    "title": "硬水软水与净水",
+    "material": "取井水、蒸馏水各少许，分别加入等量肥皂水振荡：井水泡沫少、有渣；蒸馏水泡沫丰富。另将天然水依次经沉淀、过滤、吸附、蒸馏处理，得到较纯的水。",
+    "tags": [
+      "hard_water",
+      "water_purify"
+    ],
+    "knowledgePoints": [
+      "硬水与软水",
+      "净水方法"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-016-1",
+        "type": "single",
+        "stem": "上述井水属于：",
+        "options": [
+          {
+            "key": "A",
+            "text": "软水"
+          },
+          {
+            "key": "B",
+            "text": "硬水"
+          },
+          {
+            "key": "C",
+            "text": "纯净物"
+          },
+          {
+            "key": "D",
+            "text": "蒸馏水"
+          }
+        ],
+        "answer": "B",
+        "explanation": "含较多可溶性钙、镁化合物时肥皂泡沫少，为硬水。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-016-2",
+        "type": "fill",
+        "stem": "生活中可用____初步降低水的暂时硬度；过滤主要除去____。",
+        "options": [],
+        "answer": "煮沸；难溶性杂质",
+        "answerAccept": [
+          "煮沸；不溶物",
+          "煮沸;难溶杂质",
+          "加热煮沸；固体杂质"
+        ],
+        "explanation": "煮沸可降低暂时硬度；过滤除不溶物。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-016-3",
+        "type": "judge",
+        "stem": "蒸馏得到的水一定是硬水。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "蒸馏水几乎不含钙镁离子，属于软水（且较纯）。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-017",
+    "type": "material",
+    "unitId": "u4",
+    "lessonId": "u4t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 3,
+    "title": "化学式与元素质量计算",
+    "material": "已知相对原子质量：H=1，O=16，C=12，Ca=40。计算任务：①H₂O的相对分子质量；②18 g水中氧元素质量；③CO₂中碳元素质量分数；④指出「2H₂O」中「2」与「H₂」右下角「2」的不同含义。",
+    "tags": [
+      "element_mass_calc",
+      "water_formula"
+    ],
+    "knowledgePoints": [
+      "相对分子质量",
+      "元素质量分数"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-017-1",
+        "type": "fill",
+        "stem": "H₂O的相对分子质量是____；18 g水中氧元素质量是____g。",
+        "options": [],
+        "answer": "18；16",
+        "answerAccept": [
+          "18;16",
+          "18，16"
+        ],
+        "explanation": "1×2+16=18；氧质量=18×16/18=16 g。勿把比例算反成约1 g。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-017-2",
+        "type": "fill",
+        "stem": "CO₂中碳元素的质量分数为____%（整数）。",
+        "options": [],
+        "answer": "27",
+        "answerAccept": [
+          "27.3",
+          "约27",
+          "27%"
+        ],
+        "explanation": "12/44×100%≈27.3%，常取27%。",
+        "difficulty": 3
+      },
+      {
+        "id": "sz-mat-017-3",
+        "type": "single",
+        "stem": "「2H₂O」中前面的「2」表示：",
+        "options": [
+          {
+            "key": "A",
+            "text": "两个氢原子"
+          },
+          {
+            "key": "B",
+            "text": "两个水分子"
+          },
+          {
+            "key": "C",
+            "text": "两种元素"
+          },
+          {
+            "key": "D",
+            "text": "氧的化合价"
+          }
+        ],
+        "answer": "B",
+        "explanation": "化学式前面的数字表示分子个数。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-018",
+    "type": "material",
+    "unitId": "u4",
+    "lessonId": "u4t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "化学式意义辨析",
+    "material": "关于化学式H₂O，四位同学发表看法：甲—表示水这种物质；乙—表示水由氢、氧元素组成；丙—表示一个水分子由两个氢原子和一个氧原子构成；丁—表示水中氢、氧元素质量比为1:1。",
+    "tags": [
+      "water_formula",
+      "element_mass_calc"
+    ],
+    "knowledgePoints": [
+      "化学式的意义"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-018-1",
+        "type": "single",
+        "stem": "说法错误的是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "甲"
+          },
+          {
+            "key": "B",
+            "text": "乙"
+          },
+          {
+            "key": "C",
+            "text": "丙"
+          },
+          {
+            "key": "D",
+            "text": "丁"
+          }
+        ],
+        "answer": "D",
+        "explanation": "氢、氧元素质量比为2:16=1:8，不是1:1。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-018-2",
+        "type": "fill",
+        "stem": "水中氢、氧元素的质量比是____。",
+        "options": [],
+        "answer": "1:8",
+        "answerAccept": [
+          "1∶8",
+          "2:16"
+        ],
+        "explanation": "2×1 : 16 = 1:8。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-018-3",
+        "type": "judge",
+        "stem": "化学式只表示物质由哪些元素组成，不表示原子个数。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "化学式既表示元素组成，也表示一个分子中各原子个数等。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-019",
+    "type": "material",
+    "unitId": "u5",
+    "lessonId": "u5t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 3,
+    "title": "质量守恒定律实验",
+    "material": "在密闭锥形瓶中放入镁条与空气，称量后点燃镁条，冷却再称量，天平仍平衡。另一组在敞口烧杯中做同样实验，反应后质量减小。第三组用碳酸钠与稀盐酸在密闭装置中反应，反应前后总质量不变；若改敞口，质量减轻。",
+    "tags": [
+      "mass_conservation",
+      "inquiry"
+    ],
+    "knowledgePoints": [
+      "质量守恒定律"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-019-1",
+        "type": "single",
+        "stem": "密闭装置中反应前后质量不变，说明：",
+        "options": [
+          {
+            "key": "A",
+            "text": "原子种类改变"
+          },
+          {
+            "key": "B",
+            "text": "参加反应的各物质质量总和等于生成的各物质质量总和"
+          },
+          {
+            "key": "C",
+            "text": "分子个数一定不变"
+          },
+          {
+            "key": "D",
+            "text": "气体质量可忽略"
+          }
+        ],
+        "answer": "B",
+        "explanation": "质量守恒定律的内容。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-019-2",
+        "type": "fill",
+        "stem": "敞口烧杯中镁燃烧后质量看起来减小，是因为生成的____散逸到空气中未计入。",
+        "options": [],
+        "answer": "生成物（部分以烟尘/气体形式逸出）",
+        "answerAccept": [
+          "气体",
+          "生成的气体",
+          "烟尘",
+          "氧化镁烟尘",
+          "气体产物",
+          "生成物"
+        ],
+        "explanation": "敞口时部分生成物离开体系，称量的残留物偏轻。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-019-3",
+        "type": "judge",
+        "stem": "任何化学反应中分子的种类和个数都不变。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "化学变化中分子种类改变；原子种类、数目、质量不变。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-020",
+    "type": "material",
+    "unitId": "u5",
+    "lessonId": "u5t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "化学方程式的书写与配平",
+    "material": "请将下列反应写成化学方程式（需配平、注明条件与箭头）：①高锰酸钾受热分解；②氢气在氧气中燃烧；③碳在氧气中充分燃烧；④过氧化氢在二氧化锰催化下分解。有同学漏写条件或未配平。",
+    "tags": [
+      "chemical_equation",
+      "oxygen_prep"
+    ],
+    "knowledgePoints": [
+      "化学方程式书写",
+      "配平"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-020-1",
+        "type": "fill",
+        "stem": "碳充分燃烧的化学方程式是____。",
+        "options": [],
+        "answer": "C+O₂点燃CO₂",
+        "answerAccept": [
+          "C+O₂→CO₂",
+          "C+O2=CO2",
+          "C＋O₂点燃CO₂",
+          "C+O₂==点燃==CO₂"
+        ],
+        "explanation": "配平后为 C + O₂ --点燃--> CO₂。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-020-2",
+        "type": "fill",
+        "stem": "过氧化氢分解制氧的化学方程式是____。",
+        "options": [],
+        "answer": "2H₂O₂MnO₂2H₂O+O₂",
+        "answerAccept": [
+          "2H₂O₂=MnO₂=2H₂O+O₂↑",
+          "2H2O2==MnO2==2H2O+O2↑",
+          "2H₂O₂→2H₂O+O₂"
+        ],
+        "explanation": "2H₂O₂ --MnO₂--> 2H₂O + O₂↑。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-020-3",
+        "type": "single",
+        "stem": "书写化学方程式必须遵守的定律是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "能量守恒"
+          },
+          {
+            "key": "B",
+            "text": "质量守恒"
+          },
+          {
+            "key": "C",
+            "text": "电荷可任意"
+          },
+          {
+            "key": "D",
+            "text": "分子个数守恒"
+          }
+        ],
+        "answer": "B",
+        "explanation": "配平依据质量守恒定律。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-021",
+    "type": "material",
+    "unitId": "u5",
+    "lessonId": "u5t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 3,
+    "title": "根据方程式的简单计算",
+    "material": "反应：2H₂O₂ =MnO₂= 2H₂O + O₂↑。现有质量分数为30%的过氧化氢溶液100 g，假设过氧化氢完全分解，理论可产生氧气的质量为多少？（H=1，O=16）实验测得氧气质量略小于理论值。",
+    "tags": [
+      "equation_calc",
+      "oxygen_prep"
+    ],
+    "knowledgePoints": [
+      "化学方程式计算"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-021-1",
+        "type": "fill",
+        "stem": "100 g 30%双氧水中含H₂O₂的质量是____g。",
+        "options": [],
+        "answer": "30",
+        "answerAccept": [
+          "30g",
+          "30 g"
+        ],
+        "explanation": "100×30%=30 g。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-021-2",
+        "type": "fill",
+        "stem": "由方程式关系 2H₂O₂～O₂，68份质量双氧水对应32份氧气，30 g双氧水理论得氧气____g。",
+        "options": [],
+        "answer": "14.1",
+        "answerAccept": [
+          "14.12",
+          "约14.1",
+          "14.118"
+        ],
+        "explanation": "32/68×30≈14.1 g。",
+        "difficulty": 3
+      },
+      {
+        "id": "sz-mat-021-3",
+        "type": "single",
+        "stem": "实测氧气质量偏小，可能原因不包括：",
+        "options": [
+          {
+            "key": "A",
+            "text": "气体收集时有泄漏"
+          },
+          {
+            "key": "B",
+            "text": "反应未完全"
+          },
+          {
+            "key": "C",
+            "text": "部分氧气溶于水"
+          },
+          {
+            "key": "D",
+            "text": "过氧化氢质量分数被低估（实际更浓）"
+          }
+        ],
+        "answer": "D",
+        "explanation": "实际更浓会使氧气偏多；泄漏、不完全、溶解会使实测偏小。",
+        "difficulty": 3
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-022",
+    "type": "material",
+    "unitId": "u5",
+    "lessonId": "u5t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 1,
+    "title": "质量守恒微观解释",
+    "material": "从微观角度看化学反应：反应前后原子的种类不变、数目不变、原子的质量不变，所以质量守恒。有同学认为「催化剂改变了原子种类所以不守恒」，另一同学认为「生成气体的反应不遵守质量守恒」。",
+    "tags": [
+      "mass_conservation",
+      "chem_change_min_particle"
+    ],
+    "knowledgePoints": [
+      "质量守恒微观实质"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-022-1",
+        "type": "judge",
+        "stem": "生成气体的化学反应不遵守质量守恒定律。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "只要计入气体质量（密闭或正确称量），仍然守恒。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-022-2",
+        "type": "fill",
+        "stem": "化学变化中不变的是____的种类、数目和质量。",
+        "options": [],
+        "answer": "原子",
+        "answerAccept": [
+          "原子种类、数目和质量",
+          "原子（种类、数目、质量）"
+        ],
+        "explanation": "原子重新组合，种类、数目、质量不变。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-022-3",
+        "type": "single",
+        "stem": "下列说法正确的是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "催化剂使原子种类改变"
+          },
+          {
+            "key": "B",
+            "text": "反应前后分子种类一定不变"
+          },
+          {
+            "key": "C",
+            "text": "反应前后元素种类不变"
+          },
+          {
+            "key": "D",
+            "text": "反应前后物质总质量可以不等"
+          }
+        ],
+        "answer": "C",
+        "explanation": "元素（原子种类）守恒；分子种类改变；总质量守恒。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-023",
+    "type": "material",
+    "unitId": "u6",
+    "lessonId": "u6t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "碳的单质与吸附",
+    "material": "金刚石、石墨、C₆₀都是碳的单质，但物理性质差异很大。实验室用木炭吸附红墨水中的色素，溶液颜色变浅；冰箱除味剂常用活性炭。加热条件下碳可还原氧化铜，生成铜和二氧化碳。",
+    "tags": [
+      "carbon_allotrope",
+      "carbon_property"
+    ],
+    "knowledgePoints": [
+      "碳的单质",
+      "吸附性",
+      "还原性"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-023-1",
+        "type": "single",
+        "stem": "金刚石、石墨物理性质不同的原因是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "元素种类不同"
+          },
+          {
+            "key": "B",
+            "text": "碳原子排列方式不同"
+          },
+          {
+            "key": "C",
+            "text": "质子数不同"
+          },
+          {
+            "key": "D",
+            "text": "相对原子质量不同"
+          }
+        ],
+        "answer": "B",
+        "explanation": "同种元素、不同原子排列→同素异形体，性质不同。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-023-2",
+        "type": "fill",
+        "stem": "木炭使红墨水褪色利用了碳的____性；碳还原氧化铜表现____性。",
+        "options": [],
+        "answer": "吸附；还原",
+        "answerAccept": [
+          "吸附;还原",
+          "吸附性；还原性"
+        ],
+        "explanation": "物理吸附色素；夺氧表现还原性。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-023-3",
+        "type": "judge",
+        "stem": "金刚石和石墨是不同种元素组成的化合物。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "二者都是碳的单质（同素异形体）。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-024",
+    "type": "material",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "二氧化碳制取与性质实验",
+    "material": "用大理石与稀盐酸反应制取CO₂，经向上排空气法收集。性质实验：①通入紫色石蕊溶液变红；②通入澄清石灰水变浑浊；③用燃着木条伸入集气瓶，木条熄灭；④倾倒CO₂使阶梯上的蜡烛自下而上熄灭。",
+    "tags": [
+      "CO2_prep",
+      "CO2_property",
+      "gas_collect_direction",
+      "long_neck_funnel"
+    ],
+    "knowledgePoints": [
+      "二氧化碳制取",
+      "二氧化碳性质"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-024-1",
+        "type": "fill",
+        "stem": "实验室制CO₂的化学方程式是____。",
+        "options": [],
+        "answer": "CaCO₃+2HCl=CaCl₂+H₂O+CO₂↑",
+        "answerAccept": [
+          "CaCO3+2HCl=CaCl2+H2O+CO2↑",
+          "CaCO₃+2HCl→CaCl₂+H₂O+CO₂↑"
+        ],
+        "explanation": "大理石主要成分CaCO₃与稀盐酸反应。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-024-2",
+        "type": "single",
+        "stem": "阶梯蜡烛自下而上熄灭，说明CO₂：",
+        "options": [
+          {
+            "key": "A",
+            "text": "密度比空气小且不支持燃烧"
+          },
+          {
+            "key": "B",
+            "text": "密度比空气大且一般不支持燃烧"
+          },
+          {
+            "key": "C",
+            "text": "有助燃性"
+          },
+          {
+            "key": "D",
+            "text": "有可燃性"
+          }
+        ],
+        "answer": "B",
+        "explanation": "倾倒实验体现密度大、不支持燃烧（或不燃烧）。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-024-3",
+        "type": "judge",
+        "stem": "二氧化碳能使澄清石灰水变浑浊，是因为生成了碳酸钙沉淀。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "对",
+        "explanation": "CO₂+Ca(OH)₂=CaCO₃↓+H₂O。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-025",
+    "type": "material",
+    "unitId": "u6",
+    "lessonId": "u6t3",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 3,
+    "title": "一氧化碳的还原与毒性",
+    "material": "加热氧化铜，通入一氧化碳，黑色粉末逐渐变红，尾气点燃处理。另有资料：煤炉烧水时若门窗紧闭，易发生一氧化碳中毒；CO能与血液中血红蛋白结合。实验后需继续通一会儿气体至装置冷却。",
+    "tags": [
+      "CO_property",
+      "lab_safety"
+    ],
+    "knowledgePoints": [
+      "一氧化碳还原性",
+      "一氧化碳毒性"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-025-1",
+        "type": "fill",
+        "stem": "CO还原CuO的化学方程式是____。",
+        "options": [],
+        "answer": "CO+CuO加热Cu+CO₂",
+        "answerAccept": [
+          "CO+CuO=Cu+CO2",
+          "CO+CuO→Cu+CO₂",
+          "CuO+CO加热Cu+CO₂"
+        ],
+        "explanation": "CO+CuO --Δ--> Cu+CO₂。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-025-2",
+        "type": "single",
+        "stem": "尾气需要处理的原因是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "CO₂有剧毒"
+          },
+          {
+            "key": "B",
+            "text": "CO有毒"
+          },
+          {
+            "key": "C",
+            "text": "氧气过多"
+          },
+          {
+            "key": "D",
+            "text": "铜粉有毒"
+          }
+        ],
+        "answer": "B",
+        "explanation": "一氧化碳有毒，尾气常点燃转化为CO₂。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-025-3",
+        "type": "judge",
+        "stem": "实验结束应立即停止通CO并撤去热源，以防倒吸。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "一般先撤热源，继续通CO至冷却，防止热的铜再被氧化；并处理好尾气。",
+        "difficulty": 3
+      },
+      {
+        "id": "sz-mat-025-4",
+        "type": "fill",
+        "stem": "CO中毒是因为CO易与____结合。",
+        "options": [],
+        "answer": "血红蛋白",
+        "answerAccept": [
+          "血液中的血红蛋白",
+          "Hb"
+        ],
+        "explanation": "一氧化碳与血红蛋白结合力强，使人体缺氧。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-026",
+    "type": "material",
+    "unitId": "u6",
+    "lessonId": "u6t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 1,
+    "title": "二氧化碳与环保",
+    "material": "短文：大气中二氧化碳增多与温室效应加剧有关；植物光合作用吸收CO₂释放O₂；过度砍伐森林、化石燃料大量燃烧会使大气中CO₂升高。某班倡议绿色出行、植树造林。",
+    "tags": [
+      "CO2_property",
+      "环保"
+    ],
+    "knowledgePoints": [
+      "温室效应",
+      "碳循环"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-026-1",
+        "type": "single",
+        "stem": "下列措施不利于减缓大气中CO₂增多的是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "植树造林"
+          },
+          {
+            "key": "B",
+            "text": "绿色出行"
+          },
+          {
+            "key": "C",
+            "text": "大量燃煤且不处理尾气"
+          },
+          {
+            "key": "D",
+            "text": "开发新能源"
+          }
+        ],
+        "answer": "C",
+        "explanation": "大量燃煤增加CO₂排放。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-026-2",
+        "type": "fill",
+        "stem": "绿色植物通过____作用吸收二氧化碳。",
+        "options": [],
+        "answer": "光合",
+        "answerAccept": [
+          "光合作用",
+          "光合"
+        ],
+        "explanation": "光合作用吸收CO₂。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-026-3",
+        "type": "judge",
+        "stem": "二氧化碳是空气污染物的主要有害成分之一（与SO₂、NO₂同类）。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "一般不把CO₂列为有毒空气污染物；它与温室效应相关。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-027",
+    "type": "material",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "燃烧条件与灭火",
+    "material": "探究燃烧条件：①铜片上同时放白磷、红磷，加水使水温升至约40℃以上，白磷燃烧红磷不燃烧；②热水中的白磷通氧气后燃烧；③灭火器、砂土、断电等灭火实例。结论归结为：可燃物、氧气（或空气）、温度达到着火点。",
+    "tags": [
+      "combustion",
+      "inquiry"
+    ],
+    "knowledgePoints": [
+      "燃烧条件",
+      "灭火原理"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-027-1",
+        "type": "single",
+        "stem": "铜片上白磷燃烧而红磷不燃烧，变量主要是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "氧气浓度"
+          },
+          {
+            "key": "B",
+            "text": "是否达到着火点"
+          },
+          {
+            "key": "C",
+            "text": "压强"
+          },
+          {
+            "key": "D",
+            "text": "光照"
+          }
+        ],
+        "answer": "B",
+        "explanation": "二者着火点不同，温度达到白磷着火点未达红磷。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-027-2",
+        "type": "fill",
+        "stem": "燃烧需要____、____、温度达到____（三点）。",
+        "options": [],
+        "answer": "可燃物；氧气（或空气）；着火点",
+        "answerAccept": [
+          "可燃物;氧气;着火点",
+          "可燃物；空气；着火点"
+        ],
+        "explanation": "燃烧三要素。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-027-3",
+        "type": "judge",
+        "stem": "灭火一定要降低可燃物的着火点。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "着火点是固有属性，灭火是清除可燃物、隔绝氧气或降温至着火点以下。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-028",
+    "type": "material",
+    "unitId": "u7",
+    "lessonId": "u7t1",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 1,
+    "title": "缓慢氧化与自燃",
+    "material": "资料：①铁生锈是缓慢氧化；②堆放的秸秆或浸油破布可能自燃；③爆炸是在有限空间内急速燃烧，短时间产生大量热和气体。安全提示：禁止在加油站吸烟；粉尘车间要通风防爆。",
+    "tags": [
+      "combustion",
+      "lab_safety"
+    ],
+    "knowledgePoints": [
+      "缓慢氧化",
+      "自燃",
+      "爆炸"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-028-1",
+        "type": "single",
+        "stem": "铁生锈属于：",
+        "options": [
+          {
+            "key": "A",
+            "text": "剧烈燃烧"
+          },
+          {
+            "key": "B",
+            "text": "缓慢氧化"
+          },
+          {
+            "key": "C",
+            "text": "爆炸"
+          },
+          {
+            "key": "D",
+            "text": "物理变化"
+          }
+        ],
+        "answer": "B",
+        "explanation": "锈蚀是缓慢氧化（也是化学变化）。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-028-2",
+        "type": "fill",
+        "stem": "自燃是由____氧化引起的，温度达到着火点而自动燃烧。",
+        "options": [],
+        "answer": "缓慢",
+        "answerAccept": [
+          "缓慢氧化"
+        ],
+        "explanation": "缓慢氧化积热导致自燃。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-028-3",
+        "type": "judge",
+        "stem": "可燃性粉尘悬浮在空气中遇明火可能发生爆炸。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "对",
+        "explanation": "粉尘爆炸是常见安全考点。",
+        "difficulty": 1
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-029",
+    "type": "material",
+    "unitId": "u7",
+    "lessonId": "u7t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 2,
+    "title": "化石燃料与清洁能源",
+    "material": "煤、石油、天然气称为化石燃料，均不可再生。煤燃烧易产生SO₂等导致酸雨；天然气主要成分是甲烷，燃烧产物相对清洁。深圳部分公交已用氢燃料电池或纯电动。沼气主要成分也是甲烷。",
+    "tags": [
+      "fossil_fuel",
+      "环保",
+      "energy"
+    ],
+    "knowledgePoints": [
+      "化石燃料",
+      "甲烷",
+      "能源"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-029-1",
+        "type": "fill",
+        "stem": "三大化石燃料是煤、____、____。",
+        "options": [],
+        "answer": "石油；天然气",
+        "answerAccept": [
+          "石油;天然气",
+          "天然气；石油"
+        ],
+        "explanation": "煤、石油、天然气。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-029-2",
+        "type": "single",
+        "stem": "天然气的主要成分是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "CO"
+          },
+          {
+            "key": "B",
+            "text": "CH₄"
+          },
+          {
+            "key": "C",
+            "text": "CO₂"
+          },
+          {
+            "key": "D",
+            "text": "H₂"
+          }
+        ],
+        "answer": "B",
+        "explanation": "甲烷CH₄。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-029-3",
+        "type": "judge",
+        "stem": "化石燃料都属于可再生能源。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "错",
+        "explanation": "化石燃料不可再生。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-029-4",
+        "type": "fill",
+        "stem": "甲烷完全燃烧的化学方程式是____。",
+        "options": [],
+        "answer": "CH₄+2O₂点燃CO₂+2H₂O",
+        "answerAccept": [
+          "CH4+2O2=CO2+2H2O",
+          "CH₄+2O₂→CO₂+2H₂O"
+        ],
+        "explanation": "CH₄ + 2O₂ --点燃--> CO₂ + 2H₂O。",
+        "difficulty": 2
+      }
+    ]
+  },
+  {
+    "id": "sz-mat-030",
+    "type": "material",
+    "unitId": "u7",
+    "lessonId": "u7t2",
+    "year": 2024,
+    "source": "深圳考情原创（九年级上册·材料）",
+    "difficulty": 3,
+    "title": "燃料充分燃烧与热值情境",
+    "material": "比较：等质量的氢气、一氧化碳、甲烷在氧气中充分燃烧放出热量不同。工业上使燃料充分燃烧需足够空气并与燃料充分接触。某炉灶火焰发黄且有黑烟，同学判断氧气不足。另给出反应：2CO + O₂ =点燃= 2CO₂。",
+    "tags": [
+      "combustion",
+      "energy",
+      "CO_property"
+    ],
+    "knowledgePoints": [
+      "充分燃烧",
+      "燃料热值"
+    ],
+    "subQuestions": [
+      {
+        "id": "sz-mat-030-1",
+        "type": "single",
+        "stem": "火焰发黄有黑烟，最可能的原因是：",
+        "options": [
+          {
+            "key": "A",
+            "text": "氧气过量很多"
+          },
+          {
+            "key": "B",
+            "text": "燃料与空气接触不充分（缺氧）"
+          },
+          {
+            "key": "C",
+            "text": "温度低于着火点"
+          },
+          {
+            "key": "D",
+            "text": "没有可燃物"
+          }
+        ],
+        "answer": "B",
+        "explanation": "缺氧时碳氢燃料不完全燃烧易产生黑烟。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-030-2",
+        "type": "fill",
+        "stem": "使燃料充分燃烧的两个条件：①足够的____；②燃料与空气____。",
+        "options": [],
+        "answer": "空气（或氧气）；充分接触",
+        "answerAccept": [
+          "氧气；充分接触",
+          "空气;充分接触"
+        ],
+        "explanation": "经典两点。",
+        "difficulty": 2
+      },
+      {
+        "id": "sz-mat-030-3",
+        "type": "judge",
+        "stem": "氢气燃烧产物只有水，是理想的清洁燃料之一。",
+        "options": [
+          {
+            "key": "对",
+            "text": "对"
+          },
+          {
+            "key": "错",
+            "text": "错"
+          }
+        ],
+        "answer": "对",
+        "explanation": "2H₂+O₂→2H₂O，产物无污染。",
+        "difficulty": 1
+      },
+      {
+        "id": "sz-mat-030-4",
+        "type": "single",
+        "stem": "由2CO + O₂ → 2CO₂可知，11.2 L CO（标准状况）完全燃烧需O₂体积约为：",
+        "options": [
+          {
+            "key": "A",
+            "text": "5.6 L"
+          },
+          {
+            "key": "B",
+            "text": "11.2 L"
+          },
+          {
+            "key": "C",
+            "text": "22.4 L"
+          },
+          {
+            "key": "D",
+            "text": "2.8 L"
           }
         ],
         "answer": "A",
-        "explanation": "初中阶段铁与稀盐酸、稀硫酸、硫酸铜等反应产物按 Fe²⁺ 书写（FeCl₂、FeSO₄）。",
-        "difficulty": 2
+        "explanation": "体积比2:1，11.2 L CO需5.6 L O₂。",
+        "difficulty": 3
       }
     ]
   }
