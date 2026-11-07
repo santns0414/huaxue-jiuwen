@@ -788,8 +788,8 @@ ul.plain li { margin-bottom: 0.3rem; }
       '<p>2021–2025 化学备考要点：计算、实验探究、推断与情境决策。</p>' +
       '<div class="go">进入中考板块 →</div></button>' +
       '<div class="entry-card" style="cursor:default"><h3>题库说明</h3>' +
-      '<p>刷题与材料题分栏存放，避免主池过重；材料题约 30 套将由化学 bot 补充。</p>' +
-      '<div class="go">样例已可练</div></div></div>' +
+      '<p>刷题与材料题分栏存放，避免主池过重；材料题正式库 30 套（共约 97 小题）已可练。</p>' +
+      '<div class="go">正式 30 套可练</div></div></div>' +
       '<div class="entry-card" style="cursor:default;margin-top:1rem"><h3>关于本站</h3>' +
       '<p>目录依据人教版九年级化学全一册。解读供复习提纲，不含教材原文。风格对齐语文六维站。</p>' +
       '<div class="go">顶栏点单元或「刷题」即可开始</div></div>' +
@@ -1446,7 +1446,7 @@ ul.plain li { margin-bottom: 0.3rem; }
       '<span>本机错题 <strong>' + readWrongIds().length + '</strong></span></div>';
     var body = '';
     if (!packs.length) {
-      body = '<div class="quiz-empty">当前筛选下没有材料题。可换难度或单元；完整约 30 套将陆续补充。</div>';
+      body = '<div class="quiz-empty">当前筛选下没有材料题。可换难度或单元后再试。</div>';
     } else {
       body = packs.map(function(p){
         var n = (p.subQuestions || []).length;
@@ -1464,7 +1464,7 @@ ul.plain li { margin-bottom: 0.3rem; }
       '<div class="hero"><h2>材料题</h2>' +
       '<p>先读材料，再逐题作答（单选 / 判断 / 填空）。独立于刷题主池，可按难度与单元筛选。答错记入本机错题。</p></div>' +
       filters + meta + body +
-      '<p class="footer-note">题库文件：questions-material.json。样例 3 套可练；完整约 30 套由化学 bot 补充后合并。</p>';
+      '<p class="footer-note">题库文件：questions-material.json。正式库 30 套（sz-mat-001…030，共约 97 小题）已上线。</p>';
     bindGoes(app);
     var diffEl = document.getElementById('mfDiff');
     if (diffEl) diffEl.onchange = function(){
